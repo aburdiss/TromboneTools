@@ -80,9 +80,9 @@ struct Articulation: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(self.dailyRoutinesTenorLink, "drtt-web-scaled")
-                        ImagePurchaseLink(self.dailyRoutinesStudentLink, "drtbone-student-front-scaled")
-                        ImagePurchaseLink(self.dailyRoutinesBassLink, "drbt-web-scaled")
+                        ImagePurchaseLink(self.dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(self.dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(self.dailyRoutinesBassLink, "dailyRoutinesBassCover")
                         Spacer()
                     }
                     
