@@ -38,9 +38,11 @@ struct Articulation: View {
                     // TODO: Embed MP3 from website
                     //Here is where the MP3 Should go!
                     
+                    // TODO: Find how to contain this image inside the frame.
                     Image("fluttertongue-drill-resized")
-                    .resizable()
-                    .scaledToFit()
+                        .resizable()
+                        .scaledToFit()
+                    
                     Paragraph("The second most common mistake mentioned above is to clip off the ends of notes too abruptly. My best advice for fixing this issue is to listen to fine singers. You will never hear them abruptly clip off a note at the end of a phrase unless the text specifically calls for it. The sound created by doing this is extremely unmusical and disruptive to your phrasing. While you’re at it, do a little singing yourself to clearly understand how to gently release phrase endings without the tongue.")
                     Paragraph("Here is a sound file featuring some multiple tonguing:")
                     
@@ -53,7 +55,8 @@ struct Articulation: View {
                 // Multiple Tonguing Group 1
                 Group {
                     EmbeddedYouTubeView(request: multipleTonguingURL)
-                    .frame(minHeight: 200)
+                        .frame(minHeight: 200)
+                    
                     Paragraph("Before you can double or triple tongue you must possess a reliable single tongue, following all the guidelines I have already set forth above because the same principles apply to multiple tonguing.")
                     Paragraph("I think it’s logical to spend time just practicing the off syllable because it’s the one you are not used to. Just play slow notes on one pitch using the syllable ga. Connect the notes and don’t try to move around at first. Try eighth notes at quarter = 72 just to get used to doing this because it will feel very awkward at first. Persevere and practice a little like this everyday. When you feel relatively comfortable doing this, try mixing up the syllables as follows:")
                     Paragraph("dadadada gagagaga dadadada gagagaga")
