@@ -14,12 +14,31 @@ import SwiftUI
  Note: after the number, a period and a single space will be added.
  */
 struct NumberedBulletPoint: View {
-    var number: String
-    var text: String
+    var number: String?
+    var text: String?
+    var boldNumber: String?
+    var boldText: String?
     
     var body: some View {
-        Text("\(number). \(text)")
+        Group {
+            Text("\(boldNumber ?? "")")
+                .bold()
+            + Text("\(number ?? ""). ")
+            + Text(boldText ?? "")
+                .bold()
+            + Text(text ?? "")
+        }
             .padding(.horizontal)
+    }
+    
+    init(number: String, text: String) {
+        self.number = number
+        self.text = text
+    }
+    
+    init(boldNumber: String, boldText: String) {
+        self.boldNumber = boldNumber
+        self.boldText = boldText
     }
 }
 

@@ -13,19 +13,25 @@ import WebKit
 
 
 struct YouTubePlayerView: View {
+    var url: String
     var body: some View {
-        Text("Not Yet")
+        YouTubeIntegratedViewController(VideoURL: url)
     }
 }
 
 struct YouTubePlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        YouTubeViewControllerWrapper(VideoURL: "https://youtu.be/ryoJnB9RB2U")
+        VStack {
+            YouTubeIntegratedViewController(VideoURL: "https://youtu.be/ryoJnB9RB2U")
+            
+        }
     }
 }
 
+
+
 class YouTubeViewController: UIViewController, WKUIDelegate {
-    private let webView = WKWebView()
+    private var webView: WKWebView! = WKWebView()
     var videoURL: String = "https://youtu.be/ryoJnB9RB2U"
 
     func updateVideo() {
@@ -36,21 +42,25 @@ class YouTubeViewController: UIViewController, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let webViewConfiguration = WKWebViewConfiguration()
+        webViewConfiguration.allowsInlineMediaPlayback = true
+        webView = WKWebView(frame: CGRect(x: 0, y: 0, width: 200, height: 200), configuration: webViewConfiguration)
+        
         webView.frame = view.frame
+        webView.contentMode = .scaleToFill
         view.addSubview(webView)
     }
 }
 
-struct YouTubeViewControllerWrapper: UIViewControllerRepresentable {
+struct YouTubeIntegratedViewController: UIViewControllerRepresentable {
     var VideoURL: String
     
-    typealias UIViewControllerType = YouTubeViewController
     
-    func makeUIViewController(context: UIViewControllerRepresentableContext<YouTubeViewControllerWrapper>) -> YouTubeViewControllerWrapper.UIViewControllerType {
-         return YouTubeViewController()
+    func makeUIViewController(context: UIViewControllerRepresentableContext<YouTubeIntegratedViewController>) -> YouTubeViewController {
+        return YouTubeViewController()
     }
     
-    func updateUIViewController(_ uiViewController: YouTubeViewControllerWrapper.UIViewControllerType, context: UIViewControllerRepresentableContext<YouTubeViewControllerWrapper>) {
+    func updateUIViewController(_ uiViewController: YouTubeViewController, context: UIViewControllerRepresentableContext<YouTubeIntegratedViewController>) {
         uiViewController.videoURL = VideoURL
         uiViewController.updateVideo()
     }
