@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C1D0DA123EBDF510092653A /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA023EBDF510092653A /* Paragraph.swift */; };
+		9C1D0DA323EBE1710092653A /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA223EBE1710092653A /* SectionDivider.swift */; };
+		9C1D0DA523EBE3F60092653A /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA423EBE3F60092653A /* PurchaseButton.swift */; };
+		9C1D0DA723EBE6040092653A /* ImagePurchaseLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA623EBE6040092653A /* ImagePurchaseLink.swift */; };
+		9C4FFCCF23EC76E2006ECF3B /* YouTubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FFCCE23EC76E2006ECF3B /* YouTubePlayerView.swift */; };
+		9C4FFCD123ECA595006ECF3B /* BulletPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FFCD023ECA595006ECF3B /* BulletPoint.swift */; };
+		9C600E7A23EB342600C73BFB /* Intonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E7923EB342600C73BFB /* Intonation.swift */; };
+		9C600E7C23EB343B00C73BFB /* LessonGuidelines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E7B23EB343B00C73BFB /* LessonGuidelines.swift */; };
+		9C600E7E23EB344700C73BFB /* LowRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E7D23EB344700C73BFB /* LowRange.swift */; };
+		9C600E8023EB345E00C73BFB /* MouthpieceBuzzing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E7F23EB345E00C73BFB /* MouthpieceBuzzing.swift */; };
+		9C600E8223EB346900C73BFB /* NaturalSlurs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E8123EB346900C73BFB /* NaturalSlurs.swift */; };
+		9C600E8423EB347100C73BFB /* Nerves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E8323EB347100C73BFB /* Nerves.swift */; };
+		9C600E8623EB347900C73BFB /* NoteEndings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E8523EB347900C73BFB /* NoteEndings.swift */; };
+		9C600E8823EB348600C73BFB /* PainAndInjuries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E8723EB348600C73BFB /* PainAndInjuries.swift */; };
+		9C600E8A23EB349000C73BFB /* Phrasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E8923EB349000C73BFB /* Phrasing.swift */; };
+		9C600E8C23EB349B00C73BFB /* PostureVsBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E8B23EB349B00C73BFB /* PostureVsBalance.swift */; };
+		9C600E8E23EB34A700C73BFB /* Practicing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E8D23EB34A700C73BFB /* Practicing.swift */; };
+		9C600E9023EB34B300C73BFB /* ResumesCvsAndBios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E8F23EB34B300C73BFB /* ResumesCvsAndBios.swift */; };
+		9C600E9223EB34BF00C73BFB /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E9123EB34BF00C73BFB /* Rhythm.swift */; };
+		9C600E9423EB34CA00C73BFB /* SightReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E9323EB34CA00C73BFB /* SightReading.swift */; };
+		9C600E9623EB34D400C73BFB /* SlideTechnique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E9523EB34D400C73BFB /* SlideTechnique.swift */; };
+		9C600E9823EB34DD00C73BFB /* ToneQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E9723EB34DD00C73BFB /* ToneQuality.swift */; };
+		9C600E9A23EB34EA00C73BFB /* Trills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E9923EB34EA00C73BFB /* Trills.swift */; };
+		9C600E9C23EB34F300C73BFB /* Vibrato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C600E9B23EB34F300C73BFB /* Vibrato.swift */; };
+		9C96268923DABCB00031B0E9 /* AlternatePositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96268823DABCB00031B0E9 /* AlternatePositions.swift */; };
+		9C96268B23DABCBE0031B0E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96268A23DABCBE0031B0E9 /* HomeView.swift */; };
+		9C96268D23DABD7E0031B0E9 /* TopicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96268C23DABD7E0031B0E9 /* TopicListView.swift */; };
+		9C96268F23DAC2910031B0E9 /* Articulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96268E23DAC2910031B0E9 /* Articulation.swift */; };
+		9C96269123DAC31A0031B0E9 /* TopicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96269023DAC31A0031B0E9 /* TopicButtonView.swift */; };
+		9C96269323DAC4E20031B0E9 /* AuditionsCollege.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96269223DAC4E20031B0E9 /* AuditionsCollege.swift */; };
+		9C96269523DAC4F10031B0E9 /* AuditionsProfessional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96269423DAC4F10031B0E9 /* AuditionsProfessional.swift */; };
+		9C96269723DAC5D90031B0E9 /* BodyMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96269623DAC5D90031B0E9 /* BodyMapping.swift */; };
+		9C96269923DAC5E30031B0E9 /* Breathing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96269823DAC5E30031B0E9 /* Breathing.swift */; };
+		9C96269B23DAC5F10031B0E9 /* DailyRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96269A23DAC5F10031B0E9 /* DailyRoutine.swift */; };
+		9C96269D23DAC5FC0031B0E9 /* Duets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96269C23DAC5FC0031B0E9 /* Duets.swift */; };
+		9C96269F23DAC6630031B0E9 /* Dynamics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96269E23DAC6630031B0E9 /* Dynamics.swift */; };
+		9C9626A123DAC6720031B0E9 /* Embochure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9626A023DAC6720031B0E9 /* Embochure.swift */; };
+		9C9626A323DAC68A0031B0E9 /* Flexibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9626A223DAC68A0031B0E9 /* Flexibility.swift */; };
+		9C9626A523DAC6940031B0E9 /* Endurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9626A423DAC6940031B0E9 /* Endurance.swift */; };
+		9C9626A723DAC6A10031B0E9 /* HesitantEntrances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9626A623DAC6A10031B0E9 /* HesitantEntrances.swift */; };
+		9C9626A923DAC6FA0031B0E9 /* HighRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9626A823DAC6FA0031B0E9 /* HighRange.swift */; };
+		9CC81E3423EA7D2B00CFA5F6 /* EmbeddedYouTubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC81E3323EA7D2B00CFA5F6 /* EmbeddedYouTubeView.swift */; };
+		9CD7563123DA7FC600C5E68E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7563023DA7FC600C5E68E /* AppDelegate.swift */; };
+		9CD7563323DA7FC600C5E68E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7563223DA7FC600C5E68E /* SceneDelegate.swift */; };
+		9CD7563523DA7FC600C5E68E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7563423DA7FC600C5E68E /* ContentView.swift */; };
+		9CD7563723DA7FC800C5E68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD7563623DA7FC800C5E68E /* Assets.xcassets */; };
+		9CD7563A23DA7FC800C5E68E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD7563923DA7FC800C5E68E /* Preview Assets.xcassets */; };
+		9CD7563D23DA7FC800C5E68E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD7563B23DA7FC800C5E68E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C1D0DA023EBDF510092653A /* Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paragraph.swift; sourceTree = "<group>"; };
+		9C1D0DA223EBE1710092653A /* SectionDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDivider.swift; sourceTree = "<group>"; };
+		9C1D0DA423EBE3F60092653A /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
+		9C1D0DA623EBE6040092653A /* ImagePurchaseLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePurchaseLink.swift; sourceTree = "<group>"; };
+		9C4FFCCE23EC76E2006ECF3B /* YouTubePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerView.swift; sourceTree = "<group>"; };
+		9C4FFCD023ECA595006ECF3B /* BulletPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletPoint.swift; sourceTree = "<group>"; };
+		9C600E7923EB342600C73BFB /* Intonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intonation.swift; sourceTree = "<group>"; };
+		9C600E7B23EB343B00C73BFB /* LessonGuidelines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonGuidelines.swift; sourceTree = "<group>"; };
+		9C600E7D23EB344700C73BFB /* LowRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowRange.swift; sourceTree = "<group>"; };
+		9C600E7F23EB345E00C73BFB /* MouthpieceBuzzing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouthpieceBuzzing.swift; sourceTree = "<group>"; };
+		9C600E8123EB346900C73BFB /* NaturalSlurs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalSlurs.swift; sourceTree = "<group>"; };
+		9C600E8323EB347100C73BFB /* Nerves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nerves.swift; sourceTree = "<group>"; };
+		9C600E8523EB347900C73BFB /* NoteEndings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEndings.swift; sourceTree = "<group>"; };
+		9C600E8723EB348600C73BFB /* PainAndInjuries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainAndInjuries.swift; sourceTree = "<group>"; };
+		9C600E8923EB349000C73BFB /* Phrasing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phrasing.swift; sourceTree = "<group>"; };
+		9C600E8B23EB349B00C73BFB /* PostureVsBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostureVsBalance.swift; sourceTree = "<group>"; };
+		9C600E8D23EB34A700C73BFB /* Practicing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practicing.swift; sourceTree = "<group>"; };
+		9C600E8F23EB34B300C73BFB /* ResumesCvsAndBios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumesCvsAndBios.swift; sourceTree = "<group>"; };
+		9C600E9123EB34BF00C73BFB /* Rhythm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhythm.swift; sourceTree = "<group>"; };
+		9C600E9323EB34CA00C73BFB /* SightReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightReading.swift; sourceTree = "<group>"; };
+		9C600E9523EB34D400C73BFB /* SlideTechnique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTechnique.swift; sourceTree = "<group>"; };
+		9C600E9723EB34DD00C73BFB /* ToneQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneQuality.swift; sourceTree = "<group>"; };
+		9C600E9923EB34EA00C73BFB /* Trills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trills.swift; sourceTree = "<group>"; };
+		9C600E9B23EB34F300C73BFB /* Vibrato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibrato.swift; sourceTree = "<group>"; };
+		9C96268823DABCB00031B0E9 /* AlternatePositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternatePositions.swift; sourceTree = "<group>"; };
+		9C96268A23DABCBE0031B0E9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9C96268C23DABD7E0031B0E9 /* TopicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListView.swift; sourceTree = "<group>"; };
+		9C96268E23DAC2910031B0E9 /* Articulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articulation.swift; sourceTree = "<group>"; };
+		9C96269023DAC31A0031B0E9 /* TopicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicButtonView.swift; sourceTree = "<group>"; };
+		9C96269223DAC4E20031B0E9 /* AuditionsCollege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditionsCollege.swift; sourceTree = "<group>"; };
+		9C96269423DAC4F10031B0E9 /* AuditionsProfessional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditionsProfessional.swift; sourceTree = "<group>"; };
+		9C96269623DAC5D90031B0E9 /* BodyMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMapping.swift; sourceTree = "<group>"; };
+		9C96269823DAC5E30031B0E9 /* Breathing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breathing.swift; sourceTree = "<group>"; };
+		9C96269A23DAC5F10031B0E9 /* DailyRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRoutine.swift; sourceTree = "<group>"; };
+		9C96269C23DAC5FC0031B0E9 /* Duets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duets.swift; sourceTree = "<group>"; };
+		9C96269E23DAC6630031B0E9 /* Dynamics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamics.swift; sourceTree = "<group>"; };
+		9C9626A023DAC6720031B0E9 /* Embochure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embochure.swift; sourceTree = "<group>"; };
+		9C9626A223DAC68A0031B0E9 /* Flexibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flexibility.swift; sourceTree = "<group>"; };
+		9C9626A423DAC6940031B0E9 /* Endurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endurance.swift; sourceTree = "<group>"; };
+		9C9626A623DAC6A10031B0E9 /* HesitantEntrances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HesitantEntrances.swift; sourceTree = "<group>"; };
+		9C9626A823DAC6FA0031B0E9 /* HighRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighRange.swift; sourceTree = "<group>"; };
+		9CC81E3323EA7D2B00CFA5F6 /* EmbeddedYouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedYouTubeView.swift; sourceTree = "<group>"; };
+		9CD7562D23DA7FC600C5E68E /* TromboneTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TromboneTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD7563023DA7FC600C5E68E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CD7563223DA7FC600C5E68E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9CD7563423DA7FC600C5E68E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9CD7563623DA7FC800C5E68E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CD7563923DA7FC800C5E68E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CD7563C23DA7FC800C5E68E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CD7563E23DA7FC800C5E68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD7564723DA7FC800C5E68E /* TromboneToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TromboneToolsTests.swift; sourceTree = "<group>"; };
+		9CD7564923DA7FC800C5E68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CD7565223DA7FC800C5E68E /* TromboneToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TromboneToolsUITests.swift; sourceTree = "<group>"; };
+		9CD7565423DA7FC800C5E68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CD7562A23DA7FC600C5E68E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C1D0D9F23EBDF190092653A /* LayoutStructures */ = {
+			isa = PBXGroup;
+			children = (
+				9C96269023DAC31A0031B0E9 /* TopicButtonView.swift */,
+				9CC81E3323EA7D2B00CFA5F6 /* EmbeddedYouTubeView.swift */,
+				9C1D0DA023EBDF510092653A /* Paragraph.swift */,
+				9C4FFCD023ECA595006ECF3B /* BulletPoint.swift */,
+				9C1D0DA223EBE1710092653A /* SectionDivider.swift */,
+				9C1D0DA423EBE3F60092653A /* PurchaseButton.swift */,
+				9C1D0DA623EBE6040092653A /* ImagePurchaseLink.swift */,
+				9C4FFCCE23EC76E2006ECF3B /* YouTubePlayerView.swift */,
+			);
+			path = LayoutStructures;
+			sourceTree = "<group>";
+		};
+		9C96268723DABC820031B0E9 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				9C96268823DABCB00031B0E9 /* AlternatePositions.swift */,
+				9C96268E23DAC2910031B0E9 /* Articulation.swift */,
+				9C96269223DAC4E20031B0E9 /* AuditionsCollege.swift */,
+				9C96269423DAC4F10031B0E9 /* AuditionsProfessional.swift */,
+				9C96269623DAC5D90031B0E9 /* BodyMapping.swift */,
+				9C96269823DAC5E30031B0E9 /* Breathing.swift */,
+				9C96269A23DAC5F10031B0E9 /* DailyRoutine.swift */,
+				9C96269C23DAC5FC0031B0E9 /* Duets.swift */,
+				9C96269E23DAC6630031B0E9 /* Dynamics.swift */,
+				9C9626A023DAC6720031B0E9 /* Embochure.swift */,
+				9C9626A423DAC6940031B0E9 /* Endurance.swift */,
+				9C9626A223DAC68A0031B0E9 /* Flexibility.swift */,
+				9C9626A623DAC6A10031B0E9 /* HesitantEntrances.swift */,
+				9C9626A823DAC6FA0031B0E9 /* HighRange.swift */,
+				9C600E7923EB342600C73BFB /* Intonation.swift */,
+				9C600E7B23EB343B00C73BFB /* LessonGuidelines.swift */,
+				9C600E7D23EB344700C73BFB /* LowRange.swift */,
+				9C600E7F23EB345E00C73BFB /* MouthpieceBuzzing.swift */,
+				9C600E8123EB346900C73BFB /* NaturalSlurs.swift */,
+				9C600E8323EB347100C73BFB /* Nerves.swift */,
+				9C600E8523EB347900C73BFB /* NoteEndings.swift */,
+				9C600E8723EB348600C73BFB /* PainAndInjuries.swift */,
+				9C600E8923EB349000C73BFB /* Phrasing.swift */,
+				9C600E8B23EB349B00C73BFB /* PostureVsBalance.swift */,
+				9C600E8D23EB34A700C73BFB /* Practicing.swift */,
+				9C600E8F23EB34B300C73BFB /* ResumesCvsAndBios.swift */,
+				9C600E9123EB34BF00C73BFB /* Rhythm.swift */,
+				9C600E9323EB34CA00C73BFB /* SightReading.swift */,
+				9C600E9523EB34D400C73BFB /* SlideTechnique.swift */,
+				9C600E9723EB34DD00C73BFB /* ToneQuality.swift */,
+				9C600E9923EB34EA00C73BFB /* Trills.swift */,
+				9C600E9B23EB34F300C73BFB /* Vibrato.swift */,
+			);
+			path = Topics;
+			sourceTree = "<group>";
+		};
+		9CD7562423DA7FC600C5E68E = {
+			isa = PBXGroup;
+			children = (
+				9CD7562F23DA7FC600C5E68E /* TromboneTools */,
+				9CD7564623DA7FC800C5E68E /* TromboneToolsTests */,
+				9CD7565123DA7FC800C5E68E /* TromboneToolsUITests */,
+				9CD7562E23DA7FC600C5E68E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CD7562E23DA7FC600C5E68E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7562D23DA7FC600C5E68E /* TromboneTools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CD7562F23DA7FC600C5E68E /* TromboneTools */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7563423DA7FC600C5E68E /* ContentView.swift */,
+				9C96268A23DABCBE0031B0E9 /* HomeView.swift */,
+				9C96268C23DABD7E0031B0E9 /* TopicListView.swift */,
+				9C1D0D9F23EBDF190092653A /* LayoutStructures */,
+				9C96268723DABC820031B0E9 /* Topics */,
+				9CD7563023DA7FC600C5E68E /* AppDelegate.swift */,
+				9CD7563223DA7FC600C5E68E /* SceneDelegate.swift */,
+				9CD7563623DA7FC800C5E68E /* Assets.xcassets */,
+				9CD7563B23DA7FC800C5E68E /* LaunchScreen.storyboard */,
+				9CD7563E23DA7FC800C5E68E /* Info.plist */,
+				9CD7563823DA7FC800C5E68E /* Preview Content */,
+			);
+			path = TromboneTools;
+			sourceTree = "<group>";
+		};
+		9CD7563823DA7FC800C5E68E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7563923DA7FC800C5E68E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9CD7564623DA7FC800C5E68E /* TromboneToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7564723DA7FC800C5E68E /* TromboneToolsTests.swift */,
+				9CD7564923DA7FC800C5E68E /* Info.plist */,
+			);
+			path = TromboneToolsTests;
+			sourceTree = "<group>";
+		};
+		9CD7565123DA7FC800C5E68E /* TromboneToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7565223DA7FC800C5E68E /* TromboneToolsUITests.swift */,
+				9CD7565423DA7FC800C5E68E /* Info.plist */,
+			);
+			path = TromboneToolsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CD7562C23DA7FC600C5E68E /* TromboneTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD7565723DA7FC800C5E68E /* Build configuration list for PBXNativeTarget "TromboneTools" */;
+			buildPhases = (
+				9CD7562923DA7FC600C5E68E /* Sources */,
+				9CD7562A23DA7FC600C5E68E /* Frameworks */,
+				9CD7562B23DA7FC600C5E68E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TromboneTools;
+			productName = TromboneTools;
+			productReference = 9CD7562D23DA7FC600C5E68E /* TromboneTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CD7562523DA7FC600C5E68E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Alex Burdiss";
+				TargetAttributes = {
+					9CD7562C23DA7FC600C5E68E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9CD7562823DA7FC600C5E68E /* Build configuration list for PBXProject "TromboneTools" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CD7562423DA7FC600C5E68E;
+			productRefGroup = 9CD7562E23DA7FC600C5E68E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CD7562C23DA7FC600C5E68E /* TromboneTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CD7562B23DA7FC600C5E68E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD7563D23DA7FC800C5E68E /* LaunchScreen.storyboard in Resources */,
+				9CD7563A23DA7FC800C5E68E /* Preview Assets.xcassets in Resources */,
+				9CD7563723DA7FC800C5E68E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CD7562923DA7FC600C5E68E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C96269F23DAC6630031B0E9 /* Dynamics.swift in Sources */,
+				9C600E9423EB34CA00C73BFB /* SightReading.swift in Sources */,
+				9CD7563123DA7FC600C5E68E /* AppDelegate.swift in Sources */,
+				9C600E8623EB347900C73BFB /* NoteEndings.swift in Sources */,
+				9C600E9023EB34B300C73BFB /* ResumesCvsAndBios.swift in Sources */,
+				9CD7563323DA7FC600C5E68E /* SceneDelegate.swift in Sources */,
+				9C96269923DAC5E30031B0E9 /* Breathing.swift in Sources */,
+				9C9626A123DAC6720031B0E9 /* Embochure.swift in Sources */,
+				9C96268D23DABD7E0031B0E9 /* TopicListView.swift in Sources */,
+				9C600E9A23EB34EA00C73BFB /* Trills.swift in Sources */,
+				9C600E8C23EB349B00C73BFB /* PostureVsBalance.swift in Sources */,
+				9CC81E3423EA7D2B00CFA5F6 /* EmbeddedYouTubeView.swift in Sources */,
+				9C96269323DAC4E20031B0E9 /* AuditionsCollege.swift in Sources */,
+				9C600E7A23EB342600C73BFB /* Intonation.swift in Sources */,
+				9C4FFCD123ECA595006ECF3B /* BulletPoint.swift in Sources */,
+				9C1D0DA523EBE3F60092653A /* PurchaseButton.swift in Sources */,
+				9C9626A523DAC6940031B0E9 /* Endurance.swift in Sources */,
+				9CD7563523DA7FC600C5E68E /* ContentView.swift in Sources */,
+				9C96268B23DABCBE0031B0E9 /* HomeView.swift in Sources */,
+				9C96269B23DAC5F10031B0E9 /* DailyRoutine.swift in Sources */,
+				9C600E8E23EB34A700C73BFB /* Practicing.swift in Sources */,
+				9C600E8223EB346900C73BFB /* NaturalSlurs.swift in Sources */,
+				9C600E8A23EB349000C73BFB /* Phrasing.swift in Sources */,
+				9C600E8423EB347100C73BFB /* Nerves.swift in Sources */,
+				9C9626A923DAC6FA0031B0E9 /* HighRange.swift in Sources */,
+				9C600E9223EB34BF00C73BFB /* Rhythm.swift in Sources */,
+				9C600E8023EB345E00C73BFB /* MouthpieceBuzzing.swift in Sources */,
+				9C600E8823EB348600C73BFB /* PainAndInjuries.swift in Sources */,
+				9C9626A323DAC68A0031B0E9 /* Flexibility.swift in Sources */,
+				9C96269723DAC5D90031B0E9 /* BodyMapping.swift in Sources */,
+				9C600E7E23EB344700C73BFB /* LowRange.swift in Sources */,
+				9C9626A723DAC6A10031B0E9 /* HesitantEntrances.swift in Sources */,
+				9C96269D23DAC5FC0031B0E9 /* Duets.swift in Sources */,
+				9C600E9C23EB34F300C73BFB /* Vibrato.swift in Sources */,
+				9C1D0DA123EBDF510092653A /* Paragraph.swift in Sources */,
+				9C1D0DA723EBE6040092653A /* ImagePurchaseLink.swift in Sources */,
+				9C600E7C23EB343B00C73BFB /* LessonGuidelines.swift in Sources */,
+				9C1D0DA323EBE1710092653A /* SectionDivider.swift in Sources */,
+				9C96268923DABCB00031B0E9 /* AlternatePositions.swift in Sources */,
+				9C96269123DAC31A0031B0E9 /* TopicButtonView.swift in Sources */,
+				9C96268F23DAC2910031B0E9 /* Articulation.swift in Sources */,
+				9C600E9623EB34D400C73BFB /* SlideTechnique.swift in Sources */,
+				9C600E9823EB34DD00C73BFB /* ToneQuality.swift in Sources */,
+				9C96269523DAC4F10031B0E9 /* AuditionsProfessional.swift in Sources */,
+				9C4FFCCF23EC76E2006ECF3B /* YouTubePlayerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9CD7563B23DA7FC800C5E68E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CD7563C23DA7FC800C5E68E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CD7565523DA7FC800C5E68E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CD7565623DA7FC800C5E68E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CD7565823DA7FC800C5E68E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TromboneTools/Preview Content\"";
+				DEVELOPMENT_TEAM = L4SN53B3F6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TromboneTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TromboneTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CD7565923DA7FC800C5E68E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TromboneTools/Preview Content\"";
+				DEVELOPMENT_TEAM = L4SN53B3F6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TromboneTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TromboneTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CD7562823DA7FC600C5E68E /* Build configuration list for PBXProject "TromboneTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD7565523DA7FC800C5E68E /* Debug */,
+				9CD7565623DA7FC800C5E68E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD7565723DA7FC800C5E68E /* Build configuration list for PBXNativeTarget "TromboneTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD7565823DA7FC800C5E68E /* Debug */,
+				9CD7565923DA7FC800C5E68E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CD7562523DA7FC600C5E68E /* Project object */;
+}
