@@ -13,24 +13,28 @@ import WebKit
  The WebView Struct allows for an embedded YouTube video, that plays in the frame and does not autoplay.
  
  - parameters:
-    - request: A URLRequest Object with the YouTube URL to be embedded.
+    - request: A String with the YouTube URL to be embedded.
  */
 struct EmbeddedYouTubeView : UIViewRepresentable {
-    let request: URLRequest
+    let request: String
+    
 
     func makeUIView(context: Context) -> WKWebView  {
-//            .allowsInlineMediaPlayback = true
-//        configuration
-//            .mediaTypesRequiringUserActionForPlayback = .all
+        let configuration = WKWebViewConfiguration()
+            configuration.allowsInlineMediaPlayback = true
+        configuration.mediaTypesRequiringUserActionForPlayback = .all
         
         let webView = WKWebView()
         
         // I don't think that this is needed.
-//        webView.translatesAutoresizingMaskIntoConstraints = false
+        webView.translatesAutoresizingMaskIntoConstraints = false
         return webView
     }
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        uiView.load(request)
+        let requestURL = URLRequest(
+            url: URL(string: self.request)!
+        )
+        uiView.load(requestURL)
     }
 }

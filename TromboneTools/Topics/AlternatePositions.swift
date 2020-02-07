@@ -10,7 +10,7 @@ import SwiftUI
 import UIKit
 
 struct AlternatePositions: View {
-    var alternatePositionsURL = URLRequest(url: URL(string: "https://www.youtube.com/watch?v=htXc3Mo2ntg&feature=emb_logo")!)
+    var alternatePositionsURL:String =  "https://www.youtube.com/watch?v=htXc3Mo2ntg&feature=emb_logo"
     
     var dailyRoutinesTenorLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
     var dailyRoutinesStudentLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"

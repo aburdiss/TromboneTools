@@ -11,8 +11,8 @@ import UIKit
 
 struct Articulation: View {
     
-    var articulationURL = URLRequest(url: URL(string: "https://youtu.be/M_OR3slad0c")!)
-    var multipleTonguingURL = URLRequest(url: URL(string: "https://youtu.be/ryoJnB9RB2U")!)
+    var articulationURL: String = "https://youtu.be/M_OR3slad0c"
+    var multipleTonguingURL:String = "https://youtu.be/ryoJnB9RB2U"
     
     var dailyRoutinesTenorLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
     var dailyRoutinesStudentLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"
@@ -24,7 +24,7 @@ struct Articulation: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 
-                EmbeddedYouTubeView(request: self.articulationURL)
+                EmbeddedYouTubeView(request: articulationURL)
                     .frame(minHeight: 200)
                 
                 Group {
@@ -34,6 +34,8 @@ struct Articulation: View {
                     Paragraph("Stick your tongue out and lightly touch its tip with your finger. As you are doing this, move just the tip up and down without moving the middle or back of the tongue. You can move just the tip of the tongue without getting the rest of it involved and this is what you should do to articulate on trombone.")
                     Paragraph("Another way to get the sense of the tongue bouncing off the air is to practice fluttertonguing. Try fluttertonguing, or rolling your tongue, away from the horn to get the sense that the air is compelling the tongue to move. In fact, it’s pretty much impossible to fluttertongue without blowing air, so this is a terrific tool for learning what efficient tonguing should feel like. Unfortunately, some people simply cannot fluttertongue, so if you are one of these people, you won’t be able to use the following tool to improve your articulation:")
                     
+                    
+                    // TODO: Embed MP3 from website
                     //Here is where the MP3 Should go!
                     
                     Image("fluttertongue-drill-resized")
@@ -42,6 +44,7 @@ struct Articulation: View {
                     Paragraph("The second most common mistake mentioned above is to clip off the ends of notes too abruptly. My best advice for fixing this issue is to listen to fine singers. You will never hear them abruptly clip off a note at the end of a phrase unless the text specifically calls for it. The sound created by doing this is extremely unmusical and disruptive to your phrasing. While you’re at it, do a little singing yourself to clearly understand how to gently release phrase endings without the tongue.")
                     Paragraph("Here is a sound file featuring some multiple tonguing:")
                     
+                    // TODO: embed Soundcloud Link
                     // Here is where the Soundcloud link should go!
                     
                     Paragraph("These pieces requires double tonguing, a method of tonguing in which you use both the front and the back of the tongue like a see-saw : da-ga-da-ga, etc. Most methods recommend T and K syllables (Ta-Ka-Ta-Ka) but I prefer the softer d and g sound because it allows the note to have more of a core and there is less chance of getting a short, percussive “machine-gun” sound.I used d’s and g’s in the sound file above.")
@@ -49,7 +52,8 @@ struct Articulation: View {
                 
                 // Multiple Tonguing Group 1
                 Group {
-                    EmbeddedYouTubeView(request: self.multipleTonguingURL)
+                    EmbeddedYouTubeView(request: multipleTonguingURL)
+                    .frame(minHeight: 200)
                     Paragraph("Before you can double or triple tongue you must possess a reliable single tongue, following all the guidelines I have already set forth above because the same principles apply to multiple tonguing.")
                     Paragraph("I think it’s logical to spend time just practicing the off syllable because it’s the one you are not used to. Just play slow notes on one pitch using the syllable ga. Connect the notes and don’t try to move around at first. Try eighth notes at quarter = 72 just to get used to doing this because it will feel very awkward at first. Persevere and practice a little like this everyday. When you feel relatively comfortable doing this, try mixing up the syllables as follows:")
                     Paragraph("dadadada gagagaga dadadada gagagaga")
