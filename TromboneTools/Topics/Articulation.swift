@@ -98,16 +98,16 @@ struct Articulation: View {
                     
                     // Purchase Daily Routines Links
                     Group {
-                        PurchaseButton(self.dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(self.dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
-                        PurchaseButton(self.dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
+                        PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
+                        PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
+                        PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
                     }
                 }
                 
                 SectionDivider()
                 
                 Group {
-                    ImagePurchaseLink(self.whatEveryTrombonistLink, "what-every-trombonist-front-scaled")
+                    ImagePurchaseLink(whatEveryTrombonistLink, "whatEveryTrombonistCover")
                     
                     Group {
                         Text("“Only over the last decade or so has Task Specific Focal Dystonia become completely identified, although there have always been brass players who have mysteriously “lost their lip”. David Vining’s recovery and rehabilitation from this terrifying condition marks him out as one of the very fortunate few amongst the many trombonists who have otherwise had to abandon their often high-profile careers.“ ")

@@ -22,6 +22,9 @@ struct ImagePurchaseLink: View {
         }) {
             Image(self.imageName)
                 .renderingMode(.original)
+                .resizable()
+                .scaledToFit()
+                .frame(maxHeight: 275)
         }
     }
     

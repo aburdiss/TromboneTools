@@ -9,7 +9,9 @@
 import SwiftUI
 
 /**
- A Formatted Button that opens a link in a new Safari Window.
+ A Button that opens a link in a new Safari Window.
+ 
+ Note: This button has padding, prevents vertical truncation, and is center-aligned.
  */
 struct PurchaseButton: View {
     var link: String
@@ -20,9 +22,14 @@ struct PurchaseButton: View {
             let url = URL(string: self.link)!
             UIApplication.shared.open(url)
         }) {
-            Text(self.text)
+            HStack {
+                Spacer()
+                Text(self.text)
                 .padding()
                 .fixedSize(horizontal: false, vertical: true)
+                Spacer()
+            }
+            
         }
     }
     
