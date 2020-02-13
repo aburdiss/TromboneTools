@@ -70,7 +70,9 @@ struct DailyRoutine: View {
                 Group {
                     Paragraph("There are also 3 daily routines in this book that allow you to practice your fundamentals at the same time you refine your intonation:")
                     HStack{
-                          ImagePurchaseLink(intonationMasteryLink, "intonationMasteryCover")
+                        Spacer()
+                        ImagePurchaseLink(intonationMasteryLink, "intonationMasteryCover")
+                        Spacer()
                     }
                   
                     PurchaseButton(intonationMasteryLink, "Purchase Trombone Intonation Mastery.")

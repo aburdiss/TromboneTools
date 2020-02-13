@@ -20,10 +20,10 @@ struct BulletPoint: View {
     
     var body: some View {
         Group {
-            Text("•  \(italicText ?? "") ")
-                .italic()
-            + Text(boldText ?? "")
+            Text("•  \(boldText ?? "") ")
                 .bold()
+            + Text(italicText ?? "")
+                .italic()
             + Text(text ?? "")
         }
     .padding(.horizontal)
@@ -41,6 +41,11 @@ struct BulletPoint: View {
     
     init(boldText: String) {
         self.boldText = boldText
+    }
+    
+    init(boldText: String, italicText: String) {
+        self.boldText = boldText
+        self.italicText = italicText
     }
 }
 
