@@ -6,7 +6,15 @@
 //  Copyright © 2020 Alex Burdiss. All rights reserved.
 //
 
+//***********************************************//
+//                MASTER TODO LIST               //
+//***********************************************//
+
 // TODO: Design a nice ipad interface
+// TODO: Extract link sections to subviews.
+// TODO: Extract links to a global scope.
+// TODO: Standardize the way that the plugs are formatted. Make sure that they are all the same style
+// TODO: make sure that there are dividers between each of the purchase sections. 
 
 import SwiftUI
 

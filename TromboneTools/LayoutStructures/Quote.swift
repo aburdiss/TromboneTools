@@ -10,6 +10,8 @@ import SwiftUI
 
 /**
  A View that will italicize the quote, and add a space before the non-italicized author.
+ 
+ This view can also be used to display italicized text followed by non Italicized text.
  */
 struct Quote: View {
     var quoteItalics: String

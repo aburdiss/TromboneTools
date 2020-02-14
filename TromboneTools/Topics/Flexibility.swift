@@ -9,8 +9,69 @@
 import SwiftUI
 
 struct Flexibility: View {
+    var dailyRoutinesTenorLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
+    var dailyRoutinesStudentLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"
+    var dailyRoutinesBassLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-bass-trombone/"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical) {
+            VStack {
+                Group {
+                    EmbeddedYouTubeView(request: "https://youtube.com/embed/MXhzfE_QfAw")
+                    Paragraph("Like endurance, flexibility will only improve with regular practice over time.")
+                    Paragraph("When practicing lip slurs, always use a metronome and strive for equally spaced notes – in time and steady. Make all the notes equal volume; don’t allow the top note of a lip slur to pop out. If you don’t have a metronome, stop reading now and go buy one…yes, we will still be here when you get back.")
+                    Paragraph("Lip slurs are important because they teach you how to navigate all the ranges of the instrument. I like to mix things up a little by adding additional features to lip slurs. For example, here is a lip slur pattern with dynamics added. You can click on the sound file to hear me play it:")
+                    
+                    //TODO: Embed MP3 File
+                    
+                    Image("lip-slur-with-dynamic")
+                        .resizable()
+                        .scaledToFill()
+                    
+                    Paragraph("Another challenging way to practice lip slurs is to begin with a descending pattern, like this:")
+                    
+                    //TODO: Embed MP3 File
+                    
+                    Image("lip-slur-descend")
+                        .resizable()
+                        .scaledToFill()
+                }
+                
+                Group {
+                    Paragraph("Finally, here is a pattern with lip slurs combined with tonguing:")
+                    
+                    //TODO: Embed MP3 File
+                    
+                    Image("lip-slur-with-tonguing")
+                        .resizable()
+                        .scaledToFill()
+                    
+                    Paragraph("I have found this pattern to be particularly helpful because usually a student is either good at lip slurs or tonguing but not necessarily both. By combining these two elements, the stronger technique pulls the weaker one forward.")
+                    Paragraph("Here are some resources to practice flexibility:")
+                }
+                
+                SectionDivider()
+                
+                Group {
+                    HStack {
+                        Spacer()
+                        ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutinesBassCover")
+                        Spacer()
+                    }
+                    
+                    Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
+                    
+                    PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
+                    PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
+                    PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
+                }
+                
+                
+            }
+        }
+    .navigationBarTitle("Flexibility")
     }
 }
 

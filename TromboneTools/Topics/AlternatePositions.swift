@@ -78,8 +78,8 @@ struct AlternatePositions: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(self.flowStudiesTenorLink, "fs-tenor-bone-scaled")
-                        ImagePurchaseLink(self.flowStudiesBassLink, "fs-bass-bone-scaled")
+                        ImagePurchaseLink(self.flowStudiesTenorLink, "flowStudiesTenorCover")
+                        ImagePurchaseLink(self.flowStudiesBassLink, "flowStudiesBassCover")
                         Spacer()
                     }
                     

@@ -172,6 +172,7 @@ struct Duets: View {
                 }
             }
         }
+    .navigationBarTitle("Duets")
     }
 }
 
