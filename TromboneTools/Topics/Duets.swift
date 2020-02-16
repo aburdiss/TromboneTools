@@ -152,7 +152,16 @@ struct Duets: View {
                         ImagePurchaseLink(longToneDuetsRalphSauerLink, "longToneDuetsRalphSauerCover")
                         Spacer()
                     }
-                    Quote("Long Tone Duets", "provides an opportunity for trombonists to play long tones together, learning to blend tone quality, balance dynamics, and play in tune. Long Tone Duets contains a duet in every major key, and provides the perfect forum for teachers to discuss details of intonation, tone quality, blend, and balance with their students.")
+                    Group {
+                        Text("Long Tone Duets")
+                            .italic()
+                        + Text(" provides an opportunity for trombonists to play long tones together, learning to blend tone quality, balance dynamics, and play in tune. ")
+                        + Text("Long Tone Duets")
+                            .italic()
+                        + Text(" contains a duet in every major key, and provides the perfect forum for teachers to discuss details of intonation, tone quality, blend, and balance with their students.")
+                    }
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
                     
                     PurchaseButton(longToneDuetsLink, "Purchase Long Tone Duets for Trombones.")
                     PurchaseButton(longToneDuetsRalphSauerLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
