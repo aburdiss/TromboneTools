@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C089A7923FAFFF40008E29E /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C089A7823FAFFF40008E29E /* ContentModel.swift */; };
 		9C1D0DA123EBDF510092653A /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA023EBDF510092653A /* Paragraph.swift */; };
 		9C1D0DA323EBE1710092653A /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA223EBE1710092653A /* SectionDivider.swift */; };
 		9C1D0DA523EBE3F60092653A /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA423EBE3F60092653A /* PurchaseButton.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C089A7823FAFFF40008E29E /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		9C1D0DA023EBDF510092653A /* Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paragraph.swift; sourceTree = "<group>"; };
 		9C1D0DA223EBE1710092653A /* SectionDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDivider.swift; sourceTree = "<group>"; };
 		9C1D0DA423EBE3F60092653A /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		9CD7562F23DA7FC600C5E68E /* TromboneTools */ = {
 			isa = PBXGroup;
 			children = (
+				9C089A7823FAFFF40008E29E /* ContentModel.swift */,
 				9CD7563423DA7FC600C5E68E /* ContentView.swift */,
 				9C96268A23DABCBE0031B0E9 /* HomeView.swift */,
 				9C96268C23DABD7E0031B0E9 /* TopicListView.swift */,
@@ -355,6 +358,7 @@
 				9C1D0DA723EBE6040092653A /* ImagePurchaseLink.swift in Sources */,
 				9C600E7C23EB343B00C73BFB /* LessonGuidelines.swift in Sources */,
 				9C1D0DA323EBE1710092653A /* SectionDivider.swift in Sources */,
+				9C089A7923FAFFF40008E29E /* ContentModel.swift in Sources */,
 				9C96268923DABCB00031B0E9 /* AlternatePositions.swift in Sources */,
 				9C96268F23DAC2910031B0E9 /* Articulation.swift in Sources */,
 				9C600E9623EB34D400C73BFB /* SlideTechnique.swift in Sources */,

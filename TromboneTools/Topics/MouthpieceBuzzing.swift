@@ -9,8 +9,15 @@
 import SwiftUI
 
 struct MouthpieceBuzzing: View {
+    let mouthpieceBuzzingYouTubeVideo:String = "https://youtu.be/h-iauJ6gT-Q"
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical) {
+            VStack(alignment: .leading) {
+                EmbeddedYouTubeView(request: mouthpieceBuzzingYouTubeVideo)
+                Paragraph("Mouthpiece buzzing can be a useful practice tool. I like using it to cultivate resonance of tone, for smoothness of phrasing and for improving accuracy. Of course, if you are traveling without your instrument, it can be helpful to take your mouthpiece along just to keep your chops in shape.")
+            }
+        }
+    .navigationBarTitle("Mouthpiece Buzzing")
     }
 }
 
