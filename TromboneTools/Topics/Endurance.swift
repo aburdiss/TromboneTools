@@ -11,8 +11,8 @@ import SwiftUI
 struct Endurance: View {
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
-                VStack {
+            VStack(alignment: .leading) {
+                Group {
                     Paragraph("Good endurance depends upon good breath support. If your air flow is inadequate, your muscles will have to take up the slack by working harder and this is the last thing you want.")
                     Paragraph("Put your effort into the blowing so you can use less effort in the muscles of your face. In fact, use as little effort as you can get away with in your facial muscles. Don’t assume you have to “bear down” with your embouchure because this will make you tired quickly.")
                     Paragraph("Good endurance does not happen overnight. To build endurance you must practice regularly over time; an hour a day is an absolute minimum. The more you want to make progress and the more important your playing is to you, the more you will practice. Try keeping a record of your practice times from day-to-day and strive for a sustained effort over time – every day – without missing any days.")

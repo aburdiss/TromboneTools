@@ -11,7 +11,7 @@ import SwiftUI
 struct HighRange: View {
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
+            VStack(alignment: .leading) {
                 Group {
                     HStack {
                         Spacer()

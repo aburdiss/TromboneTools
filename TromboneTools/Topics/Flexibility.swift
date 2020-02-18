@@ -11,7 +11,7 @@ import SwiftUI
 struct Flexibility: View {    
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
+            VStack(alignment: .leading) {
                 Group {
                     EmbeddedYouTubeView(request: "https://youtube.com/embed/MXhzfE_QfAw")
                     Paragraph("Like endurance, flexibility will only improve with regular practice over time.")

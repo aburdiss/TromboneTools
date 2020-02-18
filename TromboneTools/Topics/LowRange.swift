@@ -11,7 +11,7 @@ import SwiftUI
 struct LowRange: View {
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
+            VStack(alignment: .leading) {
                 // Initial Page Text
                 Group {
                     NumberedBulletPoint(number: "1", text: "Low notes require a large amount of slow-moving air. If you use air that is too fast, you will overblow the note.")

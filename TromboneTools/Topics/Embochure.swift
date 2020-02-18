@@ -11,7 +11,7 @@ import SwiftUI
 struct Embochure: View {
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
+            VStack(alignment: .leading) {
                 Group {
                     BulletPoint(boldText: "An embouchure is a three-dimensional entity in motion created by wind rushing past lips.")
                     BulletPoint(boldText: "An embouchure does not exist without air flow because an embouchure includes motion.")

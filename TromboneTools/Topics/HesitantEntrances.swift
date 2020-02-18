@@ -11,7 +11,7 @@ import SwiftUI
 struct HesitantEntrances: View {
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
+            VStack(alignment: .leading) {
                 Group {
                     EmbeddedYouTubeView(request: hesitantEntrancesURL)
                     EmbeddedYouTubeView(request: toneProductionURL)

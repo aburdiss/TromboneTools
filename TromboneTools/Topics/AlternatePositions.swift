@@ -11,7 +11,7 @@ import UIKit
 
 struct AlternatePositions: View {
     var body: some View {
-        ScrollView {
+        ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 
                 EmbeddedYouTubeView(request: alternatePositionsURL)
