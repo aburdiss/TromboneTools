@@ -9,17 +9,11 @@
 import SwiftUI
 
 struct Breathing: View {
-    let goodAndBadBreathingURL: String = "https://youtu.be/GHllnaurD84"
-    
-    let breathingBookTenorLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-tenor-trombone/"
-    let breathingBookBassLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-bass-trombone/"
-    let whatEveryTrombonistLink: String = "https://www.mountainpeakmusic.com/what-every-trombonist-needs-to-know-about-the-body/"
-    
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 
-                EmbeddedYouTubeView(request: goodAndBadBreathingURL)
+                EmbeddedYouTubeView(request: goodAndBadBreathingYouTubeLink)
                     .frame(minHeight: 200)
                 
                 Paragraph("No technique is more important to good trombone playing than proper breathing. Sadly, no technique is as misunderstood as breathing.")

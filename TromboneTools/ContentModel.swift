@@ -13,3 +13,21 @@ import Foundation
 
 
 //TODO: Import all of the links here as constants.
+
+// Mountain Peak Music Books
+let breathingBookTenorLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-tenor-trombone/"
+let breathingBookBassLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-bass-trombone/"
+let crossTrainingPurchaseLink: String = "https://www.mountainpeakmusic.com/cross-training-for-musicians/"
+let notesOfHopePurchaseLink: String = "https://www.mountainpeakmusic.com/notes-of-hope/"
+let whatEveryTrombonistLink: String = "https://www.mountainpeakmusic.com/what-every-trombonist-needs-to-know-about-the-body/"
+
+// Mountain Peak Music Book Websites
+let crossTrainingWebsiteLink: String = "http://crosstrainingformusicians.com/"
+
+
+// External Books
+
+
+// YouTube Videos
+let goodAndBadBreathingYouTubeLink: String = "https://youtu.be/GHllnaurD84"
+let noteEndingsYouTubeLink: String = "https://youtu.be/d7JU3lskK-o"

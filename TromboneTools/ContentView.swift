@@ -15,6 +15,7 @@
 // TODO: Extract links to a global scope.
 // TODO: Standardize the way that the plugs are formatted. Make sure that they are all the same style
 // TODO: make sure that there are dividers between each of the purchase sections.
+// TODO: Make sure all the images are scaledtofit and not scaledtofill.
 
 import SwiftUI
 
