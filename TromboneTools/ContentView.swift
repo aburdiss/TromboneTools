@@ -17,6 +17,15 @@
 // TODO: make sure that there are dividers between each of the purchase sections.
 // TODO: Make sure all the images are scaledtofit and not scaledtofill.
 
+//***********************************************//
+//               To Ask Prof. Vining             //
+//***********************************************//
+
+// Should all of the quotes have " around them?
+// Should there be a . at the end of the purchase links (at the end of each plug)
+
+
+
 import SwiftUI
 
 /**

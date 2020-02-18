@@ -15,6 +15,7 @@ import Foundation
 //TODO: Import all of the links here as constants.
 
 // Mountain Peak Music Books
+let bigBookOfSightReadingDuetsLink: String = "http://www.mountainpeakmusic.com/the-big-book-of-sight-reading-duets-for-trombone/"
 let breathingBookTenorLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-tenor-trombone/"
 let breathingBookBassLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-bass-trombone/"
 let crossTrainingPurchaseLink: String = "https://www.mountainpeakmusic.com/cross-training-for-musicians/"
@@ -56,6 +57,7 @@ let naturalSlursYouTubeLink:String = "https://youtu.be/kD13y2ggPiQ"
 let noteEndingsYouTubeLink: String = "https://youtu.be/d7JU3lskK-o"
 let postureVsBalanceYouTubeLink: String = "https://youtu.be/FXBjqQxpd8k"
 let preparingExcerptsURL: String = "https://youtu.be/cirPPaIFCXg"
+let sightReadingYouTubeURL: String = "https://youtu.be/czQCzVwfrL4"
 let soloDuetTrainingYouTubeLink:String = "https://youtu.be/MmaT2HJOMm0"
 let toneProductionURL:String = "https://youtu.be/hfapGAiXxHA"
 let tuningAppsYouTubeURL:String = "https://youtu.be/7ic4uCyXXwY"
