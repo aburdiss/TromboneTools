@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct MouthpieceBuzzing: View {
-    let mouthpieceBuzzingYouTubeVideo:String = "https://youtu.be/h-iauJ6gT-Q"
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {

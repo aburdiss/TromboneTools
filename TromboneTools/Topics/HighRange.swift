@@ -9,12 +9,6 @@
 import SwiftUI
 
 struct HighRange: View {
-    let breathBuilderYouTubeURL:String = "https://youtu.be/H3meinBuSwQ"
-    
-    let rangesongsWebsite:String = "http://rangesongs.com/"
-    let rangesongsTenorLink:String = "http://www.mountainpeakmusic.com/rangesongs-for-tenor-trombone/"
-    let rangesongsBassLink:String = "http://www.mountainpeakmusic.com/rangesongs-for-bass-trombone/"
-    
     var body: some View {
         ScrollView(.vertical) {
             VStack {

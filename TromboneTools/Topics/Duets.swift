@@ -9,18 +9,6 @@
 import SwiftUI
 
 struct Duets: View {
-    var dailyRoutinesTenorLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
-    var dailyRoutinesStudentLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"
-    var dailyRoutinesBassLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-bass-trombone/"
-    
-    var soloDuetTrainingLink:String = "https://www.mountainpeakmusic.com/solo-duet-training-for-trombones/"
-    
-    var longToneDuetsLink:String = "https://www.mountainpeakmusic.com/long-tone-duets-for-trombone/"
-    var longToneDuetsRalphSauerLink:String = "https://www.mountainpeakmusic.com/long-tone-duets-for-trombone-ralph-sauer-edition-hard-copy-version/"
-    
-    var intonationMasteryLink:String = "https://www.mountainpeakmusic.com/trombone-intonation-mastery/"
-
-    
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {

@@ -8,17 +8,7 @@
 
 import SwiftUI
 
-struct Intonation: View {
-    let tuningAppsYouTubeURL:String = "https://youtu.be/7ic4uCyXXwY"
-    let tuningInstrumentYouTubeURL:String = "https://youtu.be/7nKjxi73TB8"
-    let intonationMasteryYouTubeLink:String = "https://youtu.be/uLhU3A0lu_s"
-    let soloDuetTrainingYouTubeLink:String = "https://youtu.be/MmaT2HJOMm0"
-    
-    let intonationMasteryLink:String = "http://www.mountainpeakmusic.com/trombone-intonation-mastery/"
-    let soloDuetTrainingLink:String = "http://www.mountainpeakmusic.com/solo-duet-training-for-trombone/"
-    var longToneDuetsLink:String = "https://www.mountainpeakmusic.com/long-tone-duets-for-trombone/"
-    var longToneDuetsRalphSauerLink:String = "https://www.mountainpeakmusic.com/long-tone-duets-for-trombone-ralph-sauer-edition-hard-copy-version/"
-    
+struct Intonation: View {    
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {

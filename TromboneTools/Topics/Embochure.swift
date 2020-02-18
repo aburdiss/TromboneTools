@@ -9,10 +9,6 @@
 import SwiftUI
 
 struct Embochure: View {
-    let breathingBookTenorLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-tenor-trombone/"
-    let breathingBookBassLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-bass-trombone/"
-    let whatEveryTrombonistLink: String = "https://www.mountainpeakmusic.com/what-every-trombonist-needs-to-know-about-the-body/"
-    
     var body: some View {
         ScrollView(.vertical) {
             VStack {

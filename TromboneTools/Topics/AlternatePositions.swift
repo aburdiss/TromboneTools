@@ -10,15 +10,6 @@ import SwiftUI
 import UIKit
 
 struct AlternatePositions: View {
-    var alternatePositionsURL:String =  "https://www.youtube.com/watch?v=htXc3Mo2ntg&feature=emb_logo"
-    
-    var dailyRoutinesTenorLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
-    var dailyRoutinesStudentLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"
-    var dailyRoutinesBassLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-bass-trombone/"
-    
-    var flowStudiesTenorLink:String = "https://www.mountainpeakmusic.com/flow-studies-for-tenor-trombone/"
-    var flowStudiesBassLink:String = "https://www.mountainpeakmusic.com/flow-studies-for-bass-trombone/"
-    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -47,9 +38,9 @@ struct AlternatePositions: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(self.dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(self.dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(self.dailyRoutinesBassLink, "dailyRoutinesBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutinesBassCover")
                         Spacer()
                     }
                     
@@ -66,9 +57,9 @@ struct AlternatePositions: View {
                     
                     // Purchase Daily Routines Links
                     Group {
-                        PurchaseButton(self.dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(self.dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
-                        PurchaseButton(self.dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
+                        PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
+                        PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
+                        PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
                     }
                 }
                 
@@ -78,8 +69,8 @@ struct AlternatePositions: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(self.flowStudiesTenorLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(self.flowStudiesBassLink, "flowStudiesBassCover")
+                        ImagePurchaseLink(flowStudiesTenorLink, "flowStudiesTenorCover")
+                        ImagePurchaseLink(flowStudiesBassLink, "flowStudiesBassCover")
                         Spacer()
                     }
                     
@@ -91,8 +82,8 @@ struct AlternatePositions: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                     
-                    PurchaseButton(self.flowStudiesTenorLink, "Purchase Flow Studies for Tenor Trombone")
-                    PurchaseButton(self.flowStudiesBassLink, "Purchase Flow Studies for Bass Trombone")
+                    PurchaseButton(flowStudiesTenorLink, "Purchase Flow Studies for Tenor Trombone")
+                    PurchaseButton(flowStudiesBassLink, "Purchase Flow Studies for Bass Trombone")
                 }
             }
         }

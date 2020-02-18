@@ -9,13 +9,6 @@
 import SwiftUI
 
 struct Dynamics: View {
-    var dailyRoutinesTenorLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
-    var dailyRoutinesStudentLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"
-    var dailyRoutinesBassLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-bass-trombone/"
-    
-    var flowStudiesTenorLink:String = "https://www.mountainpeakmusic.com/flow-studies-for-tenor-trombone/"
-    var flowStudiesBassLink:String = "https://www.mountainpeakmusic.com/flow-studies-for-bass-trombone/"
-    
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
@@ -75,13 +68,13 @@ struct Dynamics: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(self.flowStudiesTenorLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(self.flowStudiesBassLink, "flowStudiesBassCover")
+                        ImagePurchaseLink(flowStudiesTenorLink, "flowStudiesTenorCover")
+                        ImagePurchaseLink(flowStudiesBassLink, "flowStudiesBassCover")
                         Spacer()
                     }
                     
-                    PurchaseButton(self.flowStudiesTenorLink, "Purchase Flow Studies for Tenor Trombone")
-                    PurchaseButton(self.flowStudiesBassLink, "Purchase Flow Studies for Bass Trombone")
+                    PurchaseButton(flowStudiesTenorLink, "Purchase Flow Studies for Tenor Trombone")
+                    PurchaseButton(flowStudiesBassLink, "Purchase Flow Studies for Bass Trombone")
                 }
             }
         }

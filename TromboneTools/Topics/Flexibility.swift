@@ -8,11 +8,7 @@
 
 import SwiftUI
 
-struct Flexibility: View {
-    var dailyRoutinesTenorLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
-    var dailyRoutinesStudentLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"
-    var dailyRoutinesBassLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-bass-trombone/"
-    
+struct Flexibility: View {    
     var body: some View {
         ScrollView(.vertical) {
             VStack {

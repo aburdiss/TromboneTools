@@ -9,19 +9,6 @@
 import SwiftUI
 
 struct HesitantEntrances: View {
-    let hesitantEntrancesURL:String = "https://youtu.be/8HsF-K5Qei0"
-    let toneProductionURL:String = "https://youtu.be/hfapGAiXxHA"
-    
-    let breathingBookTenorLink:String = "http://www.mountainpeakmusic.com/breathing-book-for-tenor-trombone/"
-    let breathingBookBassLink:String = "http://www.mountainpeakmusic.com/breathing-book-for-bass-trombone/"
-    
-    let whatEveryTrombonistLink:String = "http://www.mountainpeakmusic.com/what-every-trombonist-needs-to-know-about-the-body/"
-    
-    // The following link is actually broken, but is what is on the website.
-    // TODO: add an updated link to Cross Training.
-    let crossTrainingLink:String = "http://www.mountainpeakmusic.com/cross-training-1/"
-    let notesOfHopeLink:String = "http://www.mountainpeakmusic.com/notes-of-hope-2/"
-    
     var body: some View {
         ScrollView(.vertical) {
             VStack {
@@ -89,8 +76,8 @@ struct HesitantEntrances: View {
                 
                 Group {
                     Paragraph("Here are 2 more resources that may be of help if you are experiencing difficulties:")
-                    PurchaseButton(crossTrainingLink, "Cross Training for Musicians")
-                    PurchaseButton(notesOfHopeLink, "Notes of Hope")
+                    PurchaseButton(crossTrainingPurchaseLink, "Cross Training for Musicians")
+                    PurchaseButton(notesOfHopePurchaseLink, "Notes of Hope")
                 }
             }
         }

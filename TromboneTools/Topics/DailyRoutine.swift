@@ -8,13 +8,7 @@
 
 import SwiftUI
 
-struct DailyRoutine: View {
-    var dailyRoutinesTenorLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
-    var dailyRoutinesStudentLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"
-    var dailyRoutinesBassLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-bass-trombone/"
-    
-    var intonationMasteryLink:String = "https://www.mountainpeakmusic.com/trombone-intonation-mastery/"
-    
+struct DailyRoutine: View {    
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {

@@ -10,16 +10,6 @@ import SwiftUI
 import UIKit
 
 struct Articulation: View {
-    
-    var articulationURL: String = "https://youtu.be/M_OR3slad0c"
-    var multipleTonguingURL:String = "https://youtu.be/ryoJnB9RB2U"
-    
-    var dailyRoutinesTenorLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
-    var dailyRoutinesStudentLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"
-    var dailyRoutinesBassLink:String = "https://www.mountainpeakmusic.com/daily-routines-for-bass-trombone/"
-    
-    var whatEveryTrombonistLink:String = "https://www.mountainpeakmusic.com/what-every-trombonist-needs-to-know-about-the-body/"
-    
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
@@ -80,9 +70,9 @@ struct Articulation: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(self.dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(self.dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(self.dailyRoutinesBassLink, "dailyRoutinesBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutinesBassCover")
                         Spacer()
                     }
                     
@@ -117,7 +107,7 @@ struct Articulation: View {
                         .padding()
                         .fixedSize(horizontal: true, vertical: false)
                     
-                    PurchaseButton(self.whatEveryTrombonistLink, "Purchase What Every Trombonist Needs to Know About the Body")
+                    PurchaseButton(whatEveryTrombonistLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }
             }
         }

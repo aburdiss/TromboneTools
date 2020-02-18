@@ -9,9 +9,6 @@
 import SwiftUI
 
 struct LowRange: View {
-    let rangesongsWebsite:String = "http://rangesongs.com/"
-    let rangesongsTenorLink:String = "http://www.mountainpeakmusic.com/rangesongs-for-tenor-trombone/"
-    let rangesongsBassLink:String = "http://www.mountainpeakmusic.com/rangesongs-for-bass-trombone/"
     var body: some View {
         ScrollView(.vertical) {
             VStack {

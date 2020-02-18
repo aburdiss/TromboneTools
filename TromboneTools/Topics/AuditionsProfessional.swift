@@ -9,8 +9,6 @@
 import SwiftUI
 
 struct AuditionsProfessional: View {
-    var preparingExcerptsURL: String = "https://youtu.be/cirPPaIFCXg"
-    
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
