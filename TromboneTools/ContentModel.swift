@@ -37,7 +37,9 @@ let crossTrainingWebsiteLink: String = "http://crosstrainingformusicians.com/"
 let rangesongsWebsite:String = "http://rangesongs.com/"
 
 
-// External Books
+// External Links
+//TODO: This link doesn't work.
+let michaelDavisWarmUpLink: String = "https://www.hip-bonestore.com/15_Minute_Warm_Up_s/50.htm"
 
 
 // YouTube Videos
