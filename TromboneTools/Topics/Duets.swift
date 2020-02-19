@@ -115,7 +115,7 @@ struct Duets: View {
                     
                     //TODO: Embed PDFs???
                     
-                    EmbeddedYouTubeView(request: "https://youtube.com/embed/MmaT2HJOMm0")
+                    EmbeddedYouTubeView(request: soloDuetTrainingYouTubeLink)
                     
                     HStack {
                         Spacer()
