@@ -51,30 +51,30 @@ struct Dynamics: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutineTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutineStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutineBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutineTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutineStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutineBassCover")
                         Spacer()
                     }
 
                     Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
                     
-                    PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                    PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
-                    PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
+                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
+                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
+                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
                 }
                 
                 // Flow Studies
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(flowStudiesTenorLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(flowStudiesBassLink, "flowStudiesBassCover")
+                        ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
+                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
                         Spacer()
                     }
                     
-                    PurchaseButton(flowStudiesTenorLink, "Purchase Flow Studies for Tenor Trombone")
-                    PurchaseButton(flowStudiesBassLink, "Purchase Flow Studies for Bass Trombone")
+                    PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone")
+                    PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")
                 }
             }
         }

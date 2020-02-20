@@ -13,7 +13,7 @@ struct SightReading: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 Group {
-                    EmbeddedYouTubeView(request: sightReadingYouTubeURL)
+                    EmbeddedYouTubeView(request: sightReadingYouTubeLink)
                     Paragraph("There is no question that sight reading is a valuable skill for musicians. Many auditions require sight reading and it is a critical technique for a freelancer. Musicians who sight read well tend to think on their feet better than those who don’t, and this attribute improves their ability to perform under pressure. Good sight readers have a musical intuition and heightened perception that allows them to understand complicated rhythms, harmonies, and musical forms. Sight reading is essentially the confluence of countless diverse musical skills.")
                     Paragraph("If sight reading is so important, why don’t more people take practicing it more seriously? Part of the problem is a lack of guidance. There are few resources devoted entirely to sight reading and even fewer stated strategies for improvement. Here is a list of suggestions for improving your sight reading followed by details about each point:")
                     Text("Before You Begin:")
@@ -116,7 +116,7 @@ struct SightReading: View {
                     Paragraph("Here is a resource to help you with your sight reading:")
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(bigBookOfSightReadingDuetsLink, "bigBookOfSightReadingDuetsCover")
+                        ImagePurchaseLink(bigBookOfSightReadingDuetsPurchaseLink, "bigBookOfSightReadingDuetsCover")
                         Spacer()
                     }
                     Group {
@@ -144,7 +144,7 @@ struct SightReading: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                     Quote("The Big Book of Sight Reading Duets by David Vining is an invaluable addition to any trombonist’s arsenal of educational materials. In it, he covers a large variety of sight reading obstacles including several different levels of difficulty, styles, tempi, and time and key signatures to keep one on their toes. Add to that the fact that there are 100 duets and you have a fantastic resource that will last for a long time.", "- Craig Mulcahy – Principal Trombone, National Symphony Orchestra and Adjunct Professor of Trombone, University of Maryland")
-                    PurchaseButton(bigBookOfSightReadingDuetsLink, "Purchase The Big Book of Sight Reading Duets.")
+                    PurchaseButton(bigBookOfSightReadingDuetsPurchaseLink, "Purchase The Big Book of Sight Reading Duets.")
                 }
             }
         }

@@ -25,7 +25,7 @@ struct HighRange: View {
                     //TODO: embed the link on "breath builder"
                     //http://www.musiciansfriend.com/accessories/breath-builder-isomeric-exerciser?source=3WWRWXGP&gclid=CL3HxZeCpL4CFQGTfgodHmcA8A&kwid=productads-plaid^43618166084-sku^420386000000000@ADL4MF-adType^PLA-device^c-adid^30428562987
                     Paragraph("There is a symbiotic relationship between the air flow and the muscles of your face. Because of this relationship, when the speed of the air is increased, the muscles are challenged to grow stronger. I like using the breath builder to demonstrate the kind of effort required to generate fast air.")
-                    EmbeddedYouTubeView(request: breathBuilderYouTubeURL)
+                    EmbeddedYouTubeView(request: breathBuilderYouTubeLink)
                     Paragraph("Don’t use this device to exercise; simply use it to learn what it feels like to move fast, intense air. You can use it once or twice a day as a reminder, but rest assured that you are plenty strong to generate the fast air – it’s a matter of understanding specifically what is necessary.")
                     Paragraph("Here is a musical strategy which incorporates this very simple principle:")
                     Image("rangesong-sample")
@@ -52,16 +52,16 @@ struct HighRange: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(rangesongsTenorLink, "rangesongsTenorCover")
-                        ImagePurchaseLink(rangesongsBassLink, "rangesongsBassCover")
+                        ImagePurchaseLink(rangesongsTenorPurchaseLink, "rangesongsTenorCover")
+                        ImagePurchaseLink(rangesongsBassPurchaseLink, "rangesongsBassCover")
                         Spacer()
                     }
                     Paragraph("Rangesongs develops your high and low ranges by using target notes in a musical context to encourage you to move your air properly. For the high range, Rangesongs offers sixty-five songs designed to improve your range and endurance systematically by using two strategies: the phrases within each song are specifically composed to build melodically to a designated target note, providing a compelling musical incentive to support the tone with the proper air speed; and the songs proceed chromatically to reach a high F for gradual improvement. For the low range, Rangesongs offers forty songs to extend the range downward in the same fashion to a pedal B-flat.")
                     
                     // This PurchaseButton just links to a website for rangesongs, and is not actually for purchasing a book.
-                    PurchaseButton(rangesongsWebsite, "Visit the Rangesongs website")
-                    PurchaseButton(rangesongsTenorLink, "Purchase Rangesongs for Tenor Trombone")
-                    PurchaseButton(rangesongsBassLink, "Purchase Rangesongs for Bass Trombone")
+                    PurchaseButton(rangesongsWebsiteLink, "Visit the Rangesongs website")
+                    PurchaseButton(rangesongsTenorPurchaseLink, "Purchase Rangesongs for Tenor Trombone")
+                    PurchaseButton(rangesongsBassPurchaseLink, "Purchase Rangesongs for Bass Trombone")
                 }
             }
         }

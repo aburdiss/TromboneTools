@@ -13,7 +13,7 @@ struct SlideTechnique: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 Group {
-                    EmbeddedYouTubeView(request: slideTechniqueYouTubeURL)
+                    EmbeddedYouTubeView(request: slideTechniqueYouTubeLink)
                     Paragraph("Slide technique can be a confusing subject because there are many conflicting opinions swirling around the internet. Here is a very simple idea which should help alleviate some confusion and is not likely to be controversial:")
                     HStack {
                         Spacer()
@@ -75,17 +75,17 @@ struct SlideTechnique: View {
                     Group {
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
-                            ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
-                            ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutinesBassCover")
+                            ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
+                            ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
+                            ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
                             Spacer()
                         }
                         
                         Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
                         
-                        PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
-                        PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
+                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
+                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
+                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
                     }
                     
                     SectionDivider()
@@ -94,15 +94,15 @@ struct SlideTechnique: View {
                     Group {
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(flowStudiesTenorLink, "flowStudiesTenorCover")
-                            ImagePurchaseLink(flowStudiesBassLink, "flowStudiesBassCover")
+                            ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
+                            ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
                             Spacer()
                         }
                         
                         Quote("“David Vining has written a group of studies which I think artfully isolate the movement of air when you play. I highly recommend them for students and anyone who needs to “get back to the basics” of air movement.”", "— Mark Lawrence, Principal Trombonist (retired), San Francisco Symphony")
                         
-                        PurchaseButton(flowStudiesTenorLink, "Purchase Flow Studies for Tenor Trombone.")
-                        PurchaseButton(flowStudiesBassLink, "Purchase Flow Studies for Bass Trombone.")
+                        PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone.")
+                        PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone.")
                     }
                     
                     SectionDivider()
@@ -111,13 +111,13 @@ struct SlideTechnique: View {
                     Group {
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(whatEveryTrombonistLink, "whatEveryTrombonistCover")
+                            ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
                             Spacer()
                         }
                         
                         Quote("David’s research and increased self-awareness have resulted in his book “What Every Trombonist Needs to Know About the Body.” It is a remarkable volume that will be of tremendous use to future generations of trombone teachers and players. The great majority of trombonists (myself included) who never had to think very much about this can consider themselves lucky. David is to be congratulated upon his recovery and thanked for showing us so completely how the body works in trombone playing.", "— Denis Wick, Principal Trombonist (retired), London Symphony")
                         
-                        PurchaseButton(whatEveryTrombonistLink, "Purchase What Every Trombonist Needs to Know About the Body")
+                        PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                     }
                 }
             }

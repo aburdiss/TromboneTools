@@ -14,7 +14,7 @@ struct Articulation: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 
-                EmbeddedYouTubeView(request: articulationURL)
+                EmbeddedYouTubeView(request: articulationYouTubeLink)
                     .frame(minHeight: 200)
                 
                 Group {
@@ -44,7 +44,7 @@ struct Articulation: View {
                 
                 // Multiple Tonguing Group 1
                 Group {
-                    EmbeddedYouTubeView(request: multipleTonguingURL)
+                    EmbeddedYouTubeView(request: multipleTonguingYouTubeLink)
                         .frame(minHeight: 200)
                     
                     Paragraph("Before you can double or triple tongue you must possess a reliable single tongue, following all the guidelines I have already set forth above because the same principles apply to multiple tonguing.")
@@ -70,9 +70,9 @@ struct Articulation: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutinesBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
                         Spacer()
                     }
                     
@@ -88,16 +88,16 @@ struct Articulation: View {
                     
                     // Purchase Daily Routines Links
                     Group {
-                        PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
-                        PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
+                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
+                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
+                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
                     }
                 }
                 
                 SectionDivider()
                 
                 Group {
-                    ImagePurchaseLink(whatEveryTrombonistLink, "whatEveryTrombonistCover")
+                    ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
                     
                     Group {
                         Text("“Only over the last decade or so has Task Specific Focal Dystonia become completely identified, although there have always been brass players who have mysteriously “lost their lip”. David Vining’s recovery and rehabilitation from this terrifying condition marks him out as one of the very fortunate few amongst the many trombonists who have otherwise had to abandon their often high-profile careers.“ ")
@@ -107,7 +107,7 @@ struct Articulation: View {
                         .padding()
                         .fixedSize(horizontal: true, vertical: false)
                     
-                    PurchaseButton(whatEveryTrombonistLink, "Purchase What Every Trombonist Needs to Know About the Body")
+                    PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }
             }
         }

@@ -36,16 +36,16 @@ struct Endurance: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(rangesongsTenorLink, "rangesongsTenorCover")
-                        ImagePurchaseLink(rangesongsBassLink, "rangesongsBassCover")
+                        ImagePurchaseLink(rangesongsTenorPurchaseLink, "rangesongsTenorCover")
+                        ImagePurchaseLink(rangesongsBassPurchaseLink, "rangesongsBassCover")
                         Spacer()
                     }
                     Paragraph("Rangesongs develops your high and low ranges by using target notes in a musical context to encourage you to move your air properly. For the high range, Rangesongs offers sixty-five songs designed to improve your range and endurance systematically by using two strategies: the phrases within each song are specifically composed to build melodically to a designated target note, providing a compelling musical incentive to support the tone with the proper air speed; and the songs proceed chromatically to reach a high F for gradual improvement. For the low range, Rangesongs offers forty songs to extend the range downward in the same fashion to a pedal B-flat.")
                     
                     // This PurchaseButton just links to a website for rangesongs, and is not actually for purchasing a book.
-                    PurchaseButton(rangesongsWebsite, "Visit the Rangesongs website")
-                    PurchaseButton(rangesongsTenorLink, "Purchase Rangesongs for Tenor Trombone")
-                    PurchaseButton(rangesongsBassLink, "Purchase Rangesongs for Bass Trombone")
+                    PurchaseButton(rangesongsWebsiteLink, "Visit the Rangesongs website")
+                    PurchaseButton(rangesongsTenorPurchaseLink, "Purchase Rangesongs for Tenor Trombone")
+                    PurchaseButton(rangesongsBassPurchaseLink, "Purchase Rangesongs for Bass Trombone")
                 }
             }
         }

@@ -75,7 +75,7 @@ struct PostureVsBalance: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(whatEveryTrombonistLink, "whatEveryTrombonistCover")
+                        ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
                         Spacer()
                     }
                     
@@ -84,7 +84,7 @@ struct PostureVsBalance: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                     Quote("David’s research and increased self-awareness have resulted in his book “What Every Trombonist Needs to Know About the Body.” It is a remarkable volume that will be of tremendous use to future generations of trombone teachers and players. The great majority of trombonists (myself included) who never had to think very much about this can consider themselves lucky. David is to be congratulated upon his recovery and thanked for showing us so completely how the body works in trombone playing.", "— Denis Wick, Principal Trombonist (retired), London Symphony")
-                    PurchaseButton(whatEveryTrombonistLink, "Purchase What Every Trombonist Needs to Know About the Body")
+                    PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }
                 
                 SectionDivider()
@@ -93,8 +93,8 @@ struct PostureVsBalance: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(flowStudiesTenorLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(flowStudiesBassLink, "flowStudiesBassLink")
+                        ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
+                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassLink")
                         Spacer()
                     }
                     
@@ -102,8 +102,8 @@ struct PostureVsBalance: View {
                     Quote("“For me, The Breathing Book was an eye-opener and is a new inspiration for my teaching and also for my own playing. I use the book and its exercises on a regular basis in my teaching and in my own daily routines. His ideas are so easy to apply to everything you have to play or work on and they help you to play in more relaxed, easy and controlled manner.”", "— Ben van Dijk, Bass Trombonist, Rotterdam Philharmonic, Professor of Trombone, Rotterdam Conservatory")
                     Quote("“In this slender book, David Vining strips away the many misconceptions about breathing that have been accepted as fact for far too long. Once the player understands exactly where the air goes and how it should be utilized, every area of playing will improve.”", "— Ralph Sauer, Principal Trombonist (retired), Los Angeles Philharmonic")
                     
-                    PurchaseButton(breathingBookTenorLink, "Purchase The Breathing Book for Tenor Trombone")
-                    PurchaseButton(breathingBookBassLink, "Purchase the Breathing Book for Bass Trombone")
+                    PurchaseButton(breathingBookTenorPurchaseLink, "Purchase The Breathing Book for Tenor Trombone")
+                    PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")
                 }
             }
         }

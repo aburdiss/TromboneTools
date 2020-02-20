@@ -46,17 +46,17 @@ struct DailyRoutine: View {
                     //TODO: Extract this whole Group as a subview.
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutinesBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
                         Spacer()
                     }
                     
                     Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
                     
-                    PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                    PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
-                    PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
+                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
+                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
+                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
                 }
                 
                 SectionDivider()
@@ -66,11 +66,11 @@ struct DailyRoutine: View {
                     Paragraph("There are also 3 daily routines in this book that allow you to practice your fundamentals at the same time you refine your intonation:")
                     HStack{
                         Spacer()
-                        ImagePurchaseLink(intonationMasteryLink, "intonationMasteryCover")
+                        ImagePurchaseLink(intonationMasteryPurchaseLink, "intonationMasteryCover")
                         Spacer()
                     }
                   
-                    PurchaseButton(intonationMasteryLink, "Purchase Trombone Intonation Mastery.")
+                    PurchaseButton(intonationMasteryPurchaseLink, "Purchase Trombone Intonation Mastery.")
                     
                     
                 }

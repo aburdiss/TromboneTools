@@ -21,9 +21,9 @@ struct Intonation: View {
                     //TODO: Edit this text to make it accruate to an app.
                     Paragraph("I have also created so drones on trombone that you can download to use if you like. Just scroll to the bottom of this page to find them.")
                     Paragraph("Here’s a video about how to use a tuning app and an external speaker:")
-                    EmbeddedYouTubeView(request: tuningAppsYouTubeURL)
+                    EmbeddedYouTubeView(request: tuningAppsYouTubeLink)
                     Paragraph("Here is a video with help in tuning your instrument and slide sensitivity:")
-                    EmbeddedYouTubeView(request: tuningInstrumentYouTubeURL)
+                    EmbeddedYouTubeView(request: tuningInstrumentYouTubeLink)
                     //TODO: embed link to "Tascam"
                     Paragraph("So much of intonation is dependent upon your ability to hear discrete differences in your pitch as you play. Recording yourself is an invaluable tool for improving intonation and I recommend a high quality digital recording device – here’s one that won’t break the bank but provides nice digital sound quality: Tascam digital recorder. Be brutally honest when you listen back to recordings of yourself – is it really in tune or just in the ball park?")
                     Paragraph("Tiny deviations in where you place your slide matter to your intonation. I call your ability to discern these tiny deviations your “Slide Sensitivity” and those with excellent slide sensitivity have a better chance of having exquisite intonation than those who don’t. You can cultivate slide sensitivity by following these suggestions:")
@@ -92,11 +92,11 @@ struct Intonation: View {
                         
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(intonationMasteryLink, "intonationMasteryCover")
+                            ImagePurchaseLink(intonationMasteryPurchaseLink, "intonationMasteryCover")
                             Spacer()
                         }
                         
-                        PurchaseButton(intonationMasteryLink, "Purchase Trombone Intonation Mastery")
+                        PurchaseButton(intonationMasteryPurchaseLink, "Purchase Trombone Intonation Mastery")
                         
                         Group {
                             Text("Trombone Intonation Mastery ")
@@ -110,7 +110,7 @@ struct Intonation: View {
                         .fixedSize(horizontal: false, vertical: true)
                         
                         
-                        EmbeddedYouTubeView(request: intonationMasteryLink)
+                        EmbeddedYouTubeView(request: intonationMasteryPurchaseLink)
                     }
                     
                     SectionDivider()
@@ -134,13 +134,13 @@ struct Intonation: View {
                         EmbeddedYouTubeView(request: soloDuetTrainingYouTubeLink)
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(soloDuetTrainingLink, "soloDuetTrainingCover")
+                            ImagePurchaseLink(soloDuetTrainingPurchaseLink, "soloDuetTrainingCover")
                             Spacer()
                         }
                         
                         Paragraph("These duets are designed to assist trombone players in learning six of the most popular trombone solos. The two parts are equal in importance and difficulty. Solo Training Duets can be used to help students learn style and technique, as recreational musical diversions or even as additions to recitals.")
                         Quote("“David Vining’s Solo Training Duets for Trombone are both enjoyable and challenging.  These duets are a unique and creative way to learn the most popular solo works for trombone.  We are always looking for good new duets to play with both colleagues and students, and these duets fit the bill on many levels.  I highly recommend them.”", "— Larry Zalkind, Eastman School of Music")
-                        PurchaseButton(soloDuetTrainingLink, "Purchase Solo Duet Training")
+                        PurchaseButton(soloDuetTrainingPurchaseLink, "Purchase Solo Duet Training")
                     }
                     
                     SectionDivider()
@@ -150,8 +150,8 @@ struct Intonation: View {
                         Paragraph("Here are a few more duet books that I have written:")
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(longToneDuetsLink, "longToneDuetsCover")
-                            ImagePurchaseLink(longToneDuetsRalphSauerLink, "longToneDuetsRalphSauerCover")
+                            ImagePurchaseLink(longToneDuetsPurchaseLink, "longToneDuetsCover")
+                            ImagePurchaseLink(longToneDuetsRalphSauerPurchaseLink, "longToneDuetsRalphSauerCover")
                             Spacer()
                         }
                         Group {
@@ -165,8 +165,8 @@ struct Intonation: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                         
-                        PurchaseButton(longToneDuetsLink, "Purchase Long Tone Duets for Trombones.")
-                        PurchaseButton(longToneDuetsRalphSauerLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
+                        PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones.")
+                        PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
                     }
                 }
                 

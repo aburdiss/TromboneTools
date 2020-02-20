@@ -57,24 +57,24 @@ struct Embochure: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(breathingBookTenorLink, "breathingBookTenorCover")
-                        ImagePurchaseLink(breathingBookBassLink, "breathingBookBassCover")
+                        ImagePurchaseLink(breathingBookTenorPurchaseLink, "breathingBookTenorCover")
+                        ImagePurchaseLink(breathingBookBassPurchaseLink, "breathingBookBassCover")
                         Spacer()
                     }
                     Paragraph("To breathe well means to breathe free of tension, and trombonists who breathe well create a resonant tone quality. The Breathing Book provides concise information about breathing alongside etudes and activites encouraging application of this knowledge in musically meaningful ways. The Breathing Book teaches the truth about breathing, establishing a reliable foundation for improved resonance, articulation, endurance, and tone quality.")
                     Quote("“In this slender book, David Vining strips away the many misconceptions about breathing that have been accepted as fact for far too long. Once the player understands exactly where the air goes and how it should be utilized, every area of playing will improve.”", "— Ralph Sauer, Principal Trombonist (retired), Los Angeles Philharmonic")
-                    PurchaseButton(breathingBookTenorLink, "Purchase The Breathing Book for Tenor Trombone")
-                    PurchaseButton(breathingBookBassLink, "Purchase the Breathing Book for Bass Trombone")
+                    PurchaseButton(breathingBookTenorPurchaseLink, "Purchase The Breathing Book for Tenor Trombone")
+                    PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")
                 }
                 
                 // What Every Trombonist Needs to Know About the Body
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(whatEveryTrombonistLink, "whatEveryTrombonistCover")
+                        ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
                         Spacer()
                     }
-                    PurchaseButton(whatEveryTrombonistLink, "Purchase What Every Trombonist Needs to Know About the Body")
+                    PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }
             }
         }

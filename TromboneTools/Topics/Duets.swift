@@ -93,17 +93,17 @@ struct Duets: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutineTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutineStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutineBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutineTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutineStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutineBassCover")
                         Spacer()
                     }
                     
                     Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
                     
-                    PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                    PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
-                    PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
+                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
+                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
+                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
                 }
                 
                 SectionDivider()
@@ -119,14 +119,14 @@ struct Duets: View {
                     
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(soloDuetTrainingLink, "soloDuetTrainingCover")
+                        ImagePurchaseLink(soloDuetTrainingPurchaseLink, "soloDuetTrainingCover")
                         Spacer()
                     }
                     
                     Paragraph("These duets are designed to assist trombone players in learning six of the most popular trombone solos. The two parts are equal in importance and difficulty. Solo Training Duets can be used to help students learn style and technique, as recreational musical diversions or even as additions to recitals.")
                     Quote("“David Vining’s Solo Training Duets for Trombone are both enjoyable and challenging.  These duets are a unique and creative way to learn the most popular solo works for trombone.  We are always looking for good new duets to play with both colleagues and students, and these duets fit the bill on many levels.  I highly recommend them.”", "— Larry Zalkind, Eastman School of Music")
                     
-                    PurchaseButton(soloDuetTrainingLink, "Purchase Solo Duet Training")
+                    PurchaseButton(soloDuetTrainingPurchaseLink, "Purchase Solo Duet Training")
                 }
                 
                 SectionDivider()
@@ -136,8 +136,8 @@ struct Duets: View {
                     Paragraph("Here are a few more duet books that I have written:")
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(longToneDuetsLink, "longToneDuetsCover")
-                        ImagePurchaseLink(longToneDuetsRalphSauerLink, "longToneDuetsRalphSauerCover")
+                        ImagePurchaseLink(longToneDuetsPurchaseLink, "longToneDuetsCover")
+                        ImagePurchaseLink(longToneDuetsRalphSauerPurchaseLink, "longToneDuetsRalphSauerCover")
                         Spacer()
                     }
                     Group {
@@ -151,8 +151,8 @@ struct Duets: View {
                     .padding()
                     .fixedSize(horizontal: false, vertical: true)
                     
-                    PurchaseButton(longToneDuetsLink, "Purchase Long Tone Duets for Trombones.")
-                    PurchaseButton(longToneDuetsRalphSauerLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
+                    PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones.")
+                    PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
                 }
                 
                 SectionDivider()
@@ -162,10 +162,10 @@ struct Duets: View {
                     Paragraph("There are also quite a few duets in this book, organized by Student/Teacher Duets, Equal Part Duets, and Repertoire Duets:")
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(intonationMasteryLink, "intonationMasteryCover")
+                        ImagePurchaseLink(intonationMasteryPurchaseLink, "intonationMasteryCover")
                         Spacer()
                     }
-                    PurchaseButton(intonationMasteryLink, "Purchase Trombone Intonation Mastery.")
+                    PurchaseButton(intonationMasteryPurchaseLink, "Purchase Trombone Intonation Mastery.")
                 }
             }
         }

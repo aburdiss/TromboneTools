@@ -51,7 +51,7 @@ struct Phrasing: View {
                         .resizable()
                         .scaledToFit()
                     
-                    EmbeddedYouTubeView(request: flowStudiesURL)
+                    EmbeddedYouTubeView(request: flowStudiesYouTubeLink)
                     
                     Paragraph("Here are some resources to practice phrasing:")
                 }
@@ -62,15 +62,15 @@ struct Phrasing: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutinesBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
                         Spacer()
                     }
                     
-                    PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                    PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
-                    PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
+                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
+                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
+                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
                 }
                 
                 SectionDivider()
@@ -79,13 +79,13 @@ struct Phrasing: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(flowStudiesTenorLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(flowStudiesBassLink, "flowStudiesBassCover")
+                        ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
+                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
                         Spacer()
                     }
                     
-                    PurchaseButton(flowStudiesTenorLink, "Purchase Flow Studies for Tenor Trombone.")
-                    PurchaseButton(flowStudiesBassLink, "Purchase Flow Studies for Bass Trombone.")
+                    PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone.")
+                    PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone.")
                 }
             }
         }

@@ -42,17 +42,17 @@ struct ToneQuality: View {
                     Group {
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
-                            ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
-                            ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutinesBassCover")
+                            ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
+                            ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
+                            ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
                             Spacer()
                         }
                         
                         Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
                         
-                        PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
-                        PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
+                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
+                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
+                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
                     }
                     
                     SectionDivider()
@@ -68,14 +68,14 @@ struct ToneQuality: View {
                         
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(soloDuetTrainingLink, "soloDuetTrainingCover")
+                            ImagePurchaseLink(soloDuetTrainingPurchaseLink, "soloDuetTrainingCover")
                             Spacer()
                         }
                         
                         Paragraph("These duets are designed to assist trombone players in learning six of the most popular trombone solos. The two parts are equal in importance and difficulty. Solo Training Duets can be used to help students learn style and technique, as recreational musical diversions or even as additions to recitals.")
                         Quote("“This is a fantastic idea! It helps students develop a better overall sense of a solo piece as they prepare it for performance. A great tool for private teachers to “show” rather than just “tell”, and a fun resource for players to read through a piece with other players. You can even learn a lot recording one part and playing along with yourself! No more wondering “how it feels to play with someone else” prior to the first run through with the pianist! Hopefully, this will be the first volume of duets like this David Vining’s has up his sleeve!”", "— Alex Iles, Los Angeles freelance/studio trombonist and Principal trombone, Long Beach Symphony Orchestra")
                         
-                        PurchaseButton(soloDuetTrainingLink, "Purchase Solo Duet Training")
+                        PurchaseButton(soloDuetTrainingPurchaseLink, "Purchase Solo Duet Training")
                     }
                     
                     SectionDivider()
@@ -84,8 +84,8 @@ struct ToneQuality: View {
                     Group {
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(longToneDuetsLink, "longToneDuetsCover")
-                            ImagePurchaseLink(longToneDuetsRalphSauerLink, "longToneDuetsRalphSauerCover")
+                            ImagePurchaseLink(longToneDuetsPurchaseLink, "longToneDuetsCover")
+                            ImagePurchaseLink(longToneDuetsRalphSauerPurchaseLink, "longToneDuetsRalphSauerCover")
                             Spacer()
                         }
                         Group {
@@ -99,8 +99,8 @@ struct ToneQuality: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                         
-                        PurchaseButton(longToneDuetsLink, "Purchase Long Tone Duets for Trombones.")
-                        PurchaseButton(longToneDuetsRalphSauerLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
+                        PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones.")
+                        PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
                     }
                     
                     SectionDivider()
@@ -109,13 +109,13 @@ struct ToneQuality: View {
                     Group {
                         HStack {
                             Spacer()
-                            ImagePurchaseLink(flowStudiesTenorLink, "flowStudiesTenorCover")
-                            ImagePurchaseLink(flowStudiesBassLink, "flowStudiesBassCover")
+                            ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
+                            ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
                             Spacer()
                         }
                         
-                        PurchaseButton(flowStudiesTenorLink, "Purchase Flow Studies for Tenor Trombone.")
-                        PurchaseButton(flowStudiesBassLink, "Purchase Flow Studies for Bass Trombone.")
+                        PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone.")
+                        PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone.")
                     }
                     
                 }

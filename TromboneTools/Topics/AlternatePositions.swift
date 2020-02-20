@@ -14,7 +14,7 @@ struct AlternatePositions: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 
-                EmbeddedYouTubeView(request: alternatePositionsURL)
+                EmbeddedYouTubeView(request: alternatePositionsYouTubeLink)
                     .frame(minHeight: 200)
                 
                 // The main body group
@@ -38,9 +38,9 @@ struct AlternatePositions: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassLink, "dailyRoutinesBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
                         Spacer()
                     }
                     
@@ -57,9 +57,9 @@ struct AlternatePositions: View {
                     
                     // Purchase Daily Routines Links
                     Group {
-                        PurchaseButton(dailyRoutinesTenorLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(dailyRoutinesBassLink, "Purchase Daily Routines for Bass Trombone.")
-                        PurchaseButton(dailyRoutinesStudentLink, "Purchase Daily Routines for the Student Trombone Player.")
+                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
+                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
+                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
                     }
                 }
                 
@@ -69,8 +69,8 @@ struct AlternatePositions: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(flowStudiesTenorLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(flowStudiesBassLink, "flowStudiesBassCover")
+                        ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
+                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
                         Spacer()
                     }
                     
@@ -82,8 +82,8 @@ struct AlternatePositions: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                     
-                    PurchaseButton(flowStudiesTenorLink, "Purchase Flow Studies for Tenor Trombone")
-                    PurchaseButton(flowStudiesBassLink, "Purchase Flow Studies for Bass Trombone")
+                    PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone")
+                    PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")
                 }
             }
         }

@@ -13,7 +13,7 @@ struct AuditionsProfessional: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 
-                EmbeddedYouTubeView(request: preparingExcerptsURL)
+                EmbeddedYouTubeView(request: preparingExcerptsYouTubeLink)
                     .frame(minHeight: 200)
                 
                 Paragraph("Here is a handout with tips about preparing excerpts:")

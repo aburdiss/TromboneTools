@@ -13,8 +13,8 @@ struct HesitantEntrances: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 Group {
-                    EmbeddedYouTubeView(request: hesitantEntrancesURL)
-                    EmbeddedYouTubeView(request: toneProductionURL)
+                    EmbeddedYouTubeView(request: hesitantEntrancesYouTubeLink)
+                    EmbeddedYouTubeView(request: toneProductionYouTubeLink)
                     Paragraph("Hesitant entrances (some people call it “locking up”) are fairly common among trombonists; if you have struggled with this issue, you are not alone. Fixing this problem as soon as it arises is important because a hesitation can evolve into something far more serious if left untreated.")
                     Paragraph("I have used the following stepwise process to help some people recover from hesitant entrances. Of course, there is no way to guarantee success and there are many individual variables which may affect the outcome, but at least the following steps will give you a starting point.")
                     NumberedBulletPoint(boldNumber: "1", boldText: "Blow no tongue and no sound – “circular blowing”")
@@ -52,13 +52,13 @@ struct HesitantEntrances: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(breathingBookTenorLink, "breathingBookTenorCover")
-                        ImagePurchaseLink(breathingBookBassLink, "breathingBookBassCover")
+                        ImagePurchaseLink(breathingBookTenorPurchaseLink, "breathingBookTenorCover")
+                        ImagePurchaseLink(breathingBookBassPurchaseLink, "breathingBookBassCover")
                         Spacer()
                     }
                     Paragraph("To breathe well means to breathe free of tension, and trombonists who breathe well create a resonant tone quality. The Breathing Book provides concise information about breathing alongside etudes and activites encouraging application of this knowledge in musically meaningful ways. The Breathing Book teaches the truth about breathing, establishing a reliable foundation for improved resonance, articulation, endurance, and tone quality.")
-                    PurchaseButton(breathingBookTenorLink, "Purchase The Breathing Book for Tenor Trombone")
-                    PurchaseButton(breathingBookBassLink, "Purchase the Breathing Book for Bass Trombone")
+                    PurchaseButton(breathingBookTenorPurchaseLink, "Purchase The Breathing Book for Tenor Trombone")
+                    PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")
                 }
                 
                 SectionDivider()
@@ -66,10 +66,10 @@ struct HesitantEntrances: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(whatEveryTrombonistLink, "whatEveryTrombonistCover")
+                        ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
                         Spacer()
                     }
-                    PurchaseButton(whatEveryTrombonistLink, "Purchase What Every Trombonist Needs to Know About the Body")
+                    PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }
                 
                 SectionDivider()
