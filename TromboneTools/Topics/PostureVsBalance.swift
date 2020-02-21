@@ -94,7 +94,7 @@ struct PostureVsBalance: View {
                     HStack {
                         Spacer()
                         ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassLink")
+                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
                         Spacer()
                     }
                     

@@ -14,7 +14,7 @@ import Foundation
 
 //TODO: Import all of the links here as constants.
 
-// Mountain Peak Music Books
+// Mountain Peak Music Trombone Books
 let bigBookOfSightReadingDuetsPurchaseLink: String = "http://www.mountainpeakmusic.com/the-big-book-of-sight-reading-duets-for-trombone/"
 let breathingBookTenorPurchaseLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-tenor-trombone/"
 let breathingBookBassPurchaseLink: String = "https://www.mountainpeakmusic.com/breathing-book-for-bass-trombone/"
@@ -32,6 +32,20 @@ let rangesongsTenorPurchaseLink: String = "http://www.mountainpeakmusic.com/rang
 let rangesongsBassPurchaseLink: String = "http://www.mountainpeakmusic.com/rangesongs-for-bass-trombone/"
 let soloDuetTrainingPurchaseLink: String = "https://www.mountainpeakmusic.com/solo-duet-training-for-trombones/"
 let whatEveryTrombonistPurchaseLink: String = "https://www.mountainpeakmusic.com/what-every-trombonist-needs-to-know-about-the-body/"
+
+// Mountain Peak Music Resource Books
+let bigBookOfSightReadingDuetsResourceLink: String = "https://www.mountainpeakmusic.com/big-book-of-sight-reading-duets/"
+let breathingBookResourceLink: String = "https://www.mountainpeakmusic.com/breathing-book/"
+let crossTrainingResourceLink: String = "http://crosstrainingformusicians.com/"
+let dailyRoutinesResourceLink: String = "http://www.mountainpeakmusic.com/daily-routines/"
+let flowStudiesResourceLink: String = "http://www.mountainpeakmusic.com/flow-studies/"
+let longToneDuetsResourceLink: String = "http://www.mountainpeakmusic.com/long-tone-duets/"
+let notesOfHopeResourceLink: String = "http://www.mountainpeakmusic.com/notes-of-hope/"
+let rangesongsResourceLink: String = "http://www.mountainpeakmusic.com/rangesongs/"
+let soloDuetTrainingResourceLink: String = "http://www.mountainpeakmusic.com/solo-duet-training-for-trombones/"
+let teachingBrassResourceLink: String = "http://teachbrass.com/"
+let tromboneIntonationMasteryResourceLink: String = "http://www.mountainpeakmusic.com/trombone-intonation-mastery/"
+let whatEveryTrombonistResourceLink: String = "http://www.mountainpeakmusic.com/what-every-trombonist-needs-to-know-about-the-body-1/"
 
 // Mountain Peak Music Book Websites
 let crossTrainingWebsiteLink: String = "http://crosstrainingformusicians.com/"

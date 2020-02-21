@@ -125,7 +125,7 @@ struct TopicListView: View {
                     }
                 }
             }
-.navigationBarTitle("TromboneTools")
+.navigationBarTitle("Trombonetools")
         }
     .navigationViewStyle(StackNavigationViewStyle())
     }
