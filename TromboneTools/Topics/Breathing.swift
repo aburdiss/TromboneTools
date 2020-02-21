@@ -14,7 +14,6 @@ struct Breathing: View {
             VStack(alignment: .leading) {
                 
                 EmbeddedYouTubeView(request: goodAndBadBreathingYouTubeLink)
-                    .frame(minHeight: 200)
                 
                 Paragraph("No technique is more important to good trombone playing than proper breathing. Sadly, no technique is as misunderstood as breathing.")
                 Paragraph("I could fill page after page with information about breathing but for now, I’ll summarize the most common student mistakes:")
@@ -28,28 +27,31 @@ struct Breathing: View {
                     NumberedBulletPoint(number: "5", text: "Don’t be a belly dancing breather. Yes there is very important motion which occurs in the abdominal area when you breathe, but the motion is secondary to rib movement. Moving your tummy where your belly button is does not cause air to enter the body.")
                     NumberedBulletPoint(number: "6", text: "ou can’t directly feel your diaphragm and you use your diaphragm every time you breathe. Don’t use misleading phrases like  “support with your diaphragm” because they imply that you can directly feel the diaphragm (you can’t) and that there is some other way to breathe that does not involve the diaphragm (there isn’t).")
                 }
-                .padding(.horizontal)
                 
                 // More Videos
                 Group {
                     Paragraph("Here is a video about how to use breathing devices:")
                     
-                    EmbeddedYouTubeView(request: "https://youtu.be/c07ADJF7QWE")
+                    EmbeddedYouTubeView(request: breathingDevicesYouTubeLink)
                     
                     Paragraph("Here is a video discussing efficient breathing during technical passages:")
                     
-                    EmbeddedYouTubeView(request: "https://youtu.be/vvpm0fdAU9Q")
+                    EmbeddedYouTubeView(request: efficientBreathigYouTubeLink)
                     
                     // TODO: Check to make sure that this formats correctly on both iPhone and iPad.
-                    HStack {
-                        Text("If you want more detail about breathing, visit my ")
-                        Button(action: {
-                            let url = URL(string: "https://mountainpeakmusic.wordpress.com/")!
-                            UIApplication.shared.open(url)
-                        }) {
-                            Text("Breathing Blog.")
+                    VStack(alignment: .leading) {
+                        Text("If you want more detail about breathing,")
+                        HStack(spacing: 0) {
+                            Text("visit my ")
+                            Button(action: {
+                                let url = URL(string: "https://mountainpeakmusic.wordpress.com/")!
+                                UIApplication.shared.open(url)
+                            }) {
+                                Text("Breathing Blog.")
+                            }
                         }
                     }
+                    .padding()
                     
                     Paragraph("Here are some additional resources to help you with your breathing:")
                 }

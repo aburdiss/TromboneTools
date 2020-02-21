@@ -23,7 +23,6 @@ struct LessonGuidelines: View {
                     NumberedBulletPoint(number: "4", text: "Your teacher knows more than you do so genuinely listen and do what he or she is suggesting. If you feel like it’s not working then have a conversation with your teacher or find a different teacher. Not every teacher is right for every student. Again – its nothing personal – it’s just a fact of life.")
                     NumberedBulletPoint(number: "5", text: "If your teacher sends you an email that requires a response from you, please respond within 48 hours.")
                 }
-                .padding(.leading)
                 
                 Group {
                     NumberedBulletPoint(number: "6", text: "Please don’t borrow stuff and not return it. It’s rude and disrespectful – and expensive for the teacher.")

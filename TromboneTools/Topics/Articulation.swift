@@ -15,7 +15,6 @@ struct Articulation: View {
             VStack(alignment: .leading) {
                 
                 EmbeddedYouTubeView(request: articulationYouTubeLink)
-                    .frame(minHeight: 200)
                 
                 Group {
                     Paragraph("The most common articulation problems I encounter are students who use too much tongue or too heavy of a tongue and students who clip the ends of notes off too abruptly.")
@@ -31,7 +30,7 @@ struct Articulation: View {
                     // TODO: Find how to contain this image inside the frame.
                     Image("fluttertongue-drill-resized")
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                     
                     Paragraph("The second most common mistake mentioned above is to clip off the ends of notes too abruptly. My best advice for fixing this issue is to listen to fine singers. You will never hear them abruptly clip off a note at the end of a phrase unless the text specifically calls for it. The sound created by doing this is extremely unmusical and disruptive to your phrasing. While you’re at it, do a little singing yourself to clearly understand how to gently release phrase endings without the tongue.")
                     Paragraph("Here is a sound file featuring some multiple tonguing:")
@@ -45,7 +44,6 @@ struct Articulation: View {
                 // Multiple Tonguing Group 1
                 Group {
                     EmbeddedYouTubeView(request: multipleTonguingYouTubeLink)
-                        .frame(minHeight: 200)
                     
                     Paragraph("Before you can double or triple tongue you must possess a reliable single tongue, following all the guidelines I have already set forth above because the same principles apply to multiple tonguing.")
                     Paragraph("I think it’s logical to spend time just practicing the off syllable because it’s the one you are not used to. Just play slow notes on one pitch using the syllable ga. Connect the notes and don’t try to move around at first. Try eighth notes at quarter = 72 just to get used to doing this because it will feel very awkward at first. Persevere and practice a little like this everyday. When you feel relatively comfortable doing this, try mixing up the syllables as follows:")
@@ -97,7 +95,11 @@ struct Articulation: View {
                 SectionDivider()
                 
                 Group {
-                    ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
+                    HStack {
+                        Spacer()
+                        ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
+                        Spacer()
+                    }
                     
                     Group {
                         Text("“Only over the last decade or so has Task Specific Focal Dystonia become completely identified, although there have always been brass players who have mysteriously “lost their lip”. David Vining’s recovery and rehabilitation from this terrifying condition marks him out as one of the very fortunate few amongst the many trombonists who have otherwise had to abandon their often high-profile careers.“ ")
@@ -105,7 +107,7 @@ struct Articulation: View {
                         + Text("— Denis Wick, Principal Trombonist (retired), London Symphony")
                     }
                         .padding()
-                        .fixedSize(horizontal: true, vertical: false)
+                        .fixedSize(horizontal: false, vertical: true)
                     
                     PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }

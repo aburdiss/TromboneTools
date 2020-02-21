@@ -28,7 +28,7 @@ struct NumberedBulletPoint: View {
                 .bold()
             + Text(text ?? "")
         }
-            .padding(.horizontal)
+            .padding()
     }
     
     init(number: String, text: String) {

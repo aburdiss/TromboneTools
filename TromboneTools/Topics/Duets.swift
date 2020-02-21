@@ -14,7 +14,7 @@ struct Duets: View {
             VStack(alignment: .leading) {
                 // Duet BulletPoints and Text Before
                 Group {
-                    EmbeddedYouTubeView(request: "https://youtube.com/embed/2fUaefL_RGI")
+                    EmbeddedYouTubeView(request: duelingFundamentalsYouTubeLink)
                     Paragraph("I think duets are a terrific way to learn. When I play a duet with my student, she learns by listening musically. She learns to tune, to match styles and note lengths. She learns to cooperate, to blend and to play in time. There is so much good to playing duets, sometimes that’s all I do in a lesson!")
                     Paragraph("There are so many great duet books – here are a few of my favorites:")
                 }
@@ -93,9 +93,9 @@ struct Duets: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutineTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutineStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutineBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
                         Spacer()
                     }
                     

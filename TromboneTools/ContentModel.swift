@@ -47,6 +47,9 @@ let michaelDavisWarmUpLink: String = "https://www.hip-bonestore.com/15_Minute_Wa
 let alternatePositionsYouTubeLink: String =  "https://www.youtube.com/embed/htXc3Mo2ntg"
 let articulationYouTubeLink: String = "https://youtube.com/embed/M_OR3slad0c"
 let breathBuilderYouTubeLink: String = "https://youtube.com/embed/H3meinBuSwQ"
+let breathingDevicesYouTubeLink: String = "https://youtube.com/embed/c07ADJF7QWE"
+let duelingFundamentalsYouTubeLink: String = "https://youtube.com/embed/2fUaefL_RGI"
+let efficientBreathigYouTubeLink: String = "https://youtube.com/embed/vvpm0fdAU9Q"
 let flowStudiesYouTubeLink: String = "https://youtube.com/embed/iTKGQJ2umt4"
 let goodAndBadBreathingYouTubeLink: String = "https://youtube.com/embed/GHllnaurD84"
 let hesitantEntrancesYouTubeLink: String = "https://youtube.com/embed/8HsF-K5Qei0"
@@ -66,6 +69,8 @@ let trillsYouTubeLink: String = "https://youtube.com/embed/IfgkWVlIV-4"
 let tuningAppsYouTubeLink: String = "https://youtube.com/embed/7ic4uCyXXwY"
 let tuningInstrumentYouTubeLink: String = "https://youtube.com/embed/7nKjxi73TB8"
 let vibratoYouTubeLink: String = "https://youtube.com/embed/ovl8BcxJZL0"
+var WelcomeYouTubeLink:String = "https://youtube.com/embed/syifJzXQihM"
+
 
 
 

@@ -42,7 +42,7 @@ struct ContentView: View {
                 }
             TopicListView()
                 .tabItem {
-                    Image(systemName: "book")
+                    Image(systemName: "list.bullet")
                     Text("Topics")
                 }
         }

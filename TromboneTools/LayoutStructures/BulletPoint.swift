@@ -22,7 +22,7 @@ struct BulletPoint: View {
         Group {
             Text("•  \(boldText ?? "") ")
                 .bold()
-            + Text(italicText ?? "")
+            + Text("\(italicText ?? "") ")
                 .italic()
             + Text(text ?? "")
         }
