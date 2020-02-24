@@ -10,7 +10,15 @@ import SwiftUI
 
 struct ContactView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            
+            VStack {
+                ContactButton("Email Me", "mailto:info@mountainpeakmusic.com")
+                ContactButton("Get Skype/FaceTime Lessons", "https://trombonetools.com/skype-lessons/")
+                ContactButton("Send me a message", "https://trombonetools.com/contact/")
+            }
+            .navigationBarTitle("Contact")
+        }
     }
 }
 
