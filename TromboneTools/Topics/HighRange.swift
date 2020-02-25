@@ -22,24 +22,43 @@ struct HighRange: View {
                             .fixedSize(horizontal: false, vertical: true)
                         Spacer()
                     }
-                    //TODO: embed the link on "breath builder"
-                    //http://www.musiciansfriend.com/accessories/breath-builder-isomeric-exerciser?source=3WWRWXGP&gclid=CL3HxZeCpL4CFQGTfgodHmcA8A&kwid=productads-plaid^43618166084-sku^420386000000000@ADL4MF-adType^PLA-device^c-adid^30428562987
-                    Paragraph("There is a symbiotic relationship between the air flow and the muscles of your face. Because of this relationship, when the speed of the air is increased, the muscles are challenged to grow stronger. I like using the breath builder to demonstrate the kind of effort required to generate fast air.")
-                    EmbeddedYouTubeView(request: breathBuilderYouTubeLink)
-                        .frame(minHeight: 200)
+                    Group {
+                        Paragraph("There is a symbiotic relationship between the air flow and the muscles of your face. Because of this relationship, when the speed of the air is increased, the muscles are challenged to grow stronger. I like using the breath builder to demonstrate the kind of effort required to generate fast air.")
+                        PurchaseButton(breathBuilderLink, "Breath Builder")
+                        EmbeddedYouTubeView(request: breathBuilderYouTubeLink)
+                            .frame(minHeight: 200)
+                    }
                     Paragraph("Don’t use this device to exercise; simply use it to learn what it feels like to move fast, intense air. You can use it once or twice a day as a reminder, but rest assured that you are plenty strong to generate the fast air – it’s a matter of understanding specifically what is necessary.")
                     Paragraph("Here is a musical strategy which incorporates this very simple principle:")
                     Image("rangesong-sample")
                         .resizable()
                         .scaledToFill()
                     Paragraph("The crescendo up to the high B-flat encourages a faster, more intense air stream and when you play this phrase, you are challenging the muscles of your embouchure to grow stronger simply by moving your air in this way.")
-                    Paragraph("I have used this basic strategy with some pretty stunning results. Of course just playing one phrase is not enough – you have to use the idea thoughtfully and regularly over time. Building high range is most definitely a long-range project. That’s where I came up with Rangesongs, a book which uses this very basic principle to help you build your high range slowly over time.")
-                    //TODO: make "Melodious Etudes" and "Rangesongs" bold and italic
-                    Paragraph("When I was in college, I played Bordogni Melodious Etudes in tenor clef in order to build high range. This worked pretty well but it wasn’t very systematic or gradual. Some of the etudes go way too high and others aren’t high enough – some are too long and some are too short. That’s why I wrote Rangesongs.")
+                    Group {
+                        Text("I have used this basic strategy with some pretty stunning results. Of course just playing one phrase is not enough – you have to use the idea thoughtfully and regularly over time. Building high range is most definitely a long-range project. That’s where I came up with ")
+                        + Text("Rangesongs")
+                            .italic()
+                        + Text(", a book which uses this very basic principle to help you build your high range slowly over time.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    Group {
+                        Text("When I was in college, I played Bordogni ")
+                        + Text("Melodious Etudes")
+                            .italic()
+                        + Text(" in tenor clef in order to build high range. This worked pretty well but it wasn’t very systematic or gradual. Some of the etudes go way too high and others aren’t high enough – some are too long and some are too short. That’s why I wrote ")
+                        + Text("Rangesongs")
+                            .italic()
+                        + Text(".")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
                     Paragraph("Here is a sound file of me playing a high Rangesong with the target note of high E-flat. I’ll paste in the etude as well so you can follow along as you listen:")
                 }
                 Group {
-                    //TODO: embed the mp3 file
+                    PurchaseButton(rangesongsHighEFlatMP3Link, "Rangesong High E-flat 4")
                     Image("high-rangesong-resized")
                         .resizable()
                         .scaledToFill()

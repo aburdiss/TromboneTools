@@ -55,7 +55,17 @@ let rangesongsWebsiteLink: String = "http://rangesongs.com/"
 // External Links
 //TODO: This link doesn't work.
 let michaelDavisWarmUpLink: String = "https://www.hip-bonestore.com/15_Minute_Warm_Up_s/50.htm"
+let breathBuilderLink: String = "http://www.musiciansfriend.com/accessories/breath-builder-isomeric-exerciser?source=3WWRWXGP&gclid=CL3HxZeCpL4CFQGTfgodHmcA8A&kwid=productads-plaid^43618166084-sku^420386000000000@ADL4MF-adType^PLA-device^c-adid^30428562987"
 
+// Media Links
+let flexibilityWithDynamicsMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/flex-dynamics-edit.mp3"
+let flexibilityDescendingMP3LinK: String = "https://trombonelessons.files.wordpress.com/2011/04/flex-descending-edit.mp3"
+let flexibilityWithArticulationMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/art-flex-edit.mp3"
+
+let rangesongsHighEFlatMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/high-rangesong-take-2-edit.mp3"
+
+// Onsite Website Links
+let skypeLessonLink: String = "https://trombonetools.com/skype-lessons/"
 
 // YouTube Videos
 let alternatePositionsYouTubeLink: String =  "https://www.youtube.com/embed/htXc3Mo2ntg"

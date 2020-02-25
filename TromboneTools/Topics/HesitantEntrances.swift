@@ -28,7 +28,17 @@ struct HesitantEntrances: View {
                 Group {
                     NumberedBulletPoint(boldNumber: "2", boldText: "Blow no tongue and let sound happen if it wants to – “the three blows”")
                     Paragraph("Now organize your blowing into sets of three: for the first two blows, repeat step one. For blow number three, allow your lips to accidentally get in the way of the air flow. You may get a loud blat on no pitch in particular (that’s perfectly fine) or you may get no sound at all (that’s perfectly fine too, for now). Do not shy away from blowing lots of air and do not change the rhythm and pacing of the blowing you established in step one. Make your blowing cycle circular and  make the exhale roughly twice as long as the inhale.")
-                    Paragraph("Repeat this step until you are able to create sound from the beginning of blow number three. Take your time in accomplishing this because you don’t want to feel obligated to create sound. You should feel as though you are allowing sound to occur – not making sound occur. Just a reminder: there is still NO TONGUE during this step.")
+                    Group {
+                        Text("Repeat this step until you are able to create sound from the beginning of blow number three. Take your time in accomplishing this because you don’t want to feel obligated to create sound. You should feel as though you are ")
+                        + Text("allowing")
+                            .italic()
+                        + Text(" sound to occur – not ")
+                        + Text("making")
+                            .italic()
+                        + Text(" sound occur. Just a reminder: there is still NO TONGUE during this step.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
                     Paragraph("I call this step “the three blows” because it embodies the right proportion of air to chops. It’s 2/3 air and 1/3 chops; this proportion represents a healthy approach to playing.")
                     NumberedBulletPoint(boldNumber: "3", boldText: "Add the tongue, but articulate in a different place than you usually do")
                     Paragraph("Think about where your tongue would normally touch when you articulate. For most people, it’s about where the teeth intersect with the roof of the mouth. Before you begin this step, experiment with this tongue placement and clarify where your normal default placement is.")
@@ -44,42 +54,65 @@ struct HesitantEntrances: View {
                     Paragraph("If you are still locking up, try yet a different tongue placement. Be radical in your experimentation because you never know what might work.")
                     Paragraph("The new tongue placement is your new default. Once you are able to articulate and come in on time, work with the new tongue placement until it feels more natural to you and sounds like you want it to sound.")
                     Paragraph("One last bit of advice: Don’t rush through the steps and be brutally honest about your progress. These three simple steps might take you a couple of days or they might take weeks…everybody’s different. You may need to suspend your regular practicing until you fix this problem; if you are in this situation, be patient with yourself and give yourself the time you need to “reprogram” your approach.")
-                    //TODO: Embed the link in this paragraph "request a skype lesson"
-                    //https://trombonetools.com/skype-lessons/
-                    Paragraph("If you would like additional help, feel free to request a skype lesson with me.")
+                    Group {
+                        Paragraph("If you would like additional help, feel free to")
+                        Button(action: {
+                            let url = URL(string: skypeLessonLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            Text("request a skype lesson with me.")
+                                .padding(.horizontal)
+                        }
+                    }
                     Paragraph("Here are some additional resources to help you with hesitant entrances:")
                 }
-                SectionDivider()
                 
+                // Plugs
                 Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(breathingBookTenorPurchaseLink, "breathingBookTenorCover")
-                        ImagePurchaseLink(breathingBookBassPurchaseLink, "breathingBookBassCover")
-                        Spacer()
+                    SectionDivider()
+                    
+                    Group {
+                        HStack {
+                            Spacer()
+                            ImagePurchaseLink(breathingBookTenorPurchaseLink, "breathingBookTenorCover")
+                            ImagePurchaseLink(breathingBookBassPurchaseLink, "breathingBookBassCover")
+                            Spacer()
+                        }
+                        
+                        Group {
+                            Text("To breathe well means to breathe free of tension, and trombonists who breathe well create a resonant tone quality. ")
+                            + Text("The Breathing Book")
+                                .italic()
+                            + Text("provides concise information about breathing alongside etudes and activites encouraging application of this knowledge in musically meaningful ways. ")
+                            + Text("The Breathing Book")
+                                .italic()
+                            + Text(" teaches the truth about breathing, establishing a reliable foundation for improved resonance, articulation, endurance, and tone quality.")
+                        }
+                            .padding()
+                            .fixedSize(horizontal: false, vertical: true)
+                        
+                        PurchaseButton(breathingBookTenorPurchaseLink, "Purchase The Breathing Book for Tenor Trombone")
+                        PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")
                     }
-                    Paragraph("To breathe well means to breathe free of tension, and trombonists who breathe well create a resonant tone quality. The Breathing Book provides concise information about breathing alongside etudes and activites encouraging application of this knowledge in musically meaningful ways. The Breathing Book teaches the truth about breathing, establishing a reliable foundation for improved resonance, articulation, endurance, and tone quality.")
-                    PurchaseButton(breathingBookTenorPurchaseLink, "Purchase The Breathing Book for Tenor Trombone")
-                    PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")
-                }
-                
-                SectionDivider()
-                
-                Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
-                        Spacer()
+                    
+                    SectionDivider()
+                    
+                    Group {
+                        HStack {
+                            Spacer()
+                            ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
+                            Spacer()
+                        }
+                        PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                     }
-                    PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
-                }
-                
-                SectionDivider()
-                
-                Group {
-                    Paragraph("Here are 2 more resources that may be of help if you are experiencing difficulties:")
-                    PurchaseButton(crossTrainingPurchaseLink, "Cross Training for Musicians")
-                    PurchaseButton(notesOfHopePurchaseLink, "Notes of Hope")
+                    
+                    SectionDivider()
+                    
+                    Group {
+                        Paragraph("Here are 2 more resources that may be of help if you are experiencing difficulties:")
+                        PurchaseButton(crossTrainingPurchaseLink, "Cross Training for Musicians")
+                        PurchaseButton(notesOfHopePurchaseLink, "Notes of Hope")
+                    }
                 }
             }
         }

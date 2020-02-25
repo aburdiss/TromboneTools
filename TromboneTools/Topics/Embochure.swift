@@ -17,7 +17,15 @@ struct Embochure: View {
                     BulletPoint(boldText: "An embouchure does not exist without air flow because an embouchure includes motion.")
                     BulletPoint(boldText: "You can’t take a two-dimensional photo of an embouchure but you can videotape an embouchure.")
                     //TODO: format the text in this paragraph
-                    Paragraph("Try thinking of this definition of embouchure as you play. If you are like me (and many of my students), the idea of including the wind as part of the embouchure will make a noticeable difference in your playing. My students are able to generate more resonance and their endurance is enhanced. They tend to be less worried about “having a bad chop day” because their focus is on the air instead of the lips.")
+                    Group {
+                        Text("Try thinking of this definition of embouchure as you play. If you are like me (and many of my students), the idea of ")
+                        + Text("including the wind as part of the embouchure")
+                        .italic()
+                        + Text(" will make a noticeable difference in your playing. My students are able to generate more resonance and their endurance is enhanced. They tend to be less worried about “having a bad chop day” because their focus is on the air instead of the lips.")
+                    }
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
+                    
                     Paragraph("When we include the air as part of the embouchure, we make the air a pre-requisite to tone production instead of an afterthought; the air is a requirement instead of a suggestion. This is a profound, meaningful change in the way we think about producing sound on trombone.")
                     Paragraph("It can also be helpful to think of an equation I call “Embouchure Equilibrium”:")
                     HStack {
@@ -61,7 +69,17 @@ struct Embochure: View {
                         ImagePurchaseLink(breathingBookBassPurchaseLink, "breathingBookBassCover")
                         Spacer()
                     }
-                    Paragraph("To breathe well means to breathe free of tension, and trombonists who breathe well create a resonant tone quality. The Breathing Book provides concise information about breathing alongside etudes and activites encouraging application of this knowledge in musically meaningful ways. The Breathing Book teaches the truth about breathing, establishing a reliable foundation for improved resonance, articulation, endurance, and tone quality.")
+                    Group {
+                        Text("To breathe well means to breathe free of tension, and trombonists who breathe well create a resonant tone quality. ")
+                        + Text("The Breathing Book")
+                        .italic()
+                        + Text(" provides concise information about breathing alongside etudes and activites encouraging application of this knowledge in musically meaningful ways. ")
+                        + Text("The Breathing Book")
+                        .italic()
+                        + Text(" teaches the truth about breathing, establishing a reliable foundation for improved resonance, articulation, endurance, and tone quality.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
                     Quote("“In this slender book, David Vining strips away the many misconceptions about breathing that have been accepted as fact for far too long. Once the player understands exactly where the air goes and how it should be utilized, every area of playing will improve.”", "— Ralph Sauer, Principal Trombonist (retired), Los Angeles Philharmonic")
                     PurchaseButton(breathingBookTenorPurchaseLink, "Purchase The Breathing Book for Tenor Trombone")
                     PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")

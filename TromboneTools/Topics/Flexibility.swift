@@ -19,7 +19,7 @@ struct Flexibility: View {
                     Paragraph("When practicing lip slurs, always use a metronome and strive for equally spaced notes – in time and steady. Make all the notes equal volume; don’t allow the top note of a lip slur to pop out. If you don’t have a metronome, stop reading now and go buy one…yes, we will still be here when you get back.")
                     Paragraph("Lip slurs are important because they teach you how to navigate all the ranges of the instrument. I like to mix things up a little by adding additional features to lip slurs. For example, here is a lip slur pattern with dynamics added. You can click on the sound file to hear me play it:")
                     
-                    //TODO: Embed MP3 File
+                    PurchaseButton(flexibilityWithDynamicsMP3Link, "Flexibility with Dynamics")
                     
                     Image("lip-slur-with-dynamic")
                         .resizable()
@@ -27,7 +27,7 @@ struct Flexibility: View {
                     
                     Paragraph("Another challenging way to practice lip slurs is to begin with a descending pattern, like this:")
                     
-                    //TODO: Embed MP3 File
+                    PurchaseButton(flexibilityDescendingMP3LinK, "Flexibility Descending Pattern")
                     
                     Image("lip-slur-descend")
                         .resizable()
@@ -37,7 +37,7 @@ struct Flexibility: View {
                 Group {
                     Paragraph("Finally, here is a pattern with lip slurs combined with tonguing:")
                     
-                    //TODO: Embed MP3 File
+                    PurchaseButton(flexibilityWithArticulationMP3Link, "Flexibility with Articulation")
                     
                     Image("lip-slur-with-tonguing")
                         .resizable()
