@@ -14,6 +14,7 @@ struct SightReading: View {
             VStack(alignment: .leading) {
                 Group {
                     EmbeddedYouTubeView(request: sightReadingYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("There is no question that sight reading is a valuable skill for musicians. Many auditions require sight reading and it is a critical technique for a freelancer. Musicians who sight read well tend to think on their feet better than those who don’t, and this attribute improves their ability to perform under pressure. Good sight readers have a musical intuition and heightened perception that allows them to understand complicated rhythms, harmonies, and musical forms. Sight reading is essentially the confluence of countless diverse musical skills.")
                     Paragraph("If sight reading is so important, why don’t more people take practicing it more seriously? Part of the problem is a lack of guidance. There are few resources devoted entirely to sight reading and even fewer stated strategies for improvement. Here is a list of suggestions for improving your sight reading followed by details about each point:")
                     Text("Before You Begin:")

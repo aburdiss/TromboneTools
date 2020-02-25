@@ -15,6 +15,7 @@ struct Duets: View {
                 // Duet BulletPoints and Text Before
                 Group {
                     EmbeddedYouTubeView(request: duelingFundamentalsYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("I think duets are a terrific way to learn. When I play a duet with my student, she learns by listening musically. She learns to tune, to match styles and note lengths. She learns to cooperate, to blend and to play in time. There is so much good to playing duets, sometimes that’s all I do in a lesson!")
                     Paragraph("There are so many great duet books – here are a few of my favorites:")
                 }
@@ -113,9 +114,25 @@ struct Duets: View {
                     Paragraph("I have also written some duets based upon several of the top trombone solos by extracting lines from the piano part and interspersing them with the solo part. Each player gets some of the solo and some of the accompaniment, so you learn the solo inside and out, in a manner of speaking.")
                     Paragraph("Here is a sample of this project – the second movement from the \"Concertino\" by David. I am providing PDF downloads so you can print them out these parts and play the duet:")
                     
-                    //TODO: Embed PDFs???
+                    Group {
+                        Button(action: {
+                            let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/1-david-second-mvt.pdf")!
+                            UIApplication.shared.open(url)
+                        }) {
+                            Paragraph("Trombone 1: David second movement")
+                        }
+                        
+                        Button(action : {
+                            let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/2-david-second-movement.pdf")!
+                            UIApplication.shared.open(url)
+                        }) {
+                            Paragraph("Trombone 2: David second movement")
+                        }
+                        
+                    }
                     
                     EmbeddedYouTubeView(request: soloDuetTrainingYouTubeLink)
+                        .frame(minHeight: 200)
                     
                     HStack {
                         Spacer()

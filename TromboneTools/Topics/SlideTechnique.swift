@@ -14,6 +14,7 @@ struct SlideTechnique: View {
             VStack(alignment: .leading) {
                 Group {
                     EmbeddedYouTubeView(request: slideTechniqueYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("Slide technique can be a confusing subject because there are many conflicting opinions swirling around the internet. Here is a very simple idea which should help alleviate some confusion and is not likely to be controversial:")
                     HStack {
                         Spacer()
@@ -60,6 +61,7 @@ struct SlideTechnique: View {
                     NumberedBulletPoint(number: "12", text: "Avoid traveling a long distance with the slide to play a small interval such as a minor second – use alternate positions to accomplish this. In other words, keep the ½ steps together.")
                     Paragraph("Here is a video I call “Trombone Incongruities” that puts together some of these slide technique ideas with some other techniques:")
                     EmbeddedYouTubeView(request: incongruitiesYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("Here is a handout highlighting some important slide technique points:")
                     
                     //TODO: Embed a PDF Here.

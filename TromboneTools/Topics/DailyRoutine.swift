@@ -43,7 +43,6 @@ struct DailyRoutine: View {
                 
                 // Daily Routines Plug
                 Group {
-                    //TODO: Extract this whole Group as a subview.
                     HStack {
                         Spacer()
                         ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")

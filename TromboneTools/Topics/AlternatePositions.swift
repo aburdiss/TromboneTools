@@ -16,7 +16,6 @@ struct AlternatePositions: View {
                 
                 EmbeddedYouTubeView(request: alternatePositionsYouTubeLink)
                     .frame(minHeight: 200)
-                
                 // The main body group
                 Group {
                     Paragraph("Alternate positions should be used judiciously because the tone and intonation of these notes can be somewhat inconsistent. If a note is loud, long and exposed, for example, do not use an alternate position because the tone will not be as pure as a primary position. In addition, I don’t recommend leaping over an interval wider than a minor third to an alternate position unless both notes are in the same position.")

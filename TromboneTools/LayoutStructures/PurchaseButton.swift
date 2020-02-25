@@ -25,8 +25,9 @@ struct PurchaseButton: View {
             HStack {
                 Spacer()
                 Text(self.text)
-                .padding()
-                .fixedSize(horizontal: false, vertical: true)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
                 Spacer()
             }
             

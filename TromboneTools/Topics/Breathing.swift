@@ -14,6 +14,7 @@ struct Breathing: View {
             VStack(alignment: .leading) {
                 
                 EmbeddedYouTubeView(request: goodAndBadBreathingYouTubeLink)
+                    .frame(minHeight: 200)
                 
                 Paragraph("No technique is more important to good trombone playing than proper breathing. Sadly, no technique is as misunderstood as breathing.")
                 Paragraph("I could fill page after page with information about breathing but for now, I’ll summarize the most common student mistakes:")
@@ -33,12 +34,13 @@ struct Breathing: View {
                     Paragraph("Here is a video about how to use breathing devices:")
                     
                     EmbeddedYouTubeView(request: breathingDevicesYouTubeLink)
+                        .frame(minHeight: 200)
                     
                     Paragraph("Here is a video discussing efficient breathing during technical passages:")
                     
                     EmbeddedYouTubeView(request: efficientBreathigYouTubeLink)
+                        .frame(minHeight: 200)
                     
-                    // TODO: Check to make sure that this formats correctly on both iPhone and iPad.
                     VStack(alignment: .leading) {
                         Text("If you want more detail about breathing,")
                         HStack(spacing: 0) {

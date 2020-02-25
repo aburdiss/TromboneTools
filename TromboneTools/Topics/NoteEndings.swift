@@ -22,6 +22,7 @@ struct NoteEndings: View {
                     Paragraph("I have had about half a dozen students use this technique during their entrance audition and not one of them sounded good. Admittedly not a large sample size but 0% is a pretty poor success rate. And to the idea that this technique is only to be used in very specific circumstances…the students who auditioned for me did not understand that – perhaps it was not made clear to them – perhaps somebody did a poor job of explaining…I do not buy this argument – this technique was ultimately harmful to their playing…why on earth would we risk harming students with a technique for any reason whatsoever?")
                     Paragraph("Here is a video to clarify things even more:")
                     EmbeddedYouTubeView(request: noteEndingsYouTubeLink)
+                        .frame(minHeight: 200)
                 }
             }
         }

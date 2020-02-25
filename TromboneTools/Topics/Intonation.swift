@@ -22,8 +22,10 @@ struct Intonation: View {
                     Paragraph("I have also created so drones on trombone that you can download to use if you like. Just scroll to the bottom of this page to find them.")
                     Paragraph("Here’s a video about how to use a tuning app and an external speaker:")
                     EmbeddedYouTubeView(request: tuningAppsYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("Here is a video with help in tuning your instrument and slide sensitivity:")
                     EmbeddedYouTubeView(request: tuningInstrumentYouTubeLink)
+                        .frame(minHeight: 200)
                     //TODO: embed link to "Tascam"
                     Paragraph("So much of intonation is dependent upon your ability to hear discrete differences in your pitch as you play. Recording yourself is an invaluable tool for improving intonation and I recommend a high quality digital recording device – here’s one that won’t break the bank but provides nice digital sound quality: Tascam digital recorder. Be brutally honest when you listen back to recordings of yourself – is it really in tune or just in the ball park?")
                     Paragraph("Tiny deviations in where you place your slide matter to your intonation. I call your ability to discern these tiny deviations your “Slide Sensitivity” and those with excellent slide sensitivity have a better chance of having exquisite intonation than those who don’t. You can cultivate slide sensitivity by following these suggestions:")
@@ -111,6 +113,7 @@ struct Intonation: View {
                         
                         
                         EmbeddedYouTubeView(request: intonationMasteryPurchaseLink)
+                            .frame(minHeight: 200)
                     }
                     
                     SectionDivider()
@@ -132,6 +135,7 @@ struct Intonation: View {
                         
                         //TODO: Embed the PDFs here.
                         EmbeddedYouTubeView(request: soloDuetTrainingYouTubeLink)
+                            .frame(minHeight: 200)
                         HStack {
                             Spacer()
                             ImagePurchaseLink(soloDuetTrainingPurchaseLink, "soloDuetTrainingCover")

@@ -14,7 +14,9 @@ struct HesitantEntrances: View {
             VStack(alignment: .leading) {
                 Group {
                     EmbeddedYouTubeView(request: hesitantEntrancesYouTubeLink)
+                        .frame(minHeight: 200)
                     EmbeddedYouTubeView(request: toneProductionYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("Hesitant entrances (some people call it “locking up”) are fairly common among trombonists; if you have struggled with this issue, you are not alone. Fixing this problem as soon as it arises is important because a hesitation can evolve into something far more serious if left untreated.")
                     Paragraph("I have used the following stepwise process to help some people recover from hesitant entrances. Of course, there is no way to guarantee success and there are many individual variables which may affect the outcome, but at least the following steps will give you a starting point.")
                     NumberedBulletPoint(boldNumber: "1", boldText: "Blow no tongue and no sound – “circular blowing”")

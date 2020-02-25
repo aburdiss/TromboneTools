@@ -18,8 +18,12 @@ struct AuditionsProfessional: View {
                 
                 Paragraph("Here is a handout with tips about preparing excerpts:")
                 
-                // TODO: Embed a PDF Here
-                // https://pspdfkit.com/blog/2019/how-to-show-a-pdf-in-swiftui/
+                Button(action: {
+                    let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/preparing-excerpts.pdf")!
+                    UIApplication.shared.open(url)
+                }) {
+                    Paragraph("Preparing Excerpts")
+                }
                 
                 // Narrative
                 Group {

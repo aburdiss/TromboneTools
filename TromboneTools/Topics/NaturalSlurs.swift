@@ -15,6 +15,7 @@ struct NaturalSlurs: View {
                 //Initial content
                 Group {
                     EmbeddedYouTubeView(request: naturalSlursYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("Natural slurs create a smooth vocal quality to the phrasing and are an important tool for all trombonists. If two adjoining notes are in different partials in a slurred passage, it is not necessary to tongue the second note because the partial break removes the smear.")
                     Paragraph("When using natural slurs, players must articulate some notes (adjoining notes in the same partial) and not others (adjoining notes in different partials), as in the following example:")
                     Image("trb-nat-slur-150")

@@ -13,6 +13,7 @@ struct Trills: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 EmbeddedYouTubeView(request: trillsYouTubeLink)
+                    .frame(minHeight: 200)
                 Paragraph("Here are some resources to help with trills:")
                 
                 SectionDivider()

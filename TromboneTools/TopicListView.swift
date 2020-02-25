@@ -34,7 +34,7 @@ struct TopicListView: View {
                         Text("Auditions - Professional")
                     }
                     NavigationLink(destination: BodyMapping()) {
-                        Text("Body Mapping")
+                        Text("Body Mapping for Brass Players")
                     }
                     NavigationLink(destination: Breathing()) {
                         Text("Breathing")

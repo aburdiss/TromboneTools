@@ -39,4 +39,5 @@ struct EmbeddedYouTubeView : UIViewRepresentable {
         )
         uiView.load(requestURL)
     }
+    
 }

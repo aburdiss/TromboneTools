@@ -15,6 +15,7 @@ struct Articulation: View {
             VStack(alignment: .leading) {
                 
                 EmbeddedYouTubeView(request: articulationYouTubeLink)
+                    .frame(minHeight: 200)
                 
                 Group {
                     Paragraph("The most common articulation problems I encounter are students who use too much tongue or too heavy of a tongue and students who clip the ends of notes off too abruptly.")
@@ -23,20 +24,29 @@ struct Articulation: View {
                     Paragraph("Stick your tongue out and lightly touch its tip with your finger. As you are doing this, move just the tip up and down without moving the middle or back of the tongue. You can move just the tip of the tongue without getting the rest of it involved and this is what you should do to articulate on trombone.")
                     Paragraph("Another way to get the sense of the tongue bouncing off the air is to practice fluttertonguing. Try fluttertonguing, or rolling your tongue, away from the horn to get the sense that the air is compelling the tongue to move. In fact, it’s pretty much impossible to fluttertongue without blowing air, so this is a terrific tool for learning what efficient tonguing should feel like. Unfortunately, some people simply cannot fluttertongue, so if you are one of these people, you won’t be able to use the following tool to improve your articulation:")
                     
+                    Group {
+                        Button(action: {
+                            let url = URL(string: "https://trombonelessons.files.wordpress.com/2011/04/fluttertongue-drill.mp3")!
+                            UIApplication.shared.open(url)
+                        }) {
+                            Paragraph("Fluttertongue Drill")
+                        }
+                        
+                        Image("fluttertongue-drill-resized")
+                            .resizable()
+                            .scaledToFill()
+                    }
                     
-                    // TODO: Embed MP3 from website
-                    //Here is where the MP3 Should go!
-                    
-                    // TODO: Find how to contain this image inside the frame.
-                    Image("fluttertongue-drill-resized")
-                        .resizable()
-                        .scaledToFill()
                     
                     Paragraph("The second most common mistake mentioned above is to clip off the ends of notes too abruptly. My best advice for fixing this issue is to listen to fine singers. You will never hear them abruptly clip off a note at the end of a phrase unless the text specifically calls for it. The sound created by doing this is extremely unmusical and disruptive to your phrasing. While you’re at it, do a little singing yourself to clearly understand how to gently release phrase endings without the tongue.")
                     Paragraph("Here is a sound file featuring some multiple tonguing:")
                     
-                    // TODO: embed Soundcloud Link
-                    // Here is where the Soundcloud link should go!
+                    Button(action: {
+                        let url = URL(string: "https://soundcloud.com/user-25642203/special")!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Paragraph("David Vining - Special")
+                    }
                     
                     Paragraph("These pieces requires double tonguing, a method of tonguing in which you use both the front and the back of the tongue like a see-saw : da-ga-da-ga, etc. Most methods recommend T and K syllables (Ta-Ka-Ta-Ka) but I prefer the softer d and g sound because it allows the note to have more of a core and there is less chance of getting a short, percussive “machine-gun” sound.I used d’s and g’s in the sound file above.")
                 }
@@ -64,7 +74,6 @@ struct Articulation: View {
                 }
                     SectionDivider()
                 
-                // TODO: Extract this and make it generic!
                 Group {
                     HStack {
                         Spacer()

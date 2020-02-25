@@ -65,6 +65,7 @@ struct ToneQuality: View {
                         //TODO: Embed PDFs???, or link to them on the Main page.
                         
                         EmbeddedYouTubeView(request: soloDuetTrainingYouTubeLink)
+                            .frame(minHeight: 200)
                         
                         HStack {
                             Spacer()

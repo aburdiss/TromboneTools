@@ -15,33 +15,92 @@ struct Dynamics: View {
                 Group {
                     Paragraph("Dynamic contrast is one of the most common expressive tools in music. Trombonists would be well served to cultivate an understanding of using dynamic contrast to their musical advantage because there are many subtleties available beyond just loud and soft.")
                     
-                    // TODO: Add embedded links to this paragraph.
-                    Paragraph("Every routine in Daily Routines for Trombone (Tenor) and (Bass) and Daily Routines for the Student Trombonist has activities which cultivate crescendo/diminuendo and subito dynamics. Practicing these skills every day is essential to being able to execute any musical dynamic requirement.")
+                    Group {
+                        Group {
+                            Text("Every routine in ")
+                            + Text("Daily Routines for Trombone (Tenor) and (Bass) and Daily Routines for the Student Trombonist")
+                                    .italic()
+                            + Text(" has activities which cultivate crescendo/diminuendo and subito dynamics. Practicing these skills every day is essential to being able to execute any musical dynamic requirement.")
+                        }
+                            .padding()
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                     
-                    Paragraph("Consider this phrase from the St. Saens Organ Symphony:")
+                    
+                    Group {
+                        Text("Consider this phrase from the St. Saens ")
+                        + Text("Organ Symphony")
+                        .italic()
+                        + Text(":")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+
                     Image("no-dynamics")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                     Paragraph("This is what the part looks like – the only marking is to play piano.")
                     Paragraph("Snoozeville!")
                     Paragraph("Try this on for size:")
                     Image("with-dynamics")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                     Paragraph("Now that’s more like it!")
                 }
                 
                 Group {
                     Paragraph("The crescendos and diminuendos should be subtle – almost imperceptible…and they really mean more than just get louder and softer. In this case, they also mean to intensify and relax the tone in order to create musical interest. It’s really about bringing the music to life and interpreting it beyond what you see on the page.")
                     Paragraph("To learn how to execute such dynamic subtleties, I suggest you cultivate sensitivity in breath control by practicing crescendo/diminuendo and subito dynamics every day in as many different musical situations as you can think of. Be ready for anything and don’t ever let a technical shortcoming limit you musically.")
-                    // TODO: format the text in this paragraph, and add links?
-                    Paragraph("In Flow Studies, you are required to create smooth, gradual crescendos and diminuendos in a very easy and predictable musical context. This is important because many times, a long, gradual crescendo is required within a difficult technical or lyrical passage. Practicing this skill using easy phrasing patterns, like in Flow Studies, will pay off when it is needed for something more difficult in a solo or excerpt.")
-                    Paragraph("Here’s a phrase from Flow Studies:")
+                    Group {
+                        Text("In ")
+                        + Text("Flow Studies")
+                            .italic()
+                        + Text(", you are required to create smooth, gradual crescendos and diminuendos in a very easy and predictable musical context. This is important because many times, a long, gradual crescendo is required within a difficult technical or lyrical passage. Practicing this skill using easy phrasing patterns, like in ")
+                        + Text("Flow Studies")
+                            .italic()
+                        + Text(", will pay off when it is needed for something more difficult in a solo or excerpt.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    Group {
+                        Text("Here's a phrase from ")
+                        + Text("Flow Studies")
+                        .italic()
+                        + Text(":")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
                     Image("flow-study-example-resized")
                         .resizable()
-                        .scaledToFill()
-                    Paragraph("How might playing this Flow Study help you play the St. Saens Organ Symphony?")
-                    Paragraph("Executing the crescendo/diminuendo across the note changes is a global skill which can be learned within the context of Flow Studies. Once you master the subtle dynamic changes in Flow Studies, you can more readily apply the skill to a more sophisticated musical context, such as the Organ Symphony.")
+                        .scaledToFit()
+                    Group {
+                        Text("How might playing this ")
+                        + Text("Flow Study")
+                            .italic()
+                        + Text(" help you play the St. Saens ")
+                        + Text("Organ Symphony")
+                            .italic()
+                        + Text("?")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    Group {
+                        Text("Executing the crescendo/diminuendo across the note changes is a global skill which can be learned within the context of")
+                        + Text("Flow Studies")
+                            .italic()
+                        + Text(". Once you master the subtle dynamic changes in ")
+                        + Text("Flow Studies")
+                            .italic()
+                        + Text(", you can more readily apply the skill to a more sophisticated musical context, such as the ")
+                        + Text("Organ Symphony")
+                            .italic()
+                        + Text(".")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
                     Paragraph("These resources provide an excellent means for working on dynamics:")
                 }
                 
@@ -51,9 +110,9 @@ struct Dynamics: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutineTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutineStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutineBassCover")
+                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
+                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
+                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
                         Spacer()
                     }
 

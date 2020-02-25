@@ -14,6 +14,7 @@ struct Flexibility: View {
             VStack(alignment: .leading) {
                 Group {
                     EmbeddedYouTubeView(request: "https://youtube.com/embed/MXhzfE_QfAw")
+                        .frame(minHeight: 200)
                     Paragraph("Like endurance, flexibility will only improve with regular practice over time.")
                     Paragraph("When practicing lip slurs, always use a metronome and strive for equally spaced notes – in time and steady. Make all the notes equal volume; don’t allow the top note of a lip slur to pop out. If you don’t have a metronome, stop reading now and go buy one…yes, we will still be here when you get back.")
                     Paragraph("Lip slurs are important because they teach you how to navigate all the ranges of the instrument. I like to mix things up a little by adding additional features to lip slurs. For example, here is a lip slur pattern with dynamics added. You can click on the sound file to hear me play it:")

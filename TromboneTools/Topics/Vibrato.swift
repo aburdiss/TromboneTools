@@ -14,6 +14,7 @@ struct Vibrato: View {
             VStack(alignment: .leading) {
                 Group {
                     EmbeddedYouTubeView(request: vibratoYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("There are two types of vibrato available to a trombonist: slide vibrato and jaw (or embouchure) vibrato.")
                     Paragraph("Some people suggest a third option called diaphragm vibrato, or puffing the air to create the vibrato. Under no circumstances should a trombonist puff the air in this way because it undermines the tone quality and disrupts the musical flow.")
                     Paragraph("It is not advisable to begin using vibrato until you can reliably create a good tone quality in all registers. Once you are ready, start with jaw (or embouchure) vibrato, not slide vibrato because slide vibrato takes a great deal of slide coordination and finesse and is consequently more difficult to learn than jaw vibrato. In addition, slide vibrato is usually reserved for jazz playing, although it is possible to apply it in classical situations if done tastefully.")

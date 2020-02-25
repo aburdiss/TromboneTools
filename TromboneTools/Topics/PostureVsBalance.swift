@@ -14,6 +14,7 @@ struct PostureVsBalance: View {
             VStack(alignment: .leading) {
                 Group {
                     EmbeddedYouTubeView(request: postureVsBalanceYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("The title of this page is a little misleading because I don’t actually use the word “posture” in my teaching. “Posture” is what everybody else says, though, so now that I have piqued your interest…")
                     Paragraph("If you ask a room of 25 trombone players to sit with good posture, you will have 25 people trying to fulfill what they think your version of good posture is. They will each most likely have been told something a little different from you and they will each undoubtedly have their own (sometimes very strong) idea of what “good posture” is.")
                     Group {

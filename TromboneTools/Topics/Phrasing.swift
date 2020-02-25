@@ -52,6 +52,7 @@ struct Phrasing: View {
                         .scaledToFit()
                     
                     EmbeddedYouTubeView(request: flowStudiesYouTubeLink)
+                        .frame(minHeight: 200)
                     
                     Paragraph("Here are some resources to practice phrasing:")
                 }

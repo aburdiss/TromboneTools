@@ -14,10 +14,15 @@ struct BodyMapping: View {
             VStack(alignment: .leading) {
                 Paragraph("Here is a Keynote presentation I delivered at the Andover Educators conference at the University of Redlands in June, 2019. Click on the link to download a PDF file:")
                 
-                //TODO: Embed a PDF Here
+                Button(action: {
+                    let url = URL(string: "https://trombonelessons.files.wordpress.com/2019/06/body-mapping-for-brass-players.pdf")!
+                    UIApplication.shared.open(url)
+                }) {
+                    Paragraph("Body Mapping for Brass Players")
+                }
             }
         }
-    .navigationBarTitle("Body Mapping for Brass Players")
+    .navigationBarTitle("Body Mapping")
     }
 }
 

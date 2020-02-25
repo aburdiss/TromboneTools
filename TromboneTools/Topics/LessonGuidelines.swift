@@ -31,7 +31,7 @@ struct LessonGuidelines: View {
                 }
             }
         }
-    .navigationBarTitle("Lesson Guidelines for Students")
+    .navigationBarTitle("Lesson Guidelines")
     }
 }
 
