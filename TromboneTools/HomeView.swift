@@ -12,15 +12,12 @@ import SwiftUI
  The main view of the app. This view has its own tab.
  */
 struct HomeView: View {
-    var white = Color(UIColor(red: 190.0/255.0, green: 226.0/255.0, blue: 234.0/255.0, alpha: 1))
-    
-    var green = Color(UIColor(red: 48.0/255.0, green: 129.0/255.0, blue: 172.0/255.0, alpha: 1))
-    
     var body: some View {
         NavigationView {
             ZStack {
                Rectangle()
-                .foregroundColor(.clear) .background(LinearGradient(gradient: Gradient(colors: [green, white]), startPoint: .top, endPoint: .bottom))
+                .foregroundColor(.clear)
+                .background(LinearGradient(gradient: Gradient(colors: [greenColor, whiteColor]), startPoint: .top, endPoint: .bottom))
                 .edgesIgnoringSafeArea(.all)
                 
                 ScrollView{

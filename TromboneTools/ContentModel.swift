@@ -7,12 +7,17 @@
 //
 
 import Foundation
+import SwiftUI
 /**
  This file is the one source of truth for all of the content in this application. All of the youtube video links and website links are defined in this file as constants, and accessed by name throughout the app.
  */
 
 
 //TODO: Import all of the links here as constants.
+
+// Colors
+let whiteColor: Color = Color(UIColor(named: "WhiteColor")!)
+let greenColor: Color = Color(UIColor(named: "GreenColor")!)
 
 // Mountain Peak Music Trombone Books
 let bigBookOfSightReadingDuetsPurchaseLink: String = "http://www.mountainpeakmusic.com/the-big-book-of-sight-reading-duets-for-trombone/"

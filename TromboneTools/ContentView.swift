@@ -34,29 +34,36 @@ import SwiftUI
  */
 struct ContentView: View {
     var body: some View {
-        TabView {
-            HomeView()
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
-            }
-            TopicListView()
-                .tabItem {
-                    Image(systemName: "list.bullet")
-                    Text("Topics")
-            }
-            ContactView()
-                .tabItem {
-                    Image(systemName: "envelope")
-                    Text("Contact")
-            }
-            ResourceView()
-                .tabItem {
-                    Image(systemName: "book")
-                    Text("Resources")
-            }
+        ZStack {
+            Rectangle()
+                .foregroundColor(.clear)
+                .background(greenColor)
+                .edgesIgnoringSafeArea(.all)
+            TabView {
+                    HomeView()
+                        .tabItem {
+                            Image(systemName: "house")
+                            Text("Home")
+                    }
+                    TopicListView()
+                        .tabItem {
+                            Image(systemName: "list.bullet")
+                            Text("Topics")
+                    }
+                    ContactView()
+                        .tabItem {
+                            Image(systemName: "envelope")
+                            Text("Contact")
+                    }
+                    ResourceView()
+                        .tabItem {
+                            Image(systemName: "book")
+                            Text("Resources")
+                    }
+                }
+            .accentColor(.orange)
         }
-    .accentColor(.orange)
+        
     }
 }
 
