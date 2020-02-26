@@ -20,7 +20,7 @@ struct ContactButton: View {
             Text(text)
             .padding()
                 .overlay(RoundedRectangle(cornerRadius: 12)
-            .stroke(Color.blue, lineWidth: 1))
+            .stroke(Color.orange, lineWidth: 1))
             .padding()
         }
     }

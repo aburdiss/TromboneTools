@@ -12,34 +12,48 @@ import SwiftUI
  The main view of the app. This view has its own tab.
  */
 struct HomeView: View {
+    var white = Color(UIColor(red: 190.0/255.0, green: 226.0/255.0, blue: 234.0/255.0, alpha: 1))
+    
+    var green = Color(UIColor(red: 48.0/255.0, green: 129.0/255.0, blue: 172.0/255.0, alpha: 1))
+    
     var body: some View {
         NavigationView {
-            ScrollView{
-            VStack(alignment: .leading) {
-                Group {
-                    Text("Welcome to ")
-                    + Text("Trombonetools")
-                        .italic()
-                    + Text(", an app designed to help trombonists improve musicianship through innovative and effective trombone teaching resources.")
-                }
+            ZStack {
+               Rectangle()
+                .foregroundColor(.clear) .background(LinearGradient(gradient: Gradient(colors: [green, white]), startPoint: .top, endPoint: .bottom))
+                .edgesIgnoringSafeArea(.all)
+                
+                ScrollView{
+                VStack(alignment: .leading) {
+                    Group {
+                        Text("Welcome to ")
+                        + Text("Trombonetools")
+                            .italic()
+                        + Text(", an app designed to help trombonists improve musicianship through innovative and effective trombone teaching resources.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    Group {
+                        Text("To use ")
+                        + Text("Trombonetools")
+                            .italic()
+                        + Text(", select a playing topic from the topics button below. ")
+                    }
                     .padding()
                     .fixedSize(horizontal: false, vertical: true)
-                
-                Group {
-                    Text("To use ")
-                    + Text("Trombonetools")
-                        .italic()
-                    + Text(", select a playing topic from the topics button below. ")
-                }
-                .padding()
-                .fixedSize(horizontal: false, vertical: true)
-                  
-                Paragraph("For more individualized help, request a skype or facetime lesson through the contact button below.")
+                      
+                    Paragraph("For more individualized help, request a skype or facetime lesson through the contact button below.")
+                    }
                 }
             }
+            
         .navigationBarTitle("Trombonetools")
+            
         }
-    .navigationViewStyle(StackNavigationViewStyle())
+            
+             //.background(LinearGradient(gradient: Gradient(colors: [Color(.sRGB, red: 48, green: 129, blue: 172, opacity: 1), Color(.sRGB, red: 190, green: 226, blue: 234)]), startPoint: .top, endPoint: .bottom))
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

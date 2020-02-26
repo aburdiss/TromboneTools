@@ -56,8 +56,7 @@ struct ContentView: View {
                     Text("Resources")
             }
         }
-    // Not needed, but here in case it needs to change.
-    .accentColor(.blue)
+    .accentColor(.orange)
     }
 }
 

@@ -15,7 +15,7 @@ struct SectionDivider: View {
     var body: some View {
         Divider()
         .frame(height: 2)
-        .background(Color.blue)
+        .background(Color.orange)
         .padding(.horizontal)
     }
 }
