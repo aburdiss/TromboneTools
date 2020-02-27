@@ -94,12 +94,21 @@ struct PostureVsBalance: View {
                 Group {
                     HStack {
                         Spacer()
-                        ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
+                        ImagePurchaseLink(breathingBookTenorPurchaseLink, "breathingBookTenorCover")
+                        ImagePurchaseLink(breathingBookBassPurchaseLink, "breathingBookBassCover")
                         Spacer()
                     }
-                    
-                    Paragraph("To breathe well means to breathe free of tension, and trombonists who breathe well create a resonant tone quality. The Breathing Book provides concise information about breathing alongside etudes and activities encouraging application of this knowledge in musically meaningful ways. The Breathing Book teaches the truth about breathing, establishing a reliable foundation for improved resonance, articulation, endurance, and tone quality.")
+                    Group {
+                        Text("To breathe well means to breathe free of tension, and trombonists who breathe well create a resonant tone quality. ")
+                        + Text("The Breathing Book")
+                        .italic()
+                        + Text(" provides concise information about breathing alongside etudes and activities encouraging application of this knowledge in musically meaningful ways. ")
+                        + Text("The Breathing Book")
+                        .italic()
+                        + Text(" teaches the truth about breathing, establishing a reliable foundation for improved resonance, articulation, endurance, and tone quality.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
                     Quote("“For me, The Breathing Book was an eye-opener and is a new inspiration for my teaching and also for my own playing. I use the book and its exercises on a regular basis in my teaching and in my own daily routines. His ideas are so easy to apply to everything you have to play or work on and they help you to play in more relaxed, easy and controlled manner.”", "— Ben van Dijk, Bass Trombonist, Rotterdam Philharmonic, Professor of Trombone, Rotterdam Conservatory")
                     Quote("“In this slender book, David Vining strips away the many misconceptions about breathing that have been accepted as fact for far too long. Once the player understands exactly where the air goes and how it should be utilized, every area of playing will improve.”", "— Ralph Sauer, Principal Trombonist (retired), Los Angeles Philharmonic")
                     

@@ -88,7 +88,7 @@ struct Dynamics: View {
                         .fixedSize(horizontal: false, vertical: true)
                     
                     Group {
-                        Text("Executing the crescendo/diminuendo across the note changes is a global skill which can be learned within the context of")
+                        Text("Executing the crescendo/diminuendo across the note changes is a global skill which can be learned within the context of ")
                         + Text("Flow Studies")
                             .italic()
                         + Text(". Once you master the subtle dynamic changes in ")

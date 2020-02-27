@@ -23,13 +23,13 @@ struct ResumesCvsAndBios: View {
                         .bold()
                         .padding()
                     Text("During my ten years of teaching trombone privately, my reputation grew as the result of my students’ many successes. Consequently, my studio also grew from three students to my current enrollment of fifteen.")
-                        .font(.caption)
+                        .font(.subheadline)
                         .padding(.horizontal)
                     Text("Cocky:")
                         .bold()
                         .padding()
                     Text("I have taught trombone privately for ten years and many of my students have made it into all-state and regional bands. Now, so many trombonists want to study with me that I have to turn them away.")
-                        .font(.caption)
+                        .font(.subheadline)
                         .padding(.horizontal)
                         .padding(.bottom)
                 }
@@ -50,8 +50,7 @@ struct ResumesCvsAndBios: View {
                     Paragraph("There are two types of resume: a traditional resume, which states very succinctly the highlights of your relevant activities and a curriculum vitae (or CV), which is a thorough accounting of all your activities. Playing gigs generally require a one page resume and teaching gigs generally require a CV.")
                     Paragraph("If you are preparing a one-page resume for a playing gig, organize your content as follows:")
                 }
-                
-                //TODO: Make sure this formats correctly
+                                
                 // Resume Bullets
                 Group {
                     NumberedBulletPoint(number: "1", text: "Name and contact information")
@@ -94,16 +93,16 @@ struct ResumesCvsAndBios: View {
                         .padding()
                     Paragraph("A bio is less formal and presents your accomplishments in prose form – that is, more like you are chatting with someone. A good bio is not too long and engages the reader as though telling a little story. Here’s my bio you can use as an example:")
                     Text("Trombonist David Vining is the founder and co-owner of Mountain Peak Music, a publishing company devoted to offering innovative, healthy teaching methods for all musicians. Mountain Peak Music represents Mr. Vining’s personal mission, combining his extensive performing and teaching background with insights learned through his remarkable recovery from embouchure dystonia.")
-                        .font(.caption)
+                        .font(.subheadline)
                         .padding()
                     Text("Professor Vining’s teaching transcends his trombone specialty, covering a wide range of topics appealing to musicians of every discipline. He is equally at home teaching trombone technique, helping instrumentalists and vocalists become more efficient, and helping musicians cope with injuries, among other topics. His Mountain Peak Music publications include the Breathing Book series, Daily Routines, Cross Training for Musicians, Teaching Brass and Teaching Woodwinds, to name a few.")
-                        .font(.caption)
+                        .font(.subheadline)
                         .padding()
                     Text("Mr. Vining is a dynamic performer who has delivered hundreds of recitals nationwide. As trombonist with the Chestnut Brass Company, he recorded several CD’s and toured the United States and Europe performing recitals, masterclasses, and concerts with orchestras. Currently a member of the Flagstaff Symphony, he has performed with the Cincinnati Symphony, Kansas City Symphony and the Philadelphia Orchestra. Mr. Vining has appeared on college campuses coast-to-coast in recital and as a guest soloist with ensembles, and recorded a solo CD, Arrows of Time.")
-                        .font(.caption)
+                        .font(.subheadline)
                         .padding()
                     Text("Currently Professor of Trombone at Northern Arizona University in Flagstaff, Arizona, Mr. Vining has also served on the faculties of the University of Kansas and the University of Cincinnati’s College-Conservatory of Music. A native of Cocoa, Florida, Mr. Vining resides in Flagstaff with his wife Leslie, daughter Sarah and son Benjamin.")
-                        .font(.caption)
+                        .font(.subheadline)
                         .padding()
                 }
             }

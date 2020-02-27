@@ -22,7 +22,6 @@ struct Vibrato: View {
                     Group {
                         Text("Here is a sample from the Vibrato Routine out of ")
                         + Text("Daily Routines")
-                            .bold()
                             .italic()
                         + Text(":")
                     }

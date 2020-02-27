@@ -59,14 +59,22 @@ let rangesongsWebsiteLink: String = "http://rangesongs.com/"
 
 // External Links
 //TODO: This link doesn't work.
-let michaelDavisWarmUpLink: String = "https://www.hip-bonestore.com/15_Minute_Warm_Up_s/50.htm"
+let blazhevich70StudiesLink: String = "http://www.hickeys.com/music/brass/tuba_and_euphonium/methods_and_studies/tuba_studies_and_etudes/products/sku001209-blazhevich-studies-70-v1.php"
+let blumeFink36StudiesLink: String = "http://www.hickeys.com/music/brass/trombone/tenor_trombone/studies_and_etudes/products/sku020200-blume-fink-studies-36-for-trombone-wf-attachment.php"
+let bordogni43BelCantoStudiesLink: String = "https://www.hickeys.com/music/brass/tuba_and_euphonium/methods_and_studies/tuba_studies_and_etudes/products/sku007847-bordogni-roberts-bel-canto-studies-43.php"
+let bordogniMelodiousEtudesLink: String = "http://www.hickeys.com/music/brass/trombone/tenor_trombone/studies_and_etudes/products/sku086846-bordogni-rochutraph-melodious-etudes-v1-revised-wcd-accompaniment.php"
 let breathBuilderLink: String = "http://www.musiciansfriend.com/accessories/breath-builder-isomeric-exerciser?source=3WWRWXGP&gclid=CL3HxZeCpL4CFQGTfgodHmcA8A&kwid=productads-plaid^43618166084-sku^420386000000000@ADL4MF-adType^PLA-device^c-adid^30428562987"
+let michaelDavisWarmUpLink: String = "https://hip-bonemusic.com/products/20-minute-warm-up-for-trombone"
+let neotechHandGripLink: String = "http://neotechstraps.com/trombone-grip.html"
+let snedecorLowStudiesLink: String = "http://www.hickeys.com/music/brass/tuba_and_euphonium/methods_and_studies/tuba_studies_and_etudes/products/sku034980-snedecor-low-etudes.php"
 
 // Media Links
+let constructiveRestSoundCloudLink: String = "https://soundcloud.com/user-25642203/constructive-rest"
+let davidViningBozzaBalladMP3Link: String = "http://www.davidvining.net/media/DavidVining-Bozza_Ballade.mp3"
 let flexibilityWithDynamicsMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/flex-dynamics-edit.mp3"
 let flexibilityDescendingMP3LinK: String = "https://trombonelessons.files.wordpress.com/2011/04/flex-descending-edit.mp3"
 let flexibilityWithArticulationMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/art-flex-edit.mp3"
-
+let rangesongsLowDFlatMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/low-rangesong-edit.mp3"
 let rangesongsHighEFlatMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/high-rangesong-take-2-edit.mp3"
 
 // Onsite Website Links

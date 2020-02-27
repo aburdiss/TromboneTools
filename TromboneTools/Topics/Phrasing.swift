@@ -13,8 +13,10 @@ struct Phrasing: View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 Group {
-                    // TODO: See if this is possible to link to.
                     Paragraph("Phrasing means more than just where you breathe; it also means how you inflect note changes and how you shape the musical line. I believe trombonists should cultivate an excellent, reliable natural slur in order to have excellent phrasing. For a trombonist to use natural slurs effectively, the air flow must have forward momentum through the note change, regardless of what the slide is doing. For me, natural slurs are a necessary tool for achieving mature, expressive phrasing. If you’re not sure what natural slurs are, visit the Natural Slur page.")
+                    NavigationLink(destination: NaturalSlurs()) {
+                        Paragraph("Natural Slurs")
+                    }
                     
                     Group {
                         Text("Of course, Bordogni/Rochut’s ")
@@ -49,7 +51,7 @@ struct Phrasing: View {
                     
                     Image("flow-study-3-resized")
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                     
                     EmbeddedYouTubeView(request: flowStudiesYouTubeLink)
                         .frame(minHeight: 200)

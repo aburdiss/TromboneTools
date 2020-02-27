@@ -86,6 +86,7 @@ struct Rhythm: View {
                             .italic()
                         + Text(" rhythm tracks for you to use:")
                     }
+                        .padding()
                     
                     // TODO: Add all of the Rhythm Sections.
                 }

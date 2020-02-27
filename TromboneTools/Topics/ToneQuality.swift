@@ -18,7 +18,19 @@ struct ToneQuality: View {
                     Paragraph("Mr. Vernon is a bass trombonist but every trombone player can learn something from listening to his tone. Likewise, Mr. Watrous is a jazz player who plays on small equipment but hearing his tone is still helpful – even if you are a bass trombonist. The message here is to be hungry for good sounds of all kinds and be open to excellence even if it is slightly out of your immediate sphere of interest. I play tenor trombone but I try to infuse my tone with a little Vernon and a little Domingo just the same.")
                     Paragraph("Here is a sound file of me playing the Bozza Ballade, a piece which travels through both the high and low ranges:")
                     
-                    // TODO: embed the link to the Bozza Ballade here
+                    // Bozza Ballade MP3 Link
+                    Button(action: {
+                        let url = URL(string: davidViningBozzaBalladMP3Link)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Group {
+                            Text("David Vining plays the Bozza ")
+                            + Text("Ballade")
+                                .italic()
+                        }
+                            .padding()
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                     
                     Paragraph("Don’t just listen to whomever happens to pop up on Youtube. They might be a fine musician, but more than likely they are not. Listening is like programming your tone into your brain and if you put garbage in, garbage is going to come out your bell! Be discriminating and cultivate an understanding of the difference between what is genuinely good and what is only average. In order to become an exceptional musician, listen to other exceptional musicians.")
                     Paragraph("Excellent trombone tone is always warm, rich and pure, regardless of the volume, range or tempo of the music. For this reason, it’s vital to work on your tone quality every day in addition to listening. I recommend playing 5-10 minutes of long tones with a little mouthpiece buzzing every day. Play in the middle register and use simple scale patterns or slow lip slurs. Try starting your practicing with no tongue for about the first 5 minutes of playing, just to put your focus on the breath support (where it belongs!).")
@@ -28,8 +40,10 @@ struct ToneQuality: View {
                     Paragraph("To recap, here are some tools for developing a resonant, consistent tone quality:")
                     NumberedBulletPoint(number: "1", text: "Listen to great musicians and formulate a clear aural understanding of what you wish to sound like")
                     NumberedBulletPoint(number: "2", text: "Buzz a little on the mouthpiece every day")
-                    //TODO: Find out if this needs linked. I don't think that we need to link to other pages from pages inside the app.
                     NumberedBulletPoint(number: "3", text: "Play in the low register every day (see the low range page for more details)")
+                    NavigationLink(destination: LowRange()) {
+                        Paragraph("Low Range")
+                    }
                     NumberedBulletPoint(number: "4", text: "Play long tones every day")
                     Paragraph("Here are some resources to help with tone quality:")
                 }
@@ -62,7 +76,22 @@ struct ToneQuality: View {
                         Paragraph("I have also written some duets based upon several of the top trombone solos by extracting lines from the piano part and interspersing them with the solo part. Each player gets some of the solo and some of the accompaniment, so you learn the solo inside and out, in a manner of speaking.")
                         Paragraph("Here is a sample of this project – the second movement from the \"Concertino\" by David. I am providing PDF downloads so you can print them out these parts and play the duet:")
                         
-                        //TODO: Embed PDFs???, or link to them on the Main page.
+                        Group {
+                            Button(action: {
+                                let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/1-david-second-mvt.pdf")!
+                                UIApplication.shared.open(url)
+                            }) {
+                                Paragraph("Trombone 1: David second movement")
+                            }
+                            
+                            Button(action : {
+                                let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/2-david-second-movement.pdf")!
+                                UIApplication.shared.open(url)
+                            }) {
+                                Paragraph("Trombone 2: David second movement")
+                            }
+                            
+                        }
                         
                         EmbeddedYouTubeView(request: soloDuetTrainingYouTubeLink)
                             .frame(minHeight: 200)

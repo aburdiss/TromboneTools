@@ -35,7 +35,12 @@ struct Nerves: View {
                     Paragraph("If the first time you play in front of people is for your jury, you are setting yourself up for failure. Ease into it a little at a time and take every opportunity to play in front of people.")
                     Paragraph("Constructive rest is a form of meditation coming from the Alexander Technique that might help you deal with performance anxiety. Here is a sound file of me taking you through a constructive rest session:")
                     
-                    //TODO: Embed the soundcloud file here.
+                    Button(action: {
+                        let url = URL(string: constructiveRestSoundCloudLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Paragraph("Constructive Rest")
+                    }
                     
                     Paragraph("Try this resource in your practicing to help with nerves:")
                 }
@@ -44,15 +49,19 @@ struct Nerves: View {
                 
                 Group {
                     Paragraph("Use the Constructive Rest activities in Cross Training just before going on stage. I’ve seen this strategy work miracles for some people.")
-                    ImagePurchaseLink(crossTrainingPurchaseLink, "crossTrainingCover")
+                    HStack {
+                        Spacer()
+                        ImagePurchaseLink(crossTrainingPurchaseLink, "crossTrainingCover")
+                        Spacer()
+                    }
                     
                     Group {
                         Text("Cross Training for Musicians")
                             .italic()
-                        + Text("is a collection of videos and sound files that guide the reader through a series of movements designed to promote healthy practicing. The activities provide movement variety and promote global awareness, serving to keep musicians’ movements efficient and accurate. The activities are based on five modalities: The Alexander Technique, the Feldenkrais Method, Body Mapping, Yoga and Stretching")
+                        + Text(" is a collection of videos and sound files that guide the reader through a series of movements designed to promote healthy practicing. The activities provide movement variety and promote global awareness, serving to keep musicians’ movements efficient and accurate. The activities are based on five modalities: The Alexander Technique, the Feldenkrais Method, Body Mapping, Yoga and Stretching")
                     }
-                .padding()
-                .fixedSize(horizontal: false, vertical: true)
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 
                 PurchaseButton(crossTrainingWebsiteLink, "Visit the Cross Training website")

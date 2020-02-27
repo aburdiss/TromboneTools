@@ -20,7 +20,7 @@ struct NaturalSlurs: View {
                     Paragraph("When using natural slurs, players must articulate some notes (adjoining notes in the same partial) and not others (adjoining notes in different partials), as in the following example:")
                     Image("trb-nat-slur-150")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                     Paragraph("Learning to use natural slurs as in the above passage can be confusing because it involves a combination of tongued and non-tongued notes. Furthermore, one must develop the ability to match the articulation of the tongued notes with the non-tongued natural slurs.")
                     Paragraph("I recommend these tools for practicing natural slurs:")
                 }

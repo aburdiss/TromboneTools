@@ -19,6 +19,7 @@ struct ContactView: View {
             }
             .navigationBarTitle("Contact")
         }
+    .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

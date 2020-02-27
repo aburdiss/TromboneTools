@@ -21,11 +21,10 @@ struct LowRange: View {
                     Paragraph("I recommend the following books for practicing in the low range:")
                 }
                 //Group of bulletpoints
-                //TODO: Extract these links as local variables. Do this for other views that have bullets like these as well. (Makes this much easier to maintain).
                 Group {
                     // Blazhevich – 70 Studies for BB flat Tuba, Book 1
                     Button(action: {
-                        let url = URL(string: "http://www.hickeys.com/music/brass/tuba_and_euphonium/methods_and_studies/tuba_studies_and_etudes/products/sku001209-blazhevich-studies-70-v1.php")!
+                        let url = URL(string: blazhevich70StudiesLink)!
                         UIApplication.shared.open(url)
                     }) {
                         BulletPoint(boldText: "Blazhevich", italicText: "- 70 Studies for BB flat Tuba, Book 1")
@@ -33,7 +32,7 @@ struct LowRange: View {
                     
                     // Blume/Fink – 36 Studies for Trombone with F Attachment
                     Button(action: {
-                        let url = URL(string: "http://www.hickeys.com/music/brass/trombone/tenor_trombone/studies_and_etudes/products/sku020200-blume-fink-studies-36-for-trombone-wf-attachment.php")!
+                        let url = URL(string: blumeFink36StudiesLink)!
                         UIApplication.shared.open(url)
                     }) {
                         BulletPoint(boldText: "Blume/Fink", italicText: "- 36 Studies for Trombone with F Attachment")
@@ -41,7 +40,7 @@ struct LowRange: View {
                     
                     // Bordogni – 43 Bel Canto Studies for Tuba
                     Button(action : {
-                        let url = URL(string: "https://www.hickeys.com/music/brass/tuba_and_euphonium/methods_and_studies/tuba_studies_and_etudes/products/sku007847-bordogni-roberts-bel-canto-studies-43.php")!
+                        let url = URL(string: bordogni43BelCantoStudiesLink)!
                         UIApplication.shared.open(url)
                     }) {
                         BulletPoint(boldText: "Bordogni", italicText: "– 43 Bel Canto Studies for Tuba")
@@ -49,7 +48,7 @@ struct LowRange: View {
                     
                     // Bordogni – Melodious Etudes, book 1 (down one octave)
                     Button(action : {
-                        let url = URL(string: "http://www.hickeys.com/music/brass/trombone/tenor_trombone/studies_and_etudes/products/sku086846-bordogni-rochutraph-melodious-etudes-v1-revised-wcd-accompaniment.php")!
+                        let url = URL(string: bordogniMelodiousEtudesLink)!
                         UIApplication.shared.open(url)
                     }) {
                         BulletPoint(boldText: "Bordogni", italicText: "– Melodious Etudes, book 1 (down one octave)")
@@ -57,7 +56,7 @@ struct LowRange: View {
                     
                     // Snedecor – Low Etudes for Tuba
                     Button(action: {
-                        let url = URL(string: "http://www.hickeys.com/music/brass/tuba_and_euphonium/methods_and_studies/tuba_studies_and_etudes/products/sku034980-snedecor-low-etudes.php")!
+                        let url = URL(string: snedecorLowStudiesLink)!
                         UIApplication.shared.open(url)
                     }) {
                         BulletPoint(boldText: "Snedecor", italicText: "- Low Etudes for Tuba")
@@ -65,7 +64,7 @@ struct LowRange: View {
                     
                     // Vining – Rangesongs
                     Button(action: {
-                        let url = URL(string: "http://www.mountainpeakmusic.com/rangesongs-for-tenor-trombone/")!
+                        let url = URL(string: rangesongsResourceLink)!
                         UIApplication.shared.open(url)
                     }) {
                         BulletPoint(boldText: "Vining", italicText: "– Rangesongs")
@@ -73,35 +72,34 @@ struct LowRange: View {
                     
                     // Vining – Daily Routines for the Student Trombone Player
                     Button(action: {
-                        let url = URL(string: "http://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/")!
+                        let url = URL(string: dailyRoutinesStudentPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Group {
-                                Text("•  Vining) ")
-                                    .bold()
-                                + Text("– Daily Routines for the Student Trombone Player")
-                                    .italic()
-                                    //TODO: Make this last paragraph not part of the button.
-                                + Text("(this book features a routine devoted to learning F-attachment valve skills; great for those who have just purchased their first F-attachment instrument)")
+                            BulletPoint(boldText: "Vining", italicText: "– Daily Routines for the Student Trombone Player")
                             }
                                 .padding(.horizontal)
                                 .fixedSize(horizontal: false, vertical: true)
                     }
+                    
+                    Paragraph("Daily Routines for the Student Trombone Player features a routine devoted to learning F-attachment valve skills; great for those who have just purchased their first F-attachment instrument.")
                 }
                 // The rest of the page text
                 Group {
-                    // Group to make book title bold and italic
-                    //TODO: Ask if the book title should be both bold and italic everywhere.
                     Group {
                         Text("Rangsongs")
-                            .bold()
                             .italic()
                         + Text(" explores both high and low ranges. Here is a sound file of me playing the low D-flat 2 Rangesong. I will include the etude so you can follow along as you listen:")
                     }
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                     
-                    //TODO: Embed MP3 here
+                    Button(action: {
+                        let url = URL(string: rangesongsLowDFlatMP3Link)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Paragraph("Rangesong Low D-flat 2")
+                    }
                     
                     Image("low-rangesong-fixed-resized")
                     .resizable()

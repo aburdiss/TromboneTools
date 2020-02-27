@@ -19,8 +19,6 @@ struct HomeView: View {
                 .foregroundColor(.clear)
                 .background(LinearGradient(gradient: Gradient(colors: [greenColor, whiteColor]), startPoint: .top, endPoint: .bottom))
                 .edgesIgnoringSafeArea(.all)
-                
-                ScrollView{
                 VStack(alignment: .leading) {
                     Group {
                         Text("Welcome to ")
@@ -41,14 +39,11 @@ struct HomeView: View {
                     .fixedSize(horizontal: false, vertical: true)
                       
                     Paragraph("For more individualized help, request a skype or facetime lesson through the contact button below.")
-                    }
+                    Spacer()
                 }
             }
-            
         .navigationBarTitle("Trombonetools")
-            
         }
-            
              //.background(LinearGradient(gradient: Gradient(colors: [Color(.sRGB, red: 48, green: 129, blue: 172, opacity: 1), Color(.sRGB, red: 190, green: 226, blue: 234)]), startPoint: .top, endPoint: .bottom))
         .navigationViewStyle(StackNavigationViewStyle())
     }

@@ -101,6 +101,7 @@ struct ResourceView: View {
             }
             .navigationBarTitle("Resources")
         }
+    .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
