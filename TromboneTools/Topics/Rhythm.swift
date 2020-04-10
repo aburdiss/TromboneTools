@@ -78,7 +78,6 @@ struct Rhythm: View {
                         .scaledToFit()
                     Paragraph("I had a percussion friend record the background rhythm so I could play along with the rhythm track to cultivate rhythmic accuracy. But, of course, this piece is played at a wide variety of different tempos, so I have several tracks each at a different tempo. 69-72 is a normal tempo range, though I played it once and the conductor took it at about 60! It was very challenging not just because of the rhythm but also the phrasing…")
                 }
-                
                 Group {
                     Group {
                         Text("Here are the ")
@@ -88,7 +87,7 @@ struct Rhythm: View {
                     }
                         .padding()
                     
-                    // TODO: Add all of the Rhythm Sections.
+                    PurchaseButton("https://trombonetools.com/rhythm/", "Bolero Rhythm Tracks")
                 }
                 
                 Group {

@@ -14,8 +14,7 @@ struct ContactView: View {
             
             VStack {
                 ContactButton("Email Me", "mailto:info@mountainpeakmusic.com")
-                ContactButton("Get Skype/FaceTime Lessons", "https://trombonetools.com/skype-lessons/")
-                ContactButton("Send me a message", "https://trombonetools.com/contact/")
+                
             }
             .navigationBarTitle("Contact")
         }

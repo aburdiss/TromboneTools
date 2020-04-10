@@ -10,12 +10,6 @@
 //                MASTER TODO LIST               //
 //***********************************************//
 
-// TODO: Design a nice ipad interface
-// TODO: Extract link sections to subviews.
-// TODO: Extract links to a global scope.
-// TODO: Standardize the way that the plugs are formatted. Make sure that they are all the same style
-// TODO: make sure that there are dividers between each of the purchase sections.
-// TODO: Make sure all the images are scaledtofit and not scaledtofill.
 
 //***********************************************//
 //               To Ask Prof. Vining             //
@@ -24,7 +18,6 @@
 // Should all of the quotes have " around them?
 // Should there be a . at the end of the purchase links (at the end of each plug)
 // For the PDFs, should I just link to the PDF files on the Trombone Tools Website?
-
 
 
 import SwiftUI
@@ -49,11 +42,6 @@ struct ContentView: View {
                         .tabItem {
                             Image(systemName: "list.bullet")
                             Text("Topics")
-                    }
-                    ContactView()
-                        .tabItem {
-                            Image(systemName: "envelope")
-                            Text("Contact")
                     }
                     ResourceView()
                         .tabItem {
