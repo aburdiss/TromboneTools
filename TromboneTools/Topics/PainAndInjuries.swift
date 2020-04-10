@@ -66,7 +66,7 @@ struct PainAndInjuries: View {
                             ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
                             Spacer()
                         }
-                        Quote("Only over the last decade or so has Task Specific Focal Dystonia become completely identified, although there have always been brass players who have mysteriously “lost their lip”. David Vining’s recovery and rehabilitation from this terrifying condition marks him out as one of the very fortunate few amongst the many trombonists who have otherwise had to abandon their often high-profile careers.", "— Denis Wick, Principal Trombonist (retired), London Symphony")
+                        Quote("“Only over the last decade or so has Task Specific Focal Dystonia become completely identified, although there have always been brass players who have mysteriously “lost their lip”. David Vining’s recovery and rehabilitation from this terrifying condition marks him out as one of the very fortunate few amongst the many trombonists who have otherwise had to abandon their often high-profile careers.“", "— Denis Wick, Principal Trombonist (retired), London Symphony")
                         PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                     }
                     

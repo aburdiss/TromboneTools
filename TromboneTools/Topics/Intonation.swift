@@ -39,9 +39,11 @@ struct Intonation: View {
                     Paragraph("Here’s a great way to do this: Consider the following phrase:")
                     Image("flow-example")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                     Paragraph("Try playing this phrase at about quarter = 92.  Once you learn the notes, put a tuner on your music stand and turn it on. Now play the phrase again, adding a fermata as indicated. When you reach the fermata, hold the note and look at the tuner:")
                     Image("sample-with-fermata")
+                        .resizable()
+                        .scaledToFit()
                     Paragraph("This will tell you if you have a habit of being sharp or flat in this particular context. It doesn’t mean, however, that all of your A-naturals are out of tune; in a different key they might be perfectly fine.")
                     Paragraph("The point is to acknowledge the idea that we have certain intonation tendencies which are key-related. Figure out what your tendencies are and you are on your way to improving intonation.")
                 }
@@ -112,7 +114,7 @@ struct Intonation: View {
                         .fixedSize(horizontal: false, vertical: true)
                         
                         
-                        EmbeddedYouTubeView(request: intonationMasteryPurchaseLink)
+                        EmbeddedYouTubeView(request: intonationMasteryYouTubeLink)
                             .frame(minHeight: 200)
                     }
                     
@@ -133,7 +135,23 @@ struct Intonation: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                         
-                        //TODO: Embed the PDFs here.
+                        Group {
+                            Button(action: {
+                                let url = URL(string: davidDuetTbn1PDFLink)!
+                                UIApplication.shared.open(url)
+                            }) {
+                                Paragraph("Trombone 1: David second movement")
+                            }
+                            
+                            Button(action : {
+                                let url = URL(string: davidDuetTbn2PDFLink)!
+                                UIApplication.shared.open(url)
+                            }) {
+                                Paragraph("Trombone 2: David second movement")
+                            }
+                            
+                        }
+                        
                         EmbeddedYouTubeView(request: soloDuetTrainingYouTubeLink)
                             .frame(minHeight: 200)
                         HStack {
@@ -169,8 +187,8 @@ struct Intonation: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                         
-                        PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones.")
-                        PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
+                        PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones")
+                        PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition")
                     }
                 }
                 

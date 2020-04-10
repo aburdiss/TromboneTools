@@ -144,8 +144,8 @@ struct SightReading: View {
                     }
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
-                    Quote("The Big Book of Sight Reading Duets by David Vining is an invaluable addition to any trombonist’s arsenal of educational materials. In it, he covers a large variety of sight reading obstacles including several different levels of difficulty, styles, tempi, and time and key signatures to keep one on their toes. Add to that the fact that there are 100 duets and you have a fantastic resource that will last for a long time.", "- Craig Mulcahy – Principal Trombone, National Symphony Orchestra and Adjunct Professor of Trombone, University of Maryland")
-                    PurchaseButton(bigBookOfSightReadingDuetsPurchaseLink, "Purchase The Big Book of Sight Reading Duets.")
+                    Quote("“The Big Book of Sight Reading Duets by David Vining is an invaluable addition to any trombonist’s arsenal of educational materials. In it, he covers a large variety of sight reading obstacles including several different levels of difficulty, styles, tempi, and time and key signatures to keep one on their toes. Add to that the fact that there are 100 duets and you have a fantastic resource that will last for a long time.“", "- Craig Mulcahy – Principal Trombone, National Symphony Orchestra and Adjunct Professor of Trombone, University of Maryland")
+                    PurchaseButton(bigBookOfSightReadingDuetsPurchaseLink, "Purchase The Big Book of Sight Reading Duets")
                 }
             }
         }

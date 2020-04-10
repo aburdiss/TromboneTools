@@ -85,6 +85,8 @@ struct Embochure: View {
                     PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")
                 }
                 
+                SectionDivider()
+                
                 // What Every Trombonist Needs to Know About the Body
                 Group {
                     HStack {

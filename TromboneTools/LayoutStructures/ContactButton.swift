@@ -18,6 +18,7 @@ struct ContactButton: View {
             UIApplication.shared.open(url)
         }) {
             Text(text)
+                .accentColor(Color.black)
                 .padding()
                 .overlay(RoundedRectangle(cornerRadius: 12)
                     .stroke(Color.black, lineWidth: 1))

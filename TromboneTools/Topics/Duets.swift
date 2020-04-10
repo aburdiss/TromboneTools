@@ -12,16 +12,70 @@ struct Duets: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
-                // Duet BulletPoints and Text Before
                 Group {
+                    Paragraph("I think duets are a terrific way to learn. When I play a duet with my student, that student learns by listening musically – tuning, matching styles and note lengths, cooperating, blending, and playing with good rhythm.")
+                    Paragraph("I recorded the bottom line of some of my favorite duets so you can play along with me. Here is a PDF for you to download:")
+                    
+                    PurchaseButton(duetPlaylist1MP3Link, "Playlist 1")
+                    
+                    Paragraph("And here is the sound file of me playing the bottom part of each selection:")
+                    
+                    PurchaseButton("https://trombonelessons.files.wordpress.com/2020/03/master-playlist-1-1.mp3?_=1", "Playlist 1 Sound File")
+                    
+                    HStack {
+                        Spacer()
+                        ImagePurchaseLink(duelingFundamentalsPurchaseLink, "duelingFundamentalsCover")
+                        Spacer()
+                    }                    
+                }
+                
+                
+                Group {
+                    VStack(alignment: .leading) {
+                        Text("Here is a great way to work on your fundamentals by playing duets:")
+                        Button(action: {
+                            let url = URL(string: duelingFundamentalsPurchaseLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            Text("Dueling Fundamentals for Two Trombones.")
+                        }
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    Group {
+                        Text("Darth Bruckner, The Hip Lip Flip Trip, Martian Lip Slurs,")
+                            .italic()
+                        + Text(" and ")
+                        + Text("Arban Freaks Out")
+                            .italic()
+                        + Text(" are just some of the fun—but make no mistake, also challenging!—duets included in ")
+                        + Text("Dueling Fundamentals for Trombones")
+                            .italic()
+                        + Text(". This book consists of seven chapters: Long Tones, Flexibility, Stabilizers, Scales and Arpeggios, Range Extenders, Mixed Techniques, and Tenor/Bass Duets. Throughout the book, both lines are challenging—there is no “student” line and no “teacher” line. Therefore this book works well for lessons or as an excellent tool for two friends or classmates looking to challenge themselves and each other.")
+                    }
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
+                    
+                    VStack(alignment: .leading) {
+                        Text("Here is a video of a couple of the duets from")
+                        Button(action: {
+                            let url = URL(string: duelingFundamentalsPurchaseLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            Text("Dueling Fundamentals:")
+                        }
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
                     EmbeddedYouTubeView(request: duelingFundamentalsYouTubeLink)
                         .frame(minHeight: 200)
-                    Paragraph("I think duets are a terrific way to learn. When I play a duet with my student, she learns by listening musically. She learns to tune, to match styles and note lengths. She learns to cooperate, to blend and to play in time. There is so much good to playing duets, sometimes that’s all I do in a lesson!")
+                    
                     Paragraph("There are so many great duet books – here are a few of my favorites:")
                 }
                 Group {
-                    
-                    
+                    // TODO: Test these links
                     // Bassett – 12 Duos
                     Button(action: {
                         let url = URL(string: "http://www.hickeys.com/search/products/sku003682.php")!
@@ -46,12 +100,6 @@ struct Duets: View {
                         BulletPoint(boldText: "Blume", italicText: "– 12 Melodious Duets")
                     }
                     
-                    // Bordogni / Bowles – Contrapuntal Duets (counterparts to the Melodious Etudes)
-                    BulletPoint(boldText: "Bordogni / Bowles", italicText: "– Contrapuntal Duets (counterparts to the Melodious Etudes)")
-                    
-                    // Di Lasso / Schmeltekopf – 12 Duets
-                    BulletPoint(boldText: "Di Lasso / Schmeltekopf", italicText: "– 12 Duets")
-                    
                     // Nelhybel – Duets
                     Button(action: {
                         let url = URL(string: "http://www.hickeys.com/search/products/sku071208.php")!
@@ -75,36 +123,10 @@ struct Duets: View {
                     }) {
                         BulletPoint(boldText: "Voxman (Rubank)", italicText: "– Selected Duets, Volume 2")
                     }
-                }
-                
-                // Remaining Text on the page
-                Group {
+                    
+                    Group {
                     Paragraph("This list is by no means exhaustive, but these are some that I find myself turning to often.")
-                    Paragraph("The other thing I have done with the duet idea is apply it to fundamentals. So, for example, in my Daily Routines series of books, you will find some lip slurs written as duets, like this example:")
-                    Image("DailyRoutineDuet")
-                        .resizable()
-                        .scaledToFill()
-                    Paragraph("This pattern comes from my Daily Routines series of books:")
-                    SectionDivider()
-                }
-                
-                
-                
-                // Daily Routines
-                Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
-                        Spacer()
                     }
-                    
-                    Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
-                    
-                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
-                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
-                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
                 }
                 
                 SectionDivider()
@@ -112,18 +134,29 @@ struct Duets: View {
                 // Solo Duet Training
                 Group {
                     Paragraph("I have also written some duets based upon several of the top trombone solos by extracting lines from the piano part and interspersing them with the solo part. Each player gets some of the solo and some of the accompaniment, so you learn the solo inside and out, in a manner of speaking.")
-                    Paragraph("Here is a sample of this project – the second movement from the \"Concertino\" by David. I am providing PDF downloads so you can print them out these parts and play the duet:")
+                    Group {
+                        Text("Here is a sample of this project – the second movement from the ")
+                        + Text("Concertino")
+                            .italic()
+                        + Text(" by ")
+                        + Text("David")
+                            .bold()
+                        + Text(". I am providing PDF downloads so you can print them out these parts and play the duet:")
+                    }
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
+                    
                     
                     Group {
                         Button(action: {
-                            let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/1-david-second-mvt.pdf")!
+                            let url = URL(string: davidDuetTbn1PDFLink)!
                             UIApplication.shared.open(url)
                         }) {
                             Paragraph("Trombone 1: David second movement")
                         }
                         
                         Button(action : {
-                            let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/2-david-second-movement.pdf")!
+                            let url = URL(string: davidDuetTbn2PDFLink)!
                             UIApplication.shared.open(url)
                         }) {
                             Paragraph("Trombone 2: David second movement")
@@ -168,8 +201,8 @@ struct Duets: View {
                     .padding()
                     .fixedSize(horizontal: false, vertical: true)
                     
-                    PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones.")
-                    PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
+                    PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones")
+                    PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition")
                 }
                 
                 SectionDivider()
@@ -182,7 +215,7 @@ struct Duets: View {
                         ImagePurchaseLink(intonationMasteryPurchaseLink, "intonationMasteryCover")
                         Spacer()
                     }
-                    PurchaseButton(intonationMasteryPurchaseLink, "Purchase Trombone Intonation Mastery.")
+                    PurchaseButton(intonationMasteryPurchaseLink, "Purchase Trombone Intonation Mastery")
                 }
             }
         }

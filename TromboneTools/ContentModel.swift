@@ -27,6 +27,7 @@ let crossTrainingPurchaseLink: String = "https://www.mountainpeakmusic.com/cross
 let dailyRoutinesTenorPurchaseLink: String = "https://www.mountainpeakmusic.com/daily-routines-for-tenor-trombone/"
 let dailyRoutinesStudentPurchaseLink: String = "https://www.mountainpeakmusic.com/daily-routines-for-the-student-trombone-player/"
 let dailyRoutinesBassPurchaseLink: String = "https://www.mountainpeakmusic.com/daily-routines-for-bass-trombone/"
+let duelingFundamentalsPurchaseLink: String = "https://www.mountainpeakmusic.com/dueling-fundamentals-for-two-trombones/"
 let flowStudiesTenorPurchaseLink: String = "https://www.mountainpeakmusic.com/flow-studies-for-tenor-trombone/"
 let flowStudiesBassPurchaseLink: String = "https://www.mountainpeakmusic.com/flow-studies-for-bass-trombone/"
 let intonationMasteryPurchaseLink: String = "https://www.mountainpeakmusic.com/trombone-intonation-mastery/"
@@ -67,15 +68,20 @@ let breathBuilderLink: String = "http://www.musiciansfriend.com/accessories/brea
 let michaelDavisWarmUpLink: String = "https://hip-bonemusic.com/products/20-minute-warm-up-for-trombone"
 let neotechHandGripLink: String = "http://neotechstraps.com/trombone-grip.html"
 let snedecorLowStudiesLink: String = "http://www.hickeys.com/music/brass/tuba_and_euphonium/methods_and_studies/tuba_studies_and_etudes/products/sku034980-snedecor-low-etudes.php"
+let tbnXcerptsLink: String = "https://apps.apple.com/tt/app/tbnxcerpts/id1503907981"
 
 // Media Links
 let constructiveRestSoundCloudLink: String = "https://soundcloud.com/user-25642203/constructive-rest"
 let davidViningBozzaBalladMP3Link: String = "http://www.davidvining.net/media/DavidVining-Bozza_Ballade.mp3"
+let davidDuetTbn1PDFLink: String = "https://trombonelessons.files.wordpress.com/2014/04/1-david-second-mvt.pdf"
+let davidDuetTbn2PDFLink: String = "https://trombonelessons.files.wordpress.com/2014/04/2-david-second-movement.pdf"
+let duetPlaylist1MP3Link: String = "https://trombonelessons.files.wordpress.com/2020/03/playlist-1.pdf"
 let flexibilityWithDynamicsMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/flex-dynamics-edit.mp3"
 let flexibilityDescendingMP3LinK: String = "https://trombonelessons.files.wordpress.com/2011/04/flex-descending-edit.mp3"
 let flexibilityWithArticulationMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/art-flex-edit.mp3"
 let rangesongsLowDFlatMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/low-rangesong-edit.mp3"
 let rangesongsHighEFlatMP3Link: String = "https://trombonelessons.files.wordpress.com/2011/04/high-rangesong-take-2-edit.mp3"
+let slideTechniquePDFLink: String = "https://trombonelessons.files.wordpress.com/2011/04/slide-technique-handout.pdf"
 
 // Onsite Website Links
 let skypeLessonLink: String = "https://trombonetools.com/skype-lessons/"

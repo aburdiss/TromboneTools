@@ -50,7 +50,6 @@ struct HomeView: View {
             }
         .navigationBarTitle("Trombonetools")
         }
-             //.background(LinearGradient(gradient: Gradient(colors: [Color(.sRGB, red: 48, green: 129, blue: 172, opacity: 1), Color(.sRGB, red: 190, green: 226, blue: 234)]), startPoint: .top, endPoint: .bottom))
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }

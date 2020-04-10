@@ -85,19 +85,11 @@ struct Articulation: View {
                     
                     Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
                     
-                    Group {
-                        Text("“I am always grateful when a great performer goes to the trouble to organize his/her thoughts and make them available. David Vining has done just that in his book, Daily Routines. These routines are masterfully conceived. They exhibit exceptional balance, ingenuity, and insight. Vining saves us many steps by organizing tried and true material, adding his own astute innovations and explaining the procedures that produce technical mastery.” ")
-                            .italic()
-                        + Text("— Mike Hall, International Trombone Association Journal")
-                    }
-                        .padding()
-                        .fixedSize(horizontal: false, vertical: true)
-                    
                     // Purchase Daily Routines Links
                     Group {
-                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
-                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
+                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone")
+                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
+                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
                     }
                 }
                 
@@ -110,13 +102,7 @@ struct Articulation: View {
                         Spacer()
                     }
                     
-                    Group {
-                        Text("“Only over the last decade or so has Task Specific Focal Dystonia become completely identified, although there have always been brass players who have mysteriously “lost their lip”. David Vining’s recovery and rehabilitation from this terrifying condition marks him out as one of the very fortunate few amongst the many trombonists who have otherwise had to abandon their often high-profile careers.“ ")
-                            .italic()
-                        + Text("— Denis Wick, Principal Trombonist (retired), London Symphony")
-                    }
-                        .padding()
-                        .fixedSize(horizontal: false, vertical: true)
+                    Paragraph("What Every Trombonist Needs to Know About the Body applies anatomically accurate information to playing the trombone—for example, the arm and slide technique, breathing and tone production, the tongue and articulation, etc. By teaching from a position of anatomical accuracy, this book provides a secure somatic foundation upon which to make music, thereby making your movements free of tension and reducing your risk of injury. The result is a beautiful tone, improved technique, and minimum effort in your playing.")
                     
                     PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }

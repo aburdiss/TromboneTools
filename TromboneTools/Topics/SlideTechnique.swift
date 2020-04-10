@@ -64,7 +64,7 @@ struct SlideTechnique: View {
                         .frame(minHeight: 200)
                     Paragraph("Here is a handout highlighting some important slide technique points:")
                     
-                    //TODO: Embed a PDF Here.
+                   PurchaseButton(slideTechniquePDFLink, "Slide technique handout")
                     
                     Paragraph("Here are some resources to practice slide technique:")
                 }
@@ -85,9 +85,9 @@ struct SlideTechnique: View {
                         
                         Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
                         
-                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
-                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
+                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone")
+                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
+                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
                     }
                     
                     SectionDivider()
@@ -103,8 +103,8 @@ struct SlideTechnique: View {
                         
                         Quote("“David Vining has written a group of studies which I think artfully isolate the movement of air when you play. I highly recommend them for students and anyone who needs to “get back to the basics” of air movement.”", "— Mark Lawrence, Principal Trombonist (retired), San Francisco Symphony")
                         
-                        PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone.")
-                        PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone.")
+                        PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone")
+                        PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")
                     }
                     
                     SectionDivider()
@@ -117,7 +117,7 @@ struct SlideTechnique: View {
                             Spacer()
                         }
                         
-                        Quote("David’s research and increased self-awareness have resulted in his book “What Every Trombonist Needs to Know About the Body.” It is a remarkable volume that will be of tremendous use to future generations of trombone teachers and players. The great majority of trombonists (myself included) who never had to think very much about this can consider themselves lucky. David is to be congratulated upon his recovery and thanked for showing us so completely how the body works in trombone playing.", "— Denis Wick, Principal Trombonist (retired), London Symphony")
+                        Quote("“David’s research and increased self-awareness have resulted in his book “What Every Trombonist Needs to Know About the Body.” It is a remarkable volume that will be of tremendous use to future generations of trombone teachers and players. The great majority of trombonists (myself included) who never had to think very much about this can consider themselves lucky. David is to be congratulated upon his recovery and thanked for showing us so completely how the body works in trombone playing.“", "— Denis Wick, Principal Trombonist (retired), London Symphony")
                         
                         PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                     }

@@ -26,7 +26,7 @@ struct Breathing: View {
                     NumberedBulletPoint(number: "3", text: "Move constant, steady air regardless of how you are moving the slide. Blow without hesitation across the partials and note changes.")
                     NumberedBulletPoint(number: "4", text: "High notes require fast air and low notes require slow air. Don’t mix these up or your range extremes will suffer.")
                     NumberedBulletPoint(number: "5", text: "Don’t be a belly dancing breather. Yes there is very important motion which occurs in the abdominal area when you breathe, but the motion is secondary to rib movement. Moving your tummy where your belly button is does not cause air to enter the body.")
-                    NumberedBulletPoint(number: "6", text: "ou can’t directly feel your diaphragm and you use your diaphragm every time you breathe. Don’t use misleading phrases like  “support with your diaphragm” because they imply that you can directly feel the diaphragm (you can’t) and that there is some other way to breathe that does not involve the diaphragm (there isn’t).")
+                    NumberedBulletPoint(number: "6", text: "You can’t directly feel your diaphragm and you use your diaphragm every time you breathe. Don’t use misleading phrases like  “support with your diaphragm” because they imply that you can directly feel the diaphragm (you can’t) and that there is some other way to breathe that does not involve the diaphragm (there isn’t).")
                 }
                 
                 // More Videos
@@ -74,24 +74,7 @@ struct Breathing: View {
                     
                     PurchaseButton(breathingBookTenorPurchaseLink, "Purchase The Breathing Book for Tenor Trombone")
                     PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")
-                    
                 }
-                
-                SectionDivider()
-                
-                Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
-                        Spacer()
-                    }
-                    
-                    Quote("“David’s research and increased self-awareness have resulted in his book “What Every Trombonist Needs to Know About the Body.” It is a remarkable volume that will be of tremendous use to future generations of trombone teachers and players. The great majority of trombonists (myself included) who never had to think very much about this can consider themselves lucky. David is to be congratulated upon his recovery and thanked for showing us so completely how the body works in trombone playing.“", "— Denis Wick, Principal Trombonist (retired), London Symphony")
-                    
-                    PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
-                }
-                
-                
             }
         }
     .navigationBarTitle("Breathing")

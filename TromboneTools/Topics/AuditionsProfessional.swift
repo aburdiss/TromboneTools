@@ -48,7 +48,7 @@ struct AuditionsProfessional: View {
                         .font(.headline)
                         .padding(.leading)
                     Paragraph("Solo competitions present different challenges than ensemble auditions. Consider the nature of the competition: are you competing against all instruments, just brass players or just trombonists? Do you get to choose your repertoire or is the repertoire mandated? Knowing the answers to these questions will help you devise a strategy to set yourself up for success.")
-                    Paragraph("If you are competing against all other instruments, be aware that you are at a disadvantage as a trombonist. While the pianists are playing Beethoven and the violinists are playing Mendelsohn, we are stuck playing David, Grondahl and Larsson. These three particular choices are not terrible pieces of music, but stacked up against masters like Beethoven and Mendelsohn they do not typically compare well. This means that you have to do everything in your power to draw attention to yourself (in a good way) in order to get noticed. All else being equal, Beethoven will beat David every time.")
+                    Paragraph("If you are competing against all other instruments, be aware that you are at a disadvantage as a trombonist. While the pianists are playing Beethoven and the violinists are playing Mendelssohn, we are stuck playing David, Grondahl and Larsson. These three particular choices are not terrible pieces of music, but stacked up against masters like Beethoven and Mendelssohn they do not typically compare well. This means that you have to do everything in your power to draw attention to yourself (in a good way) in order to get noticed. All else being equal, Beethoven will beat David every time.")
                     Paragraph("You can help yourself by playing from memory, even if it is not required. Trombonists rarely do this so (assuming you pull it off) this strategy can go a long way in getting some much-needed attention.")
                     Paragraph("You can also help yourself by playing with a beautiful, organic vibrato. It just sounds more mature to do so. Trombonists who don’t play with vibrato are seen by committees as musically immature and typically are not considered with the front-runners. (I must acknowledge at this point the great Ian Bousfield, who I heard play a spectacular recital totally without vibrato. I suspect, however, that he is the exception, not the rule…)")
                 }
@@ -63,6 +63,30 @@ struct AuditionsProfessional: View {
                     Paragraph("It doesn’t have to be rip-roaring hard to win. It has to be beautifully, musically, confidently delivered at the right time and place to win. Do not use an audition to try something out. Do not use an audition to perform a solo piece for the very first time. Do not try to show off freakish technique unless the situation calls for it. What I mean by that is this:")
                     Paragraph("Let’s say you are in a competition with all other instruments and you are really good at playing fast notes so you choose Blue Bells of Scotland. You can fly through the variations with the greatest of ease but do you know what that pianist on the committee is thinking? He may be thinking “hmmm…what a stupid little theme…” In the mean time, one of your competitors decides on the Haydn Trumpet Concerto, which has one of the most beautiful second movements ever written for a brass instrument. The trumpeter has shown a beautiful tone and sense of lyricism in addition to excellent technique in the outer movements. His presentation is likely more attractive to a sophisticated musical ear. Your presentation is likely more attractive to a trombonist’s ear.")
                     Paragraph("The moral of the story? To win an audition (ensemble or solo), stop thinking like a trombonist and start thinking like a musician.")
+                }
+                
+                SectionDivider()
+                
+                // TbnXcerpts Ad
+                Group {
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            let url = URL(string: tbnXcerptsLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            Image("TbnXcerpts")
+                                .renderingMode(.original)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxHeight: 125)
+                        }
+                        Spacer()
+                    }
+                    
+                    Paragraph("Contained in TbnXcerpts are 70 excerpts commonly asked on orchestral auditions, and a variety of recordings for every one.")
+                    
+                    PurchaseButton(tbnXcerptsLink, "Purchase TbnXcerpts")
                 }
             }
         }

@@ -48,9 +48,9 @@ struct NaturalSlurs: View {
                     
                     Quote("“I am always grateful when a great performer goes to the trouble to organize his/her thoughts and make them available. David Vining has done just that in his book, Daily Routines. These routines are masterfully conceived. They exhibit exceptional balance, ingenuity, and insight. Vining saves us many steps by organizing tried and true material, adding his own astute innovations and explaining the procedures that produce technical mastery.”", "— Mike Hall, International Trombone Association Journal")
                                    
-                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
-                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
-                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
+                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone")
+                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
+                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
                 }
             }
         }

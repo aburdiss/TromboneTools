@@ -80,11 +80,11 @@ struct PostureVsBalance: View {
                         Spacer()
                     }
                     
-                    Text("Only over the last decade or so has Task Specific Focal Dystonia become completely identified, although there have always been brass players who have mysteriously “lost their lip”. David Vining’s recovery and rehabilitation from this terrifying condition marks him out as one of the very fortunate few amongst the many trombonists who have otherwise had to abandon their often high-profile careers.")
+                    Text("“Only over the last decade or so has Task Specific Focal Dystonia become completely identified, although there have always been brass players who have mysteriously “lost their lip”. David Vining’s recovery and rehabilitation from this terrifying condition marks him out as one of the very fortunate few amongst the many trombonists who have otherwise had to abandon their often high-profile careers.")
                         .italic()
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
-                    Quote("David’s research and increased self-awareness have resulted in his book “What Every Trombonist Needs to Know About the Body.” It is a remarkable volume that will be of tremendous use to future generations of trombone teachers and players. The great majority of trombonists (myself included) who never had to think very much about this can consider themselves lucky. David is to be congratulated upon his recovery and thanked for showing us so completely how the body works in trombone playing.", "— Denis Wick, Principal Trombonist (retired), London Symphony")
+                    Quote("“David’s research and increased self-awareness have resulted in his book “What Every Trombonist Needs to Know About the Body.” It is a remarkable volume that will be of tremendous use to future generations of trombone teachers and players. The great majority of trombonists (myself included) who never had to think very much about this can consider themselves lucky. David is to be congratulated upon his recovery and thanked for showing us so completely how the body works in trombone playing.“", "— Denis Wick, Principal Trombonist (retired), London Symphony")
                     PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }
                 

@@ -78,14 +78,14 @@ struct ToneQuality: View {
                         
                         Group {
                             Button(action: {
-                                let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/1-david-second-mvt.pdf")!
+                                let url = URL(string: davidDuetTbn1PDFLink)!
                                 UIApplication.shared.open(url)
                             }) {
                                 Paragraph("Trombone 1: David second movement")
                             }
                             
                             Button(action : {
-                                let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/2-david-second-movement.pdf")!
+                                let url = URL(string: davidDuetTbn2PDFLink)!
                                 UIApplication.shared.open(url)
                             }) {
                                 Paragraph("Trombone 2: David second movement")
@@ -129,8 +129,8 @@ struct ToneQuality: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                         
-                        PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones.")
-                        PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition.")
+                        PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones")
+                        PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition")
                     }
                     
                     SectionDivider()
@@ -144,8 +144,8 @@ struct ToneQuality: View {
                             Spacer()
                         }
                         
-                        PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone.")
-                        PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone.")
+                        PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone")
+                        PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")
                     }
                     
                 }

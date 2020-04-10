@@ -45,44 +45,12 @@ struct AlternatePositions: View {
                     
                     Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
                     
-                    Group{
-                        /* These Text Views are not extracted to Paragraph views because the Paragraph View does not accept Italics, and does not support addition. */
-                        Text("“In order for any trombonist to take the craft of brass playing seriously, they must have a method or philosophy about how to approach consistently improving on their instrument. David Vining’s book Daily Routines provides a thorough approach to understanding how to efficiently play fundamentals at the highest level. The variety of the nine different half hour routines will keep this method feeling fresh and challenging for a long time. I highly recommend using Mr. Vining’s Daily Routines for yourself and with your students.” ")
-                            .italic()
-                        + Text("— George Curran, Bass Trombonist, New York Philharmonic")
-                    }
-                        .padding()
-                        .fixedSize(horizontal: false, vertical: true)
-                    
                     // Purchase Daily Routines Links
                     Group {
-                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
-                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
+                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone")
+                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
+                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
                     }
-                }
-                
-                SectionDivider()
-                
-                // Flow Studies Group
-                Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
-                        Spacer()
-                    }
-                    
-                    Group {
-                        Text("“David Vining has written a group of studies which I think artfully isolate the movement of air when you play. I highly recommend them for students and anyone who needs to “get back to the basics” of air movement.” ")
-                        .italic()
-                        + Text("— Mark Lawrence, Principal Trombonist (retired), San Francisco Symphony")
-                    }
-                        .padding()
-                        .fixedSize(horizontal: false, vertical: true)
-                    
-                    PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone")
-                    PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")
                 }
             }
         }
