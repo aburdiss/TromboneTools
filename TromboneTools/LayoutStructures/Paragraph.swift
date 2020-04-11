@@ -16,8 +16,8 @@ struct Paragraph: View {
     
     var body: some View {
         Text(text)
-        .padding()
-        .fixedSize(horizontal: false, vertical: true)
+            .padding()
+            .fixedSize(horizontal: false, vertical: true)
     }
     
     init(_ text: String) {

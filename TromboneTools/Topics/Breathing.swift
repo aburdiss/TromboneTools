@@ -76,6 +76,7 @@ struct Breathing: View {
                     PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Breathing")
     }

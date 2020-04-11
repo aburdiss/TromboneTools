@@ -42,6 +42,13 @@ struct ResourceView: View {
                     }
                     
                     Button(action: {
+                        let url = URL(string: duelingFundamentalsResourceLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Text("Deuling Fundamentals")
+                    }
+                    
+                    Button(action: {
                         let url = URL(string: flowStudiesResourceLink)!
                         UIApplication.shared.open(url)
                     }) {
@@ -82,6 +89,13 @@ struct ResourceView: View {
                         UIApplication.shared.open(url)
                     }) {
                         Text("Teaching Brass")
+                    }
+                    
+                    Button(action: {
+                        let url = URL(string: tbnXcerptsLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Text("TbnXcerpts")
                     }
                     
                     Button(action: {

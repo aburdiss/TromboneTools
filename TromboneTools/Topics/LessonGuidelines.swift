@@ -30,6 +30,7 @@ struct LessonGuidelines: View {
                     NumberedBulletPoint(number: "8", text: "When communicating via email, please use complete sentences and spell check. I don’t think highly of a student who does not do these things and this will be reflected in any recommendation the student requests me to write.")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Lesson Guidelines")
     }

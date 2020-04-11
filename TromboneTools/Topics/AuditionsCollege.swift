@@ -28,6 +28,7 @@ struct AuditionsCollege: View {
                 Paragraph("Your college audition is not the time to try out something new. Play the selection that you sound best on, even if you have played it before. You need to put your best foot forward so don’t take chances on something that is beyond your current ability level.")
                 Paragraph("When I hear auditions, I like to spend a little time with the person after I hear their formal audition. We might play a duet or two to get to know each other and I might make a few suggestions to help the auditionee improve their playing. When I do this, I am checking the person’s willingness to accept suggestions and integrate them into their playing.")
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Auditions – College")
     }

@@ -6,9 +6,6 @@
 //  Copyright © 2020 Alex Burdiss. All rights reserved.
 //
 
-
-//TODO: Create a useable ipad interface, showing both the list and the content
-
 import SwiftUI
 
 /**
@@ -49,7 +46,7 @@ struct TopicListView: View {
                         Text("Dynamics")
                     }
                     NavigationLink(destination: Embochure()) {
-                        Text("Embochure")
+                        Text("Embouchure")
                     }
                 }
                 Section {
@@ -60,7 +57,7 @@ struct TopicListView: View {
                         Text("Flexibility")
                     }
                     NavigationLink(destination: HesitantEntrances()) {
-                        Text("Hestiant Entrances")
+                        Text("Hesitant Entrances")
                     }
                     NavigationLink(destination: HighRange()) {
                         Text("High Range")
@@ -125,7 +122,7 @@ struct TopicListView: View {
                     }
                 }
             }
-.navigationBarTitle("Trombonetools")
+        .navigationBarTitle("Trombonetools")
         }
     .navigationViewStyle(StackNavigationViewStyle())
     }

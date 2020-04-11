@@ -26,10 +26,35 @@ struct NaturalSlurs: View {
                 }
                 //BulletPoints and below
                 Group {
-                    BulletPoint(boldText: "Melodious Etudes", italicText: "by Marco Bordogni, arranged by Johannes Rochut")
-                    BulletPoint(boldText: "43 Bel Canto Studies for Tuba", italicText: "by Marco Bordogni (for bass trombone)")
-                    BulletPoint(boldText: "Lip Slurs", italicText: "by Brad Edwards")
-                    BulletPoint(boldText: "Vocalises", italicText: "by Concone")
+                    Button(action: {
+                        let url = URL(string: melodiousEtudesLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        BulletPoint(boldText: "Melodious Etudes", italicText: "by Marco Bordogni, arranged by Johannes Rochut")
+                    }
+                    
+                    Button(action: {
+                        let url = URL(string: bordogni43BelCantoStudiesLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                       BulletPoint(boldText: "43 Bel Canto Studies for Tuba", italicText: "by Marco Bordogni (for bass trombone)")
+                    }
+                    
+                    Button(action: {
+                        let url = URL(string: edwardsLipSlursLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                      BulletPoint(boldText: "Lip Slurs and Lip Slur Melodies", italicText: "by Brad Edwards")
+                    }
+                    
+                    Button(action: {
+                        let url = URL(string: conconeVocalisesLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        BulletPoint(boldText: "Vocalises", italicText: "by Concone")
+                    }
+                    
+                    
                     Paragraph("Here are some excellent resources for practicing natural slurs:")
                 }
                 
@@ -53,6 +78,7 @@ struct NaturalSlurs: View {
                     PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Natural Slurs")
     }

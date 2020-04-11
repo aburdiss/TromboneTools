@@ -30,7 +30,7 @@ struct Vibrato: View {
                     
                     Image("vibrato-routine-sample-resized")
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                     
                     Paragraph("This routine includes vibrato throughout so you learn to apply it in a wide variety of musical situations. You can find this exercise and others like it in Daily Routines:")
                 }
@@ -54,6 +54,7 @@ struct Vibrato: View {
                     PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Vibrato")
     }

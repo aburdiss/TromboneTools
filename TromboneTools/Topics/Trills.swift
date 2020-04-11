@@ -35,6 +35,7 @@ struct Trills: View {
                     PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Trills")
     }

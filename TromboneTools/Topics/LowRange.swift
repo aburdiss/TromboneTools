@@ -48,7 +48,7 @@ struct LowRange: View {
                     
                     // Bordogni – Melodious Etudes, book 1 (down one octave)
                     Button(action : {
-                        let url = URL(string: bordogniMelodiousEtudesLink)!
+                        let url = URL(string: melodiousEtudesLink)!
                         UIApplication.shared.open(url)
                     }) {
                         BulletPoint(boldText: "Bordogni", italicText: "– Melodious Etudes, book 1 (down one octave)")
@@ -125,6 +125,7 @@ struct LowRange: View {
                     PurchaseButton(rangesongsBassPurchaseLink, "Purchase Rangesongs for Bass Trombone")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Low Range")
     }

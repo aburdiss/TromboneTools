@@ -24,7 +24,9 @@ struct HighRange: View {
                     }
                     Group {
                         Paragraph("There is a symbiotic relationship between the air flow and the muscles of your face. Because of this relationship, when the speed of the air is increased, the muscles are challenged to grow stronger. I like using the breath builder to demonstrate the kind of effort required to generate fast air.")
+                        
                         PurchaseButton(breathBuilderLink, "Breath Builder")
+                        
                         EmbeddedYouTubeView(request: breathBuilderYouTubeLink)
                             .frame(minHeight: 200)
                     }
@@ -62,9 +64,20 @@ struct HighRange: View {
                     Image("high-rangesong-resized")
                         .resizable()
                         .scaledToFill()
-                    //TODO: make each "Rangesongs" bold and italic.
-                    Paragraph("Rangesongs features 5 etudes for each target note from f above the staff up to high f. The second half follows the same format for the low range – from low f down to pedal B-flat. I recommend alternating a high Rangsong with a low; back and forth several times within a practice session. Some days you can play etudes which go 1/2 step over your highest note and other days you can play several more comfortable songs just to mix things up.")
-                    Paragraph("Rangesongs is a terrific resource for improving high range:")
+                    Group {
+                        Text("Rangesongs")
+                            .italic()
+                        + Text("features 5 etudes for each target note from f above the staff up to high f. The second half follows the same format for the low range – from low f down to pedal B-flat. I recommend alternating a high Rangsong with a low; back and forth several times within a practice session. Some days you can play etudes which go 1/2 step over your highest note and other days you can play several more comfortable songs just to mix things up.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    Group {
+                        Text("Rangesongs")
+                            .italic()
+                        + Text(" is a terrific resource for improving high range:")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 
                 SectionDivider()
@@ -76,7 +89,19 @@ struct HighRange: View {
                         ImagePurchaseLink(rangesongsBassPurchaseLink, "rangesongsBassCover")
                         Spacer()
                     }
-                    Paragraph("Rangesongs develops your high and low ranges by using target notes in a musical context to encourage you to move your air properly. For the high range, Rangesongs offers sixty-five songs designed to improve your range and endurance systematically by using two strategies: the phrases within each song are specifically composed to build melodically to a designated target note, providing a compelling musical incentive to support the tone with the proper air speed; and the songs proceed chromatically to reach a high F for gradual improvement. For the low range, Rangesongs offers forty songs to extend the range downward in the same fashion to a pedal B-flat.")
+                    Group {
+                        Text("Rangesongs")
+                        .italic()
+                        + Text(" develops your high and low ranges by using target notes in a musical context to encourage you to move your air properly. For the high range, ")
+                        + Text("Rangesongs")
+                        .italic()
+                        + Text(" offers sixty-five songs designed to improve your range and endurance systematically by using two strategies: the phrases within each song are specifically composed to build melodically to a designated target note, providing a compelling musical incentive to support the tone with the proper air speed; and the songs proceed chromatically to reach a high F for gradual improvement. For the low range, ")
+                        + Text("Rangesongs")
+                        .italic()
+                        + Text(" offers forty songs to extend the range downward in the same fashion to a pedal B-flat.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
                     
                     // This PurchaseButton just links to a website for rangesongs, and is not actually for purchasing a book.
                     PurchaseButton(rangesongsWebsiteLink, "Visit the Rangesongs website")
@@ -84,6 +109,7 @@ struct HighRange: View {
                     PurchaseButton(rangesongsBassPurchaseLink, "Purchase Rangesongs for Bass Trombone")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("High Range")
     }

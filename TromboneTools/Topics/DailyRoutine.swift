@@ -72,6 +72,7 @@ struct DailyRoutine: View {
                     PurchaseButton(intonationMasteryPurchaseLink, "Purchase Trombone Intonation Mastery")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Daily Routine")
     }

@@ -24,6 +24,7 @@ struct NoteEndings: View {
                         .frame(minHeight: 200)
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Note Endings")
     }

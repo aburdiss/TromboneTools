@@ -21,28 +21,26 @@ struct Phrasing: View {
                     Group {
                         Text("Of course, Bordogni/Rochut’s ")
                         + Text("Melodious Etudes")
-                            .bold()
                             .italic()
                         + Text(" is a wonderful resource for practicing phrasing; if you do not own volume one, stop reading now and go buy it! Any set of ")
                         + Text("Vocalises")
-                            .bold()
                             .italic()
                         + Text(" by Concone are also excellent for phrasing.")
                     }
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                     
+                    PurchaseButton(melodiousEtudesLink, "Melodious Etudes")
+                    PurchaseButton(conconeVocalisesLink, "Vocalises")
+                    
                     Group {
                         Text("Flow Studies")
-                            .bold()
                             .italic()
                         + Text(" are phrasing studies. They are easy, predictable phrases designed to help you cultivate exquisite phrasing in a wide variety of keys, registers and slide movements. Here is an excerpt from ")
                         + Text("Flow Study #3")
-                            .bold()
                             .italic()
                         + Text(", which is used in the video that follows. The video shows me working with a student on this particular ")
                         + Text("Flow Study")
-                            .bold()
                             .italic()
                         + Text(".")
                     }
@@ -91,6 +89,7 @@ struct Phrasing: View {
                     PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Phrasing")
     }

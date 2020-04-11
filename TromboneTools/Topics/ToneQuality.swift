@@ -14,7 +14,63 @@ struct ToneQuality: View {
             VStack(alignment: .leading) {
                 Group {
                     Paragraph("Tone quality is your most important attribute as a trombonist. If your tone is inferior, nothing else will matter; because of this, it is extremely important to have a model sound in your head as you play.")
-                    Paragraph("Listen to great trombone players to cultivate a great trombone sound. Charles Vernon, Bill Watrous, Joseph Alessi, Jorgen van Rijen all have beautiful trombone tones that serve as excellent models. Some of you are well acquainted with these virtuoso performers and some of you are not. If you are in the latter category, stop reading right now and follow the links to their home pages to hear samples of their playing. The more you listen to great playing the more you will cultivate your own mature tone quality – and don’t just listen to great trombonists, either! Yo-Yo Ma (Cello), Placido Domingo (Tenor), Hakan Hardenberger (trumpet) are just a few of my non-trombone favorites.")
+                    
+                    Group {
+                        Paragraph("Listen to great trombone players to cultivate a great trombone sound. Charles Vernon, Bill Watrous, Joseph Alessi, Jorgen van Rijen all have beautiful trombone tones that serve as excellent models.")
+                        
+                        Button(action: {
+                            let url = URL(string: charlieVernonYouTubeLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            BulletPoint("Charles Vernon")
+                        }
+                        
+                        Button(action: {
+                            let url = URL(string: billWatrousYouTubeLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            BulletPoint("Bill Watrous")
+                        }
+                        
+                        Button(action: {
+                            let url = URL(string: josephAlessiYouTubeLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            BulletPoint("Joseph Alessi")
+                        }
+                        
+                        Button(action: {
+                            let url = URL(string: jorgenVanRijenYouTubeLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            BulletPoint("Jorgen van Rijen")
+                        }
+                    }
+                    
+                    Group {
+                        Paragraph("Some of you are well acquainted with these virtuoso performers and some of you are not. If you are in the latter category, stop reading right now and follow the links to their home pages to hear samples of their playing. The more you listen to great playing the more you will cultivate your own mature tone quality – and don’t just listen to great trombonists, either! Yo-Yo Ma (Cello), Placido Domingo (Tenor), Hakan Hardenberger (trumpet) are just a few of my non-trombone favorites.")
+                        
+                        Button(action: {
+                            let url = URL(string: yoYoMaYouTubeLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            BulletPoint("Yo-Yo Ma")
+                        }
+                        
+                        Button(action: {
+                            let url = URL(string: placidoDomingoYouTubeLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            BulletPoint("Placido Domingo")
+                        }
+                        
+                        Button(action: {
+                            let url = URL(string: hakanHardenBergerYouTubeLink)!
+                            UIApplication.shared.open(url)
+                        }) {
+                            BulletPoint("Hakan Hardenberger")
+                        }
+                    }
                     Paragraph("Mr. Vernon is a bass trombonist but every trombone player can learn something from listening to his tone. Likewise, Mr. Watrous is a jazz player who plays on small equipment but hearing his tone is still helpful – even if you are a bass trombonist. The message here is to be hungry for good sounds of all kinds and be open to excellence even if it is slightly out of your immediate sphere of interest. I play tenor trombone but I try to infuse my tone with a little Vernon and a little Domingo just the same.")
                     Paragraph("Here is a sound file of me playing the Bozza Ballade, a piece which travels through both the high and low ranges:")
                     
@@ -150,6 +206,7 @@ struct ToneQuality: View {
                     
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Tone Quality")
     }

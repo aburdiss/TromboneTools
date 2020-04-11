@@ -67,6 +67,7 @@ struct Nerves: View {
                 PurchaseButton(crossTrainingWebsiteLink, "Visit the Cross Training website")
                 PurchaseButton(crossTrainingPurchaseLink, "Purchase Cross Training for Musicians")
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Nerves")
     }

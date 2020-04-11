@@ -115,6 +115,7 @@ struct HesitantEntrances: View {
                     }
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Hesitant Entrances")
     }

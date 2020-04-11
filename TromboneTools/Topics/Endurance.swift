@@ -25,10 +25,28 @@ struct Endurance: View {
                     Paragraph("The more tired you get, the more you should blow. Unfortunately, most players tend to do the opposite. Learn to count on the air when you get tired.")
                 }
                 Group {
+                    Paragraph("A breath builder can be useful in learning to use your air efficiently. Here is a video explaining how to use this device:")
+                    EmbeddedYouTubeView(request: breathBuilderYouTubeLink)
                     NumberedBulletPoint(boldNumber: "4", boldText: "Play a solo that challenges your endurance")
                     Paragraph("Musical incentives are always more compelling than technical ones. Choose a solo that you like but is just out of reach endurance-wise and work on it over time. Decide you will be able to play it all the way through by a certain date and enter that date on your practice journal.")
-                    Paragraph("I have had a lot of success using Rangesongs to help students improve endurance. This book features etudes arranged by “target note”. 5 etudes with F above the staff as the target note followed by 5 etudes with G-flat as the target note, and so on, all the way up to high f.")
-                    Paragraph("To build endurance with Rangesongs, play several etudes that are well within your reach – not your highest note, but a gentle challenge. Rest between each etude and then play some low stuff. Then do another session like this, and even another if you have the time. If you pay your dues in this way, your endurance is sure to improve.")
+                    
+                    Group {
+                       Text("I have had a lot of success using ")
+                        + Text("Rangesongs")
+                        .italic()
+                        + Text(" to help students improve endurance. This book features etudes arranged by “target note”. 5 etudes with F above the staff as the target note followed by 5 etudes with G-flat as the target note, and so on, all the way up to high f.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    Group {
+                        Text("To build endurance with ")
+                        + Text("Rangesongs")
+                        .italic()
+                        + Text(", play several etudes that are well within your reach – not your highest note, but a gentle challenge. Rest between each etude and then play some low stuff. Then do another session like this, and even another if you have the time. If you pay your dues in this way, your endurance is sure to improve.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 
                 SectionDivider()
@@ -40,7 +58,20 @@ struct Endurance: View {
                         ImagePurchaseLink(rangesongsBassPurchaseLink, "rangesongsBassCover")
                         Spacer()
                     }
-                    Paragraph("Rangesongs develops your high and low ranges by using target notes in a musical context to encourage you to move your air properly. For the high range, Rangesongs offers sixty-five songs designed to improve your range and endurance systematically by using two strategies: the phrases within each song are specifically composed to build melodically to a designated target note, providing a compelling musical incentive to support the tone with the proper air speed; and the songs proceed chromatically to reach a high F for gradual improvement. For the low range, Rangesongs offers forty songs to extend the range downward in the same fashion to a pedal B-flat.")
+                    
+                    Group {
+                        Text("Rangesongs")
+                        .italic()
+                        + Text(" develops your high and low ranges by using target notes in a musical context to encourage you to move your air properly. For the high range, ")
+                        + Text("Rangesongs")
+                        .italic()
+                        + Text(" offers sixty-five songs designed to improve your range and endurance systematically by using two strategies: the phrases within each song are specifically composed to build melodically to a designated target note, providing a compelling musical incentive to support the tone with the proper air speed; and the songs proceed chromatically to reach a high F for gradual improvement. For the low range, ")
+                        + Text("Rangesongs")
+                        .italic()
+                        + Text(" offers forty songs to extend the range downward in the same fashion to a pedal B-flat.")
+                    }
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
                     
                     // This PurchaseButton just links to a website for rangesongs, and is not actually for purchasing a book.
                     PurchaseButton(rangesongsWebsiteLink, "Visit the Rangesongs website")
@@ -48,6 +79,7 @@ struct Endurance: View {
                     PurchaseButton(rangesongsBassPurchaseLink, "Purchase Rangesongs for Bass Trombone")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Endurance")
     }

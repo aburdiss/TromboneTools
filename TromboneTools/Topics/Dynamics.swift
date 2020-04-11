@@ -138,6 +138,7 @@ struct Dynamics: View {
                     PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Dynamics")
     }

@@ -67,28 +67,29 @@ struct AuditionsProfessional: View {
                 
                 SectionDivider()
                 
-                // TbnXcerpts Ad
-                Group {
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            let url = URL(string: tbnXcerptsLink)!
-                            UIApplication.shared.open(url)
-                        }) {
-                            Image("TbnXcerpts")
-                                .renderingMode(.original)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(maxHeight: 125)
-                        }
-                        Spacer()
-                    }
-                    
-                    Paragraph("Contained in TbnXcerpts are 70 excerpts commonly asked on orchestral auditions, and a variety of recordings for every one.")
-                    
-                    PurchaseButton(tbnXcerptsLink, "Purchase TbnXcerpts")
-                }
+//                // TbnXcerpts Ad
+//                Group {
+//                    HStack {
+//                        Spacer()
+//                        Button(action: {
+//                            let url = URL(string: tbnXcerptsLink)!
+//                            UIApplication.shared.open(url)
+//                        }) {
+//                            Image("TbnXcerpts")
+//                                .renderingMode(.original)
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(maxHeight: 125)
+//                        }
+//                        Spacer()
+//                    }
+//
+//                    Paragraph("Contained in TbnXcerpts are 70 excerpts commonly asked on orchestral auditions, and a variety of recordings for every one.")
+//
+//                    PurchaseButton(tbnXcerptsLink, "Purchase TbnXcerpts")
+//                }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Auditions – Professional")
     }

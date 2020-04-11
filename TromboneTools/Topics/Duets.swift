@@ -75,7 +75,6 @@ struct Duets: View {
                     Paragraph("There are so many great duet books – here are a few of my favorites:")
                 }
                 Group {
-                    // TODO: Test these links
                     // Bassett – 12 Duos
                     Button(action: {
                         let url = URL(string: "http://www.hickeys.com/search/products/sku003682.php")!
@@ -218,6 +217,7 @@ struct Duets: View {
                     PurchaseButton(intonationMasteryPurchaseLink, "Purchase Trombone Intonation Mastery")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Duets")
     }

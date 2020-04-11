@@ -9,10 +9,8 @@ import SwiftUI
 import UIKit
 import WebKit
 
-//TODO: REPLACE THIS WHOLE THING
-
 /**
- The WebView Struct allows for an embedded YouTube video, that plays in the frame and does not autoplay.
+ The EmbeddedYouTubeView Struct allows for an embedded YouTube video, that plays in the frame and does not autoplay.
  
  - parameters:
     - request: A String with the YouTube URL to be embedded.

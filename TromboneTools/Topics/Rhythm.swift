@@ -87,14 +87,28 @@ struct Rhythm: View {
                     }
                         .padding()
                     
-                    PurchaseButton("https://trombonetools.com/rhythm/", "Bolero Rhythm Tracks")
+                    PurchaseButton(bolero60MP3Link, "Quarter = 60")
+                    PurchaseButton(bolero63MP3Link, "Quarter = 63")
+                    PurchaseButton(bolero66MP3Link, "Quarter = 66")
+                    PurchaseButton(bolero69MP3Link, "Quarter = 69")
+                    PurchaseButton(bolero72MP3Link, "Quarter = 72")
+                    PurchaseButton(bolero76MP3Link, "Quarter = 76")
+                    PurchaseButton(bolero80MP3Link, "Quarter = 80")
                 }
                 
                 Group {
-                    Paragraph("I also like playing with Michael Davis’ terrific series of warm-up books. They come with rhythm tracks and cultivate excellent time as you do your fundamentals. Here’s a link to his page:")
-                    PurchaseButton(michaelDavisWarmUpLink, "Michael Davis Warm Ups")
+                    Group {
+                       Text("I also like playing with Michael Davis' terrific series of warm-up books ")
+                        + Text("The 20 Minute Warm-Up")
+                        .italic()
+                        + Text(". They come with rhythm tracks that help you cultivate excellent time as you play your fundamentals.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    PurchaseButton(michaelDavisWarmUpLink, "Michael Davis 20 Minute Warm-Up")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Rhythm")
     }

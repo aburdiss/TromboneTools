@@ -16,7 +16,6 @@ struct Embochure: View {
                     BulletPoint(boldText: "An embouchure is a three-dimensional entity in motion created by wind rushing past lips.")
                     BulletPoint(boldText: "An embouchure does not exist without air flow because an embouchure includes motion.")
                     BulletPoint(boldText: "You can’t take a two-dimensional photo of an embouchure but you can videotape an embouchure.")
-                    //TODO: format the text in this paragraph
                     Group {
                         Text("Try thinking of this definition of embouchure as you play. If you are like me (and many of my students), the idea of ")
                         + Text("including the wind as part of the embouchure")
@@ -97,6 +96,7 @@ struct Embochure: View {
                     PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Embouchure")
     }

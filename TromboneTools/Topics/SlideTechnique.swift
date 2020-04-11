@@ -123,6 +123,7 @@ struct SlideTechnique: View {
                     }
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Slide Technique")
     }

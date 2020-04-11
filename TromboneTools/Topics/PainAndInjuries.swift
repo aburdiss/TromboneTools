@@ -14,9 +14,20 @@ struct PainAndInjuries: View {
             VStack(alignment: .leading) {
                 Group {
                     Paragraph("The trombone is an unwieldy instrument. The left hand position, in particular, is unnatural and can cause pain over time. Smaller people should consider reducing the angle between the bell and the slide to less the 90 degrees for this reason.")
-                    Paragraph("Everybody, regardless of size, should consider using a hand grip for the left hand to help with holding up the instrument. I use one made by Neotech that I like very much. There are many other possibilities as well. These ingenious devices redistribute the weight of the instrument so it’s easier to hold up.")
+                    VStack(alignment: .leading) {
+                        Text("Everybody, regardless of size, should consider using a hand grip for the left hand to help with holding up the instrument. I use one made by Neotech that I like very much.")
+                        Button(action: {
+                            let url = URL(string: "https://www.google.com/search?q=trombone+rest+bar&client=firefox-a&hs=7FW&rls=org.mozilla:en-US:official&channel=sb&tbm=isch&tbo=u&source=univ&sa=X&ei=B4ZvU7nFJsPboATo04LwBg&ved=0CDEQsAQ&biw=1234&bih=702")!
+                            UIApplication.shared.open(url)
+                        }) {
+                            Text("There are many other possibilities as well.")
+                        }
+                        Text("These ingenious devices redistribute the weight of the instrument so it’s easier to hold up.")
+                    }
+                        .padding()
+                        .fixedSize(horizontal: false, vertical: true)
+                    
                     PurchaseButton(neotechHandGripLink, "Neotech Hand Grip")
-                    Paragraph("Trombones are inherently front heavy because of the weight of the slide; because of this, I have added a counterweight to my instrument. Counterweights simply screw on the tuning slide brace and balance the weight of the instrument front to back. Admittedly, this can drastically change the resonance of the instrument, so I recommend trying it out before purchasing one. I have found that the improved weight distribution and ease of holding up the instrument far outweighs any effect it might have on my tone.")
                     Paragraph("There are so many possible places where a trombonist can encounter pain it’s simply not possible to cover every contingency here. For this reason, I offer just a couple of global bits of advice: don’t push through pain and don’t invite trouble.")
                     NumberedBulletPoint(boldNumber: "1", boldText: "Don’t push through pain.")
                     Paragraph("Pain is your body’s way of saying something is critically wrong. If you experience pain while playing, listen to your body: stop playing and seek help from a medical professional immediately.")
@@ -102,6 +113,7 @@ struct PainAndInjuries: View {
                 }
                 
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Pain and Injuries")
     }

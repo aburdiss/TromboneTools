@@ -58,15 +58,23 @@ struct Flexibility: View {
                         Spacer()
                     }
                     
-                    Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
+                    Group {
+                        Text("Daily Routines")
+                            .italic()
+                        + Text(" and ")
+                        + Text("Daily Routines for the Student Trombone Player")
+                            .italic()
+                        + Text(" offer many opportunities to practice alternate positions.")
+                    }
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
                     
                     PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone")
                     PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
                     PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
-                }
-                
-                
+                }  
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Flexibility")
     }

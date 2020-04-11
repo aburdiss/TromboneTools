@@ -16,6 +16,7 @@ struct MouthpieceBuzzing: View {
                     .frame(minHeight: 200)
                 Paragraph("Mouthpiece buzzing can be a useful practice tool. I like using it to cultivate resonance of tone, for smoothness of phrasing and for improving accuracy. Of course, if you are traveling without your instrument, it can be helpful to take your mouthpiece along just to keep your chops in shape.")
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Mouthpiece Buzzing")
     }

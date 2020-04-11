@@ -107,6 +107,7 @@ struct Articulation: View {
                     PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Articulation")
     }

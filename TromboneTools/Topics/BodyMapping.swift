@@ -23,6 +23,7 @@ struct BodyMapping: View {
                     Paragraph("Body Mapping for Brass Players")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Body Mapping")
     }

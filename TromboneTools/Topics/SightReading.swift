@@ -148,6 +148,7 @@ struct SightReading: View {
                     PurchaseButton(bigBookOfSightReadingDuetsPurchaseLink, "Purchase The Big Book of Sight Reading Duets")
                 }
             }
+            .padding(.bottom, 100)
         }
     .navigationBarTitle("Sight Reading")
     }
