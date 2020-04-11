@@ -3,7 +3,7 @@
 //  TromboneToolsTests
 //
 //  Created by Alex Burdiss on 1/23/20.
-//  Copyright © 2020 Alex Burdiss. All rights reserved.
+//  Copyright © 2020 Alex Burdiss and Qian Yu. All rights reserved.
 //
 
 import XCTest
