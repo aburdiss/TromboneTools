@@ -65,7 +65,7 @@ struct AuditionsProfessional: View {
                     Paragraph("The moral of the story? To win an audition (ensemble or solo), stop thinking like a trombonist and start thinking like a musician.")
                 }
                 
-                SectionDivider()
+//                SectionDivider()
                 
 //                // TbnXcerpts Ad
 //                Group {

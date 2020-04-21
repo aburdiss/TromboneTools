@@ -43,19 +43,6 @@ struct Duets: View {
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
                     
-                    Group {
-                        Text("Darth Bruckner, The Hip Lip Flip Trip, Martian Lip Slurs,")
-                            .italic()
-                        + Text(" and ")
-                        + Text("Arban Freaks Out")
-                            .italic()
-                        + Text(" are just some of the fun—but make no mistake, also challenging!—duets included in ")
-                        + Text("Dueling Fundamentals for Trombones")
-                            .italic()
-                        + Text(". This book consists of seven chapters: Long Tones, Flexibility, Stabilizers, Scales and Arpeggios, Range Extenders, Mixed Techniques, and Tenor/Bass Duets. Throughout the book, both lines are challenging—there is no “student” line and no “teacher” line. Therefore this book works well for lessons or as an excellent tool for two friends or classmates looking to challenge themselves and each other.")
-                    }
-                    .padding()
-                    .fixedSize(horizontal: false, vertical: true)
                     
                     VStack(alignment: .leading) {
                         Text("Here is a video of a couple of the duets from")
@@ -173,7 +160,6 @@ struct Duets: View {
                     }
                     
                     Paragraph("These duets are designed to assist trombone players in learning six of the most popular trombone solos. The two parts are equal in importance and difficulty. Solo Training Duets can be used to help students learn style and technique, as recreational musical diversions or even as additions to recitals.")
-                    Quote("“David Vining’s Solo Training Duets for Trombone are both enjoyable and challenging.  These duets are a unique and creative way to learn the most popular solo works for trombone.  We are always looking for good new duets to play with both colleagues and students, and these duets fit the bill on many levels.  I highly recommend them.”", "— Larry Zalkind, Eastman School of Music")
                     
                     PurchaseButton(soloDuetTrainingPurchaseLink, "Purchase Solo Duet Training")
                 }
@@ -202,19 +188,6 @@ struct Duets: View {
                     
                     PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones")
                     PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition")
-                }
-                
-                SectionDivider()
-                
-                // Trombone Intonation Mastery
-                Group {
-                    Paragraph("There are also quite a few duets in this book, organized by Student/Teacher Duets, Equal Part Duets, and Repertoire Duets:")
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(intonationMasteryPurchaseLink, "intonationMasteryCover")
-                        Spacer()
-                    }
-                    PurchaseButton(intonationMasteryPurchaseLink, "Purchase Trombone Intonation Mastery")
                 }
             }
             .padding(.bottom, 100)

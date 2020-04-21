@@ -14,49 +14,56 @@ struct ResourceView: View {
             List {
                 Section {
                     Button(action: {
-                        let url = URL(string: bigBookOfSightReadingDuetsResourceLink)!
+                        let url = URL(string: bigBookOfSightReadingDuetsPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("The Big Book of Sight Reading Duets")
                     }
                     
                     Button(action: {
-                        let url = URL(string: breathingBookResourceLink)!
+                        let url = URL(string: breathingBookTenorPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Breathing Book")
                     }
                     
                     Button(action: {
-                        let url = URL(string: crossTrainingResourceLink)!
+                        let url = URL(string: crossTrainingPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Cross Training for Musicians")
                     }
                     
                     Button(action: {
-                        let url = URL(string: dailyRoutinesResourceLink)!
+                        let url = URL(string: dailyRoutinesTenorPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Daily Routines")
                     }
                     
                     Button(action: {
-                        let url = URL(string: duelingFundamentalsResourceLink)!
+                        let url = URL(string: davidViningWebsite)!
                         UIApplication.shared.open(url)
                     }) {
-                        Text("Deuling Fundamentals")
+                        Text("David Vining.com")
                     }
                     
                     Button(action: {
-                        let url = URL(string: flowStudiesResourceLink)!
+                        let url = URL(string: duelingFundamentalsPurchaseLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Text("Dueling Fundamentals")
+                    }
+                    
+                    Button(action: {
+                        let url = URL(string: flowStudiesTenorPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Flow Studies")
                     }
                     
                     Button(action : {
-                        let url = URL(string: longToneDuetsResourceLink)!
+                        let url = URL(string: longToneDuetsPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Long Tone Duets")
@@ -64,21 +71,28 @@ struct ResourceView: View {
                 }
                 Section {
                     Button(action: {
-                        let url = URL(string: notesOfHopeResourceLink)!
+                        let url = URL(string: mountainPeakWebsite)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Text("Mountain Peak Music")
+                    }
+                    
+                    Button(action: {
+                        let url = URL(string: notesOfHopePurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Notes of Hope")
                     }
                     
                     Button(action: {
-                        let url = URL(string: rangesongsResourceLink)!
+                        let url = URL(string: rangesongsTenorPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Rangesongs")
                     }
                     
                     Button(action: {
-                        let url = URL(string: soloDuetTrainingResourceLink)!
+                        let url = URL(string: soloDuetTrainingPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Solo Duet Training")
@@ -99,7 +113,14 @@ struct ResourceView: View {
                     }
                     
                     Button(action: {
-                        let url = URL(string: tromboneIntonationMasteryResourceLink)!
+                        let url = URL(string: tromboneExcerptsLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Text("Trombone Excerpts.org")
+                    }
+                    
+                    Button(action: {
+                        let url = URL(string: intonationMasteryPurchaseLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Trombone Intonation Mastery")

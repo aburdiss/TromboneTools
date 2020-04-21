@@ -12,6 +12,7 @@
 		9C1D0DA323EBE1710092653A /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA223EBE1710092653A /* SectionDivider.swift */; };
 		9C1D0DA523EBE3F60092653A /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA423EBE3F60092653A /* PurchaseButton.swift */; };
 		9C1D0DA723EBE6040092653A /* ImagePurchaseLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA623EBE6040092653A /* ImagePurchaseLink.swift */; };
+		9C3FC85B244E8498005DC8BA /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FC85A244E8498005DC8BA /* AuthorView.swift */; };
 		9C4FFCCF23EC76E2006ECF3B /* YouTubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FFCCE23EC76E2006ECF3B /* YouTubePlayerView.swift */; };
 		9C4FFCD123ECA595006ECF3B /* BulletPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FFCD023ECA595006ECF3B /* BulletPoint.swift */; };
 		9C503C6023FF8C42008B9346 /* ResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503C5F23FF8C42008B9346 /* ResourceView.swift */; };
@@ -67,6 +68,7 @@
 		9C1D0DA223EBE1710092653A /* SectionDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDivider.swift; sourceTree = "<group>"; };
 		9C1D0DA423EBE3F60092653A /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
 		9C1D0DA623EBE6040092653A /* ImagePurchaseLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePurchaseLink.swift; sourceTree = "<group>"; };
+		9C3FC85A244E8498005DC8BA /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
 		9C4FFCCE23EC76E2006ECF3B /* YouTubePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerView.swift; sourceTree = "<group>"; };
 		9C4FFCD023ECA595006ECF3B /* BulletPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletPoint.swift; sourceTree = "<group>"; };
 		9C503C5F23FF8C42008B9346 /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				9C96268A23DABCBE0031B0E9 /* HomeView.swift */,
 				9C96268C23DABD7E0031B0E9 /* TopicListView.swift */,
 				9C503C5F23FF8C42008B9346 /* ResourceView.swift */,
+				9C3FC85A244E8498005DC8BA /* AuthorView.swift */,
 				9C1D0D9F23EBDF190092653A /* LayoutStructures */,
 				9C96268723DABC820031B0E9 /* Topics */,
 				9CD7563023DA7FC600C5E68E /* AppDelegate.swift */,
@@ -369,6 +372,7 @@
 				9C089A7923FAFFF40008E29E /* ContentModel.swift in Sources */,
 				9C96268923DABCB00031B0E9 /* AlternatePositions.swift in Sources */,
 				9C96268F23DAC2910031B0E9 /* Articulation.swift in Sources */,
+				9C3FC85B244E8498005DC8BA /* AuthorView.swift in Sources */,
 				9C600E9623EB34D400C73BFB /* SlideTechnique.swift in Sources */,
 				9C600E9823EB34DD00C73BFB /* ToneQuality.swift in Sources */,
 				9C96269523DAC4F10031B0E9 /* AuditionsProfessional.swift in Sources */,
@@ -509,6 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.3;
 				DEVELOPMENT_ASSET_PATHS = "\"TromboneTools/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -517,6 +522,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TromboneTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -529,6 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.3;
 				DEVELOPMENT_ASSET_PATHS = "\"TromboneTools/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -537,6 +544,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TromboneTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

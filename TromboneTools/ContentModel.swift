@@ -53,13 +53,15 @@ let whatEveryTrombonistResourceLink: String = "http://www.mountainpeakmusic.com/
 
 // Mountain Peak Music Book Websites
 let crossTrainingWebsiteLink: String = "http://crosstrainingformusicians.com/"
+let davidViningWebsite: String = "http://www.davidvining.com/"
+let mountainPeakWebsite: String = "http://www.mountainpeakmusic.com/"
 let rangesongsWebsiteLink: String = "http://rangesongs.com/"
 
 
 // External Links
-//TODO: This link doesn't work.
 let blazhevich70StudiesLink: String = "http://www.hickeys.com/music/brass/tuba_and_euphonium/methods_and_studies/tuba_studies_and_etudes/products/sku001209-blazhevich-studies-70-v1.php"
 let blumeFink36StudiesLink: String = "http://www.hickeys.com/music/brass/trombone/tenor_trombone/studies_and_etudes/products/sku020200-blume-fink-studies-36-for-trombone-wf-attachment.php"
+let bodyMappingAssocLink: String = "http://bodymap.org/main/"
 let bordogni43BelCantoStudiesLink: String = "https://www.amazon.com/Canto-Studies-Trombone-Music-Brass/dp/B000ZGBWMO"
 let breathBuilderLink: String = "https://www.wwbw.com/Breath-Builder-Isomeric-Exerciser-420386.wwbw"
 let conconeVocalisesLink: String = "https://www.hickeys.com/search.php?q=concone+vocalises+for+trombone"
@@ -72,6 +74,7 @@ let soundblasterLink: String = "https://www.soundblaster.com/products/speakers"
 let tascamLink: String = "https://www.sweetwater.com/store/detail/DR07X--tascam-dr-07x-stereo-handheld-recorder"
 let tbnXcerptsLink: String = "https://apps.apple.com/tt/app/tbnxcerpts/id1503907981"
 let tonalEnergyLink: String = "https://apps.apple.com/us/app/tonalenergy-tuner-metronome/id497716362"
+let tromboneExcerptsLink: String = "http://www.tromboneexcerpts.org/"
 let tunableLink: String = "https://apps.apple.com/us/app/tunable-music-practice-tools/id608540795"
 let yamahaSlideLubricantLink: String = "https://usa.yamaha.com/products/musical_instruments/winds/accessories/trombone_slide_oil/index.html"
 
@@ -146,7 +149,8 @@ let trillsYouTubeLink: String = "https://youtube.com/embed/IfgkWVlIV-4"
 let tuningAppsYouTubeLink: String = "https://youtube.com/embed/7ic4uCyXXwY"
 let tuningInstrumentYouTubeLink: String = "https://youtube.com/embed/7nKjxi73TB8"
 let vibratoYouTubeLink: String = "https://youtube.com/embed/ovl8BcxJZL0"
-var welcomeYouTubeLink:String = "https://youtube.com/embed/syifJzXQihM"
+let viralYouTubeLink: String = "https://youtube.com/embed/2UpE5aMpOyU"
+let welcomeYouTubeLink:String = "https://youtube.com/embed/syifJzXQihM"
 let yoYoMaYouTubeLink: String = "https://youtube.com/embed/1prweT95Mo0"
 
 

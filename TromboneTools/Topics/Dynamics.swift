@@ -101,39 +101,16 @@ struct Dynamics: View {
                     }
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
-                    Paragraph("These resources provide an excellent means for working on dynamics:")
-                }
-                
-                SectionDivider()
-                
-                // Daily Routines
-                Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
-                        Spacer()
-                    }
-
-                    Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
                     
-                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone")
-                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
-                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
+                    Paragraph("Additionally, musicians are required to have full control over the entire dynamic range while playing high, low, loud, fast, short, long, and everything in between! In other words, you should challenge yourself to cover a wide array of dynamics in the practice room so you will be ready for any musical situation which may come up.")
+                    
+                    Paragraph("These resources provide an excellent means for working on dynamics:")
                 }
                 
                 SectionDivider()
                 
                 // Flow Studies
                 Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
-                        Spacer()
-                    }
-                    
                     PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone")
                     PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")
                 }

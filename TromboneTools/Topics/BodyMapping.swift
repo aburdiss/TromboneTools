@@ -22,6 +22,18 @@ struct BodyMapping: View {
                 }) {
                     Paragraph("Body Mapping for Brass Players")
                 }
+                
+                VStack(alignment: .leading) {
+                    Text("To learn more about Body Mapping, please refer to the ")
+                    Button(action: {
+                        let url = URL(string: bodyMappingAssocLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Text("Association for Body Mapping Education.")
+                    }
+                }
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
             }
             .padding(.bottom, 100)
         }

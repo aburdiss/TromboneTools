@@ -14,6 +14,12 @@ struct DailyRoutine: View {
             VStack(alignment: .leading) {
                 Group {
                     Paragraph("Trombonists should work on fundamentals every day – tone quality, articulation, flexibility, range extremes and dynamics.")
+                    
+                    
+                    Paragraph("Here is a daily routine I wrote to help you keep your chops together during the coronovirus outbreak in 2020. I call it the Viral Routine and it’s about 15 minutes of playing including long tones, lip slurs, low playing, high playing, tonguing, and slide technique. Once you download the music, you can play along with me in this video:")
+                    PurchaseButton(viralRoutinePDFLink, "Viral Routine Sheet Music")
+                    EmbeddedYouTubeView(request: viralYouTubeLink)
+                        .frame(minHeight: 200)
                     Paragraph("I like to think of a  daily routine as being different from a warm-up. A warm-up is just playing a few notes in preparation for a rehearsal – literally getting the instrument warmed up and getting prepared to play. A daily routine, on the other hand, is a set of activities designed to cultivate and maintain your fundamental skills. Any good daily routine should address the following areas:")
                 }
                 
@@ -51,25 +57,9 @@ struct DailyRoutine: View {
                         Spacer()
                     }
                     
-                    Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
-                    
                     PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone")
                     PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
                     PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
-                }
-                
-                SectionDivider()
-                
-                // Purchase Intonation Book
-                Group {
-                    Paragraph("There are also 3 daily routines in this book that allow you to practice your fundamentals at the same time you refine your intonation:")
-                    HStack{
-                        Spacer()
-                        ImagePurchaseLink(intonationMasteryPurchaseLink, "intonationMasteryCover")
-                        Spacer()
-                    }
-                  
-                    PurchaseButton(intonationMasteryPurchaseLink, "Purchase Trombone Intonation Mastery")
                 }
             }
             .padding(.bottom, 100)

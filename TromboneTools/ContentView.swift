@@ -35,6 +35,11 @@ struct ContentView: View {
                             Image(systemName: "book")
                             Text("Resources")
                     }
+                    AuthorView()
+                        .tabItem {
+                            Image(systemName: "person")
+                            Text("Author")
+                    }
                 }
             .accentColor(.orange)
         }

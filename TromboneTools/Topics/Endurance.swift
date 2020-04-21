@@ -27,6 +27,7 @@ struct Endurance: View {
                 Group {
                     Paragraph("A breath builder can be useful in learning to use your air efficiently. Here is a video explaining how to use this device:")
                     EmbeddedYouTubeView(request: breathBuilderYouTubeLink)
+                        .frame(minHeight: 200)
                     NumberedBulletPoint(boldNumber: "4", boldText: "Play a solo that challenges your endurance")
                     Paragraph("Musical incentives are always more compelling than technical ones. Choose a solo that you like but is just out of reach endurance-wise and work on it over time. Decide you will be able to play it all the way through by a certain date and enter that date on your practice journal.")
                     

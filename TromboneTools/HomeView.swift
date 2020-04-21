@@ -41,7 +41,7 @@ struct HomeView: View {
                     Paragraph("For more individualized help, request a skype or facetime lesson through the contact button below.")
                     HStack {
                         Spacer()
-                        ContactButton("Get Skype/FaceTime Lessons", "https://trombonetools.com/skype-lessons/")
+                        ContactButton("Get Zoom or FaceTime Lessons", "https://trombonetools.com/skype-lessons/")
                         Spacer()
                     }
                     

@@ -54,6 +54,7 @@ struct Articulation: View {
                 // Multiple Tonguing Group 1
                 Group {
                     EmbeddedYouTubeView(request: multipleTonguingYouTubeLink)
+                        .frame(minHeight: 200)
                     
                     Paragraph("Before you can double or triple tongue you must possess a reliable single tongue, following all the guidelines I have already set forth above because the same principles apply to multiple tonguing.")
                     Paragraph("I think it’s logical to spend time just practicing the off syllable because it’s the one you are not used to. Just play slow notes on one pitch using the syllable ga. Connect the notes and don’t try to move around at first. Try eighth notes at quarter = 72 just to get used to doing this because it will feel very awkward at first. Persevere and practice a little like this everyday. When you feel relatively comfortable doing this, try mixing up the syllables as follows:")
@@ -91,20 +92,6 @@ struct Articulation: View {
                         PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
                         PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
                     }
-                }
-                
-                SectionDivider()
-                
-                Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
-                        Spacer()
-                    }
-                    
-                    Paragraph("What Every Trombonist Needs to Know About the Body applies anatomically accurate information to playing the trombone—for example, the arm and slide technique, breathing and tone production, the tongue and articulation, etc. By teaching from a position of anatomical accuracy, this book provides a secure somatic foundation upon which to make music, thereby making your movements free of tension and reducing your risk of injury. The result is a beautiful tone, improved technique, and minimum effort in your playing.")
-                    
-                    PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
                 }
             }
             .padding(.bottom, 100)
