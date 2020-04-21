@@ -54,16 +54,20 @@ struct HesitantEntrances: View {
                     Paragraph("If you are still locking up, try yet a different tongue placement. Be radical in your experimentation because you never know what might work.")
                     Paragraph("The new tongue placement is your new default. Once you are able to articulate and come in on time, work with the new tongue placement until it feels more natural to you and sounds like you want it to sound.")
                     Paragraph("One last bit of advice: Don’t rush through the steps and be brutally honest about your progress. These three simple steps might take you a couple of days or they might take weeks…everybody’s different. You may need to suspend your regular practicing until you fix this problem; if you are in this situation, be patient with yourself and give yourself the time you need to “reprogram” your approach.")
-                    Group {
-                        Paragraph("If you would like additional help, feel free to")
+              
+                    VStack(alignment: .leading) {
+                        Text("If you would like additional help, feel free to")
                         Button(action: {
                             let url = URL(string: skypeLessonLink)!
                             UIApplication.shared.open(url)
                         }) {
-                            Text("request a skype lesson with me.")
-                                .padding(.horizontal)
+                            Text("request a Zoom lesson with me.")
+                                
                         }
                     }
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
+                    
                     Paragraph("Here are some additional resources to help you with hesitant entrances:")
                 }
                 

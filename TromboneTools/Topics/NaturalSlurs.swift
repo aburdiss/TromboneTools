@@ -53,29 +53,6 @@ struct NaturalSlurs: View {
                     }) {
                         BulletPoint(boldText: "Vocalises", italicText: "by Concone")
                     }
-                    
-                    
-                    Paragraph("Here are some excellent resources for practicing natural slurs:")
-                }
-                
-                SectionDivider()
-                
-                 Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
-                        Spacer()
-                    }
-                                   
-                    Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
-                    
-                    Quote("“I am always grateful when a great performer goes to the trouble to organize his/her thoughts and make them available. David Vining has done just that in his book, Daily Routines. These routines are masterfully conceived. They exhibit exceptional balance, ingenuity, and insight. Vining saves us many steps by organizing tried and true material, adding his own astute innovations and explaining the procedures that produce technical mastery.”", "— Mike Hall, International Trombone Association Journal")
-                                   
-                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone")
-                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
-                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
                 }
             }
             .padding(.bottom, 100)

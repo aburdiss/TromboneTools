@@ -55,45 +55,11 @@ struct Embochure: View {
                         Spacer()
                     }
                     Paragraph("I am continually surprised by how little effort we can get away with in the muscles of our face in order to create a resonant tone. I say use as little effort as you can get away with and if that means trusting the air more, then I’m going to blow!")
-                    Paragraph("Here are some resources that can help you with your embouchure:")
                 }
-                
-                SectionDivider()
-                
-                // The Breathing Book
                 Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(breathingBookTenorPurchaseLink, "breathingBookTenorCover")
-                        ImagePurchaseLink(breathingBookBassPurchaseLink, "breathingBookBassCover")
-                        Spacer()
-                    }
-                    Group {
-                        Text("To breathe well means to breathe free of tension, and trombonists who breathe well create a resonant tone quality. ")
-                        + Text("The Breathing Book")
-                        .italic()
-                        + Text(" provides concise information about breathing alongside etudes and activites encouraging application of this knowledge in musically meaningful ways. ")
-                        + Text("The Breathing Book")
-                        .italic()
-                        + Text(" teaches the truth about breathing, establishing a reliable foundation for improved resonance, articulation, endurance, and tone quality.")
-                    }
-                        .padding()
-                        .fixedSize(horizontal: false, vertical: true)
-                    Quote("“In this slender book, David Vining strips away the many misconceptions about breathing that have been accepted as fact for far too long. Once the player understands exactly where the air goes and how it should be utilized, every area of playing will improve.”", "— Ralph Sauer, Principal Trombonist (retired), Los Angeles Philharmonic")
-                    PurchaseButton(breathingBookTenorPurchaseLink, "Purchase The Breathing Book for Tenor Trombone")
-                    PurchaseButton(breathingBookBassPurchaseLink, "Purchase the Breathing Book for Bass Trombone")
-                }
-                
-                SectionDivider()
-                
-                // What Every Trombonist Needs to Know About the Body
-                Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(whatEveryTrombonistPurchaseLink, "whatEveryTrombonistCover")
-                        Spacer()
-                    }
-                    PurchaseButton(whatEveryTrombonistPurchaseLink, "Purchase What Every Trombonist Needs to Know About the Body")
+                    Paragraph("A breath builder can be useful in learning to use your air efficiently. Here is a video explaining how to use this device:")
+                    EmbeddedYouTubeView(request: breathBuilderYouTubeLink)
+                        .frame(minHeight: 200)
                 }
             }
             .padding(.bottom, 100)

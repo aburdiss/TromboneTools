@@ -13,9 +13,15 @@ struct AuthorView: View {
         NavigationView {
             ScrollView(.vertical) {
                 VStack {
-                    Image("vining")
-                    .resizable()
-                    .scaledToFit()
+                    HStack {
+                        Spacer()
+                        Image("vining")
+                            .resizable()
+                            .scaledToFit()
+                        Spacer()
+                    }
+                    .frame(maxHeight: 400)
+                    
                     
                     Group {
                         Text("Trombonist David Vining is the founder and co-owner of Mountain Peak Music, a publishing company devoted to offering innovative, healthy teaching methods for all musicians. Mountain Peak Music represents Mr. Vining’s personal mission, combining his extensive performing and teaching background with insights learned through his remarkable recovery from embouchure dystonia. His Mountain Peak Music publications include the ")

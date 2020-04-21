@@ -166,53 +166,6 @@ struct Intonation: View {
                     
                     SectionDivider()
                     
-                    //Solo Duet Training
-                    Group {
-                        Paragraph("I have also written some duets based upon several of the top trombone solos by extracting lines from the piano part and interspersing them with the solo part. Each player gets some of the solo and some of the accompaniment, so you learn the solo inside and out, in a manner of speaking.")
-                        Group {
-                            Text("Here is a sample of this project – the second movement from the ")
-                            + Text("Concertino")
-                                .italic()
-                            + Text(" by ")
-                            + Text("David")
-                                .bold()
-                            + Text(". I am providing PDF downloads so you can print them out these parts and play the duet:")
-                        }
-                        .padding()
-                        .fixedSize(horizontal: false, vertical: true)
-                        
-                        Group {
-                            Button(action: {
-                                let url = URL(string: davidDuetTbn1PDFLink)!
-                                UIApplication.shared.open(url)
-                            }) {
-                                Paragraph("Trombone 1: David second movement")
-                            }
-                            
-                            Button(action : {
-                                let url = URL(string: davidDuetTbn2PDFLink)!
-                                UIApplication.shared.open(url)
-                            }) {
-                                Paragraph("Trombone 2: David second movement")
-                            }
-                            
-                        }
-                        
-                        EmbeddedYouTubeView(request: soloDuetTrainingYouTubeLink)
-                            .frame(minHeight: 200)
-                        HStack {
-                            Spacer()
-                            ImagePurchaseLink(soloDuetTrainingPurchaseLink, "soloDuetTrainingCover")
-                            Spacer()
-                        }
-                        
-                        Paragraph("These duets are designed to assist trombone players in learning six of the most popular trombone solos. The two parts are equal in importance and difficulty. Solo Training Duets can be used to help students learn style and technique, as recreational musical diversions or even as additions to recitals.")
-                        Quote("“David Vining’s Solo Training Duets for Trombone are both enjoyable and challenging.  These duets are a unique and creative way to learn the most popular solo works for trombone.  We are always looking for good new duets to play with both colleagues and students, and these duets fit the bill on many levels.  I highly recommend them.”", "— Larry Zalkind, Eastman School of Music")
-                        PurchaseButton(soloDuetTrainingPurchaseLink, "Purchase Solo Duet Training")
-                    }
-                    
-                    SectionDivider()
-                    
                     //LongToneDuets
                     Group {
                         Paragraph("Here are a few more duet books that I have written:")

@@ -108,64 +108,6 @@ struct ToneQuality: View {
                 Group {
                     SectionDivider()
                     
-                    // Daily Routines
-                    Group {
-                        HStack {
-                            Spacer()
-                            ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
-                            ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
-                            ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
-                            Spacer()
-                        }
-                        
-                        Paragraph("Daily Routines and Daily Routines for the Student Trombone Player offer many opportunities to practice alternate positions.")
-                        
-                        PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone.")
-                        PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player.")
-                        PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone.")
-                    }
-                    
-                    SectionDivider()
-                    
-                    // Solo Duet Training
-                    Group {
-                        Paragraph("I have also written some duets based upon several of the top trombone solos by extracting lines from the piano part and interspersing them with the solo part. Each player gets some of the solo and some of the accompaniment, so you learn the solo inside and out, in a manner of speaking.")
-                        Paragraph("Here is a sample of this project – the second movement from the \"Concertino\" by David. I am providing PDF downloads so you can print them out these parts and play the duet:")
-                        
-                        Group {
-                            Button(action: {
-                                let url = URL(string: davidDuetTbn1PDFLink)!
-                                UIApplication.shared.open(url)
-                            }) {
-                                Paragraph("Trombone 1: David second movement")
-                            }
-                            
-                            Button(action : {
-                                let url = URL(string: davidDuetTbn2PDFLink)!
-                                UIApplication.shared.open(url)
-                            }) {
-                                Paragraph("Trombone 2: David second movement")
-                            }
-                            
-                        }
-                        
-                        EmbeddedYouTubeView(request: soloDuetTrainingYouTubeLink)
-                            .frame(minHeight: 200)
-                        
-                        HStack {
-                            Spacer()
-                            ImagePurchaseLink(soloDuetTrainingPurchaseLink, "soloDuetTrainingCover")
-                            Spacer()
-                        }
-                        
-                        Paragraph("These duets are designed to assist trombone players in learning six of the most popular trombone solos. The two parts are equal in importance and difficulty. Solo Training Duets can be used to help students learn style and technique, as recreational musical diversions or even as additions to recitals.")
-                        Quote("“This is a fantastic idea! It helps students develop a better overall sense of a solo piece as they prepare it for performance. A great tool for private teachers to “show” rather than just “tell”, and a fun resource for players to read through a piece with other players. You can even learn a lot recording one part and playing along with yourself! No more wondering “how it feels to play with someone else” prior to the first run through with the pianist! Hopefully, this will be the first volume of duets like this David Vining’s has up his sleeve!”", "— Alex Iles, Los Angeles freelance/studio trombonist and Principal trombone, Long Beach Symphony Orchestra")
-                        
-                        PurchaseButton(soloDuetTrainingPurchaseLink, "Purchase Solo Duet Training")
-                    }
-                    
-                    SectionDivider()
-                    
                     // Long Tone Duets
                     Group {
                         HStack {
@@ -188,27 +130,11 @@ struct ToneQuality: View {
                         PurchaseButton(longToneDuetsPurchaseLink, "Purchase Long Tone Duets for Trombones")
                         PurchaseButton(longToneDuetsRalphSauerPurchaseLink, "Purchase Long Tone Duets, Ralph Sauer Edition")
                     }
-                    
-                    SectionDivider()
-                    
-                    // Flow Studies Plug
-                    Group {
-                        HStack {
-                            Spacer()
-                            ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
-                            ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
-                            Spacer()
-                        }
-                        
-                        PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone")
-                        PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")
-                    }
-                    
                 }
             }
             .padding(.bottom, 100)
         }
-    .navigationBarTitle("Tone Quality")
+        .navigationBarTitle("Tone Quality")
     }
 }
 

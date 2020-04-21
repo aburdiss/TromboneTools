@@ -59,31 +59,8 @@ struct Phrasing: View {
                 
                 SectionDivider()
                 
-                // Daily Routine
-                Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(dailyRoutinesTenorPurchaseLink, "dailyRoutinesTenorCover")
-                        ImagePurchaseLink(dailyRoutinesStudentPurchaseLink, "dailyRoutinesStudentCover")
-                        ImagePurchaseLink(dailyRoutinesBassPurchaseLink, "dailyRoutinesBassCover")
-                        Spacer()
-                    }
-                    
-                    PurchaseButton(dailyRoutinesTenorPurchaseLink, "Purchase Daily Routines for Tenor Trombone")
-                    PurchaseButton(dailyRoutinesStudentPurchaseLink, "Purchase Daily Routines for the Student Trombone Player")
-                    PurchaseButton(dailyRoutinesBassPurchaseLink, "Purchase Daily Routines for Bass Trombone")
-                }
-                
-                SectionDivider()
-                
                 // Flow Studies Plug
                 Group {
-                    HStack {
-                        Spacer()
-                        ImagePurchaseLink(flowStudiesTenorPurchaseLink, "flowStudiesTenorCover")
-                        ImagePurchaseLink(flowStudiesBassPurchaseLink, "flowStudiesBassCover")
-                        Spacer()
-                    }
                     
                     PurchaseButton(flowStudiesTenorPurchaseLink, "Purchase Flow Studies for Tenor Trombone")
                     PurchaseButton(flowStudiesBassPurchaseLink, "Purchase Flow Studies for Bass Trombone")

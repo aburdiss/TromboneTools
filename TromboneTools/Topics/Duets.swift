@@ -28,24 +28,9 @@ struct Duets: View {
                         Spacer()
                     }                    
                 }
-                
-                
                 Group {
                     VStack(alignment: .leading) {
-                        Text("Here is a great way to work on your fundamentals by playing duets:")
-                        Button(action: {
-                            let url = URL(string: duelingFundamentalsPurchaseLink)!
-                            UIApplication.shared.open(url)
-                        }) {
-                            Text("Dueling Fundamentals for Two Trombones.")
-                        }
-                    }
-                        .padding()
-                        .fixedSize(horizontal: false, vertical: true)
-                    
-                    
-                    VStack(alignment: .leading) {
-                        Text("Here is a video of a couple of the duets from")
+                        Text("Dueling Fundamentals is a great way to work on your fundamentals by playing duets. Here is a video of a couple of the duets from")
                         Button(action: {
                             let url = URL(string: duelingFundamentalsPurchaseLink)!
                             UIApplication.shared.open(url)
