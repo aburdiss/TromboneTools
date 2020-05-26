@@ -17,7 +17,7 @@ struct Breathing: View {
                     .frame(minHeight: 200)
                 
                 Paragraph("No technique is more important to good trombone playing than proper breathing. Sadly, no technique is as misunderstood as breathing.")
-                Paragraph("I could fill page after page with information about breathing but for now, I’ll summarize the most common student mistakes:")
+                Paragraph("Here is a summary of the most common breathing mistakes made by students and professionals alike:")
                 
                 // Numbered List
                 Group {

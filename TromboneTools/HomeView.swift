@@ -38,7 +38,7 @@ struct HomeView: View {
                     .padding()
                     .fixedSize(horizontal: false, vertical: true)
                       
-                    Paragraph("For more individualized help, request a skype or facetime lesson through the contact button below.")
+                    Paragraph("For more individualized help, request a Zoom or FaceTime lesson with me, David Vining, author of Trombonetools.")
                     HStack {
                         Spacer()
                         ContactButton("Get Zoom or FaceTime Lessons", "https://trombonetools.com/skype-lessons/")

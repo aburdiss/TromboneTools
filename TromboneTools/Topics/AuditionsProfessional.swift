@@ -16,14 +16,26 @@ struct AuditionsProfessional: View {
                 EmbeddedYouTubeView(request: preparingExcerptsYouTubeLink)
                     .frame(minHeight: 200)
                 
-                Paragraph("Here is a handout with tips about preparing excerpts:")
-                
-                Button(action: {
-                    let url = URL(string: "https://trombonelessons.files.wordpress.com/2014/04/preparing-excerpts.pdf")!
-                    UIApplication.shared.open(url)
-                }) {
-                    Paragraph("Preparing Excerpts")
+                Group {
+                    Paragraph("Here is a handout with tips about preparing excerpts:")
+                    
+                    Button(action: {
+                        let url = URL(string: preparingExcerptsPDFLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Paragraph("Preparing Excerpts")
+                    }
+                    
+                    Paragraph("TromboneExcerpts.org features multiple recordings of all the major tenor and bass trombone orchestral excerpts to help you in your audition preparation.")
+                    
+                    Button(action: {
+                        let url = URL(string: tromboneExcerptsLink)!
+                        UIApplication.shared.open(url)
+                    }) {
+                        Paragraph("TromboneExcerpts.org")
+                    }
                 }
+                
                 
                 // Narrative
                 Group {

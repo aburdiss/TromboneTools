@@ -44,10 +44,13 @@ struct Endurance: View {
                         Text("To build endurance with ")
                         + Text("Rangesongs")
                         .italic()
-                        + Text(", play several etudes that are well within your reach – not your highest note, but a gentle challenge. Rest between each etude and then play some low stuff. Then do another session like this, and even another if you have the time. If you pay your dues in this way, your endurance is sure to improve.")
+                        + Text(", play several etudes that are well within your reach – not your highest note, but a gentle challenge. Rest between each etude and then play some low stuff. Then do another session like this, and even another if you have the time. If you pay your dues in this way, your endurance is sure to improve. To see a sample etude, please refer to the chapter on High Range.")
                     }
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)
+                    NavigationLink(destination: HighRange()) {
+                        Paragraph("High Range")
+                    }
                 }
                 
                 SectionDivider()

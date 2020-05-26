@@ -71,7 +71,7 @@ struct Articulation: View {
                     Paragraph("dagadagadagadaga, etc…")
                     Paragraph("Your next step is to speed this up a little at a time and the last and most sophisticated step is to move around while double tonguing.")
                     Paragraph("The following items have pertinent information to help you improve your articulation:")
-                    Paragraph("Here are some resources to practice alternate positions:")
+                    Paragraph("Here are some resources to practice articulations:")
                 }
                     SectionDivider()
                 

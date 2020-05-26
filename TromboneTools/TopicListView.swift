@@ -22,7 +22,7 @@ struct TopicListView: View {
                         Text("Alternate Positions")
                     }
                     NavigationLink(destination: Articulation()) {
-                        Text("Articulations")
+                        Text("Articulation")
                     }
                     NavigationLink(destination: AuditionsCollege()) {
                         Text("Auditions - College")
@@ -31,10 +31,13 @@ struct TopicListView: View {
                         Text("Auditions - Professional")
                     }
                     NavigationLink(destination: BodyMapping()) {
-                        Text("Body Mapping for Brass Players")
+                        Text("Body Mapping")
                     }
                     NavigationLink(destination: Breathing()) {
                         Text("Breathing")
+                    }
+                    NavigationLink(destination: Clefs()) {
+                        Text("Clefs")
                     }
                     NavigationLink(destination: DailyRoutine()) {
                         Text("Daily Routine")
@@ -45,11 +48,11 @@ struct TopicListView: View {
                     NavigationLink(destination: Dynamics()) {
                         Text("Dynamics")
                     }
+                }
+                Section {
                     NavigationLink(destination: Embochure()) {
                         Text("Embouchure")
                     }
-                }
-                Section {
                     NavigationLink(destination: Endurance()) {
                         Text("Endurance")
                     }
@@ -71,17 +74,20 @@ struct TopicListView: View {
                     NavigationLink(destination: LowRange()) {
                         Text("Low Range")
                     }
+                    NavigationLink(destination: MethodBooks()) {
+                        Text("Method Books")
+                    }
                     NavigationLink(destination: MouthpieceBuzzing()) {
                         Text("Mouthpiece Buzzing")
                     }
+                }
+                Section {
                     NavigationLink(destination: NaturalSlurs()) {
                         Text("Natural Slurs")
                     }
                     NavigationLink(destination: Nerves()) {
                         Text("Nerves")
                     }
-                }
-                Section {
                     NavigationLink(destination: NoteEndings()) {
                         Text("Note Endings")
                     }
@@ -106,14 +112,17 @@ struct TopicListView: View {
                     NavigationLink(destination: SightReading()) {
                         Text("Sight Reading")
                     }
+                }
+                Section {
                     NavigationLink(destination: SlideTechnique()) {
                         Text("Slide Technique")
+                    }
+                    NavigationLink(destination: SoloRepertoire()) {
+                        Text("Solo Repertoire")
                     }
                     NavigationLink(destination: ToneQuality()) {
                         Text("Tone Quality")
                     }
-                }
-                Section {
                     NavigationLink(destination: Trills()) {
                         Text("Trills")
                     }

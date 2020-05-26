@@ -13,6 +13,9 @@
 		9C1D0DA523EBE3F60092653A /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA423EBE3F60092653A /* PurchaseButton.swift */; };
 		9C1D0DA723EBE6040092653A /* ImagePurchaseLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D0DA623EBE6040092653A /* ImagePurchaseLink.swift */; };
 		9C3FC85B244E8498005DC8BA /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3FC85A244E8498005DC8BA /* AuthorView.swift */; };
+		9C435FE924585E0000E943E9 /* Clefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C435FE824585E0000E943E9 /* Clefs.swift */; };
+		9C435FEB24586B0700E943E9 /* MethodBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C435FEA24586B0700E943E9 /* MethodBooks.swift */; };
+		9C435FED2458718C00E943E9 /* SoloRepertoire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C435FEC2458718C00E943E9 /* SoloRepertoire.swift */; };
 		9C4FFCCF23EC76E2006ECF3B /* YouTubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FFCCE23EC76E2006ECF3B /* YouTubePlayerView.swift */; };
 		9C4FFCD123ECA595006ECF3B /* BulletPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FFCD023ECA595006ECF3B /* BulletPoint.swift */; };
 		9C503C6023FF8C42008B9346 /* ResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503C5F23FF8C42008B9346 /* ResourceView.swift */; };
@@ -69,6 +72,9 @@
 		9C1D0DA423EBE3F60092653A /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
 		9C1D0DA623EBE6040092653A /* ImagePurchaseLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePurchaseLink.swift; sourceTree = "<group>"; };
 		9C3FC85A244E8498005DC8BA /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
+		9C435FE824585E0000E943E9 /* Clefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clefs.swift; sourceTree = "<group>"; };
+		9C435FEA24586B0700E943E9 /* MethodBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodBooks.swift; sourceTree = "<group>"; };
+		9C435FEC2458718C00E943E9 /* SoloRepertoire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloRepertoire.swift; sourceTree = "<group>"; };
 		9C4FFCCE23EC76E2006ECF3B /* YouTubePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerView.swift; sourceTree = "<group>"; };
 		9C4FFCD023ECA595006ECF3B /* BulletPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletPoint.swift; sourceTree = "<group>"; };
 		9C503C5F23FF8C42008B9346 /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 				9C96269423DAC4F10031B0E9 /* AuditionsProfessional.swift */,
 				9C96269623DAC5D90031B0E9 /* BodyMapping.swift */,
 				9C96269823DAC5E30031B0E9 /* Breathing.swift */,
+				9C435FE824585E0000E943E9 /* Clefs.swift */,
 				9C96269A23DAC5F10031B0E9 /* DailyRoutine.swift */,
 				9C96269C23DAC5FC0031B0E9 /* Duets.swift */,
 				9C96269E23DAC6630031B0E9 /* Dynamics.swift */,
@@ -172,6 +179,7 @@
 				9C600E7923EB342600C73BFB /* Intonation.swift */,
 				9C600E7B23EB343B00C73BFB /* LessonGuidelines.swift */,
 				9C600E7D23EB344700C73BFB /* LowRange.swift */,
+				9C435FEA24586B0700E943E9 /* MethodBooks.swift */,
 				9C600E7F23EB345E00C73BFB /* MouthpieceBuzzing.swift */,
 				9C600E8123EB346900C73BFB /* NaturalSlurs.swift */,
 				9C600E8323EB347100C73BFB /* Nerves.swift */,
@@ -184,6 +192,7 @@
 				9C600E9123EB34BF00C73BFB /* Rhythm.swift */,
 				9C600E9323EB34CA00C73BFB /* SightReading.swift */,
 				9C600E9523EB34D400C73BFB /* SlideTechnique.swift */,
+				9C435FEC2458718C00E943E9 /* SoloRepertoire.swift */,
 				9C600E9723EB34DD00C73BFB /* ToneQuality.swift */,
 				9C600E9923EB34EA00C73BFB /* Trills.swift */,
 				9C600E9B23EB34F300C73BFB /* Vibrato.swift */,
@@ -342,6 +351,7 @@
 				9CC81E3423EA7D2B00CFA5F6 /* EmbeddedYouTubeView.swift in Sources */,
 				9C96269323DAC4E20031B0E9 /* AuditionsCollege.swift in Sources */,
 				9C600E7A23EB342600C73BFB /* Intonation.swift in Sources */,
+				9C435FED2458718C00E943E9 /* SoloRepertoire.swift in Sources */,
 				9C4FFCD123ECA595006ECF3B /* BulletPoint.swift in Sources */,
 				9C1D0DA523EBE3F60092653A /* PurchaseButton.swift in Sources */,
 				9C9626A523DAC6940031B0E9 /* Endurance.swift in Sources */,
@@ -362,6 +372,7 @@
 				9C9626A323DAC68A0031B0E9 /* Flexibility.swift in Sources */,
 				9C96269723DAC5D90031B0E9 /* BodyMapping.swift in Sources */,
 				9C600E7E23EB344700C73BFB /* LowRange.swift in Sources */,
+				9C435FEB24586B0700E943E9 /* MethodBooks.swift in Sources */,
 				9C9626A723DAC6A10031B0E9 /* HesitantEntrances.swift in Sources */,
 				9C96269D23DAC5FC0031B0E9 /* Duets.swift in Sources */,
 				9C600E9C23EB34F300C73BFB /* Vibrato.swift in Sources */,
@@ -372,6 +383,7 @@
 				9C089A7923FAFFF40008E29E /* ContentModel.swift in Sources */,
 				9C96268923DABCB00031B0E9 /* AlternatePositions.swift in Sources */,
 				9C96268F23DAC2910031B0E9 /* Articulation.swift in Sources */,
+				9C435FE924585E0000E943E9 /* Clefs.swift in Sources */,
 				9C3FC85B244E8498005DC8BA /* AuthorView.swift in Sources */,
 				9C600E9623EB34D400C73BFB /* SlideTechnique.swift in Sources */,
 				9C600E9823EB34DD00C73BFB /* ToneQuality.swift in Sources */,
@@ -513,7 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TromboneTools/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -522,7 +534,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TromboneTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -535,7 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TromboneTools/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -544,7 +556,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TromboneTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

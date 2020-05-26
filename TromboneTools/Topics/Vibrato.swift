@@ -20,10 +20,10 @@ struct Vibrato: View {
                     Paragraph("It is not advisable to begin using vibrato until you can reliably create a good tone quality in all registers. Once you are ready, start with jaw (or embouchure) vibrato, not slide vibrato because slide vibrato takes a great deal of slide coordination and finesse and is consequently more difficult to learn than jaw vibrato. In addition, slide vibrato is usually reserved for jazz playing, although it is possible to apply it in classical situations if done tastefully.")
                     Paragraph("To produce jaw vibrato, move the jaw as though saying “maw” while playing. Allow the embouchure to manipulate the pitch both above and below the note so it will sound in tune and develop the ability to control the profile of the vibrato—both the frequency (or speed) and the amplitude (or amount of pitch variation). Do not allow the vibrato to affect the air flow; many players back off the air as they apply the vibrato and this can undermine the tone quality. One should cultivate the ability to apply vibrato at any volume.")
                     Group {
-                        Text("Here is a sample from the Vibrato Routine out of ")
+                        Text("Here is a sample from the \"Vibrato Routine\" out of my ")
                         + Text("Daily Routines")
                             .italic()
-                        + Text(":")
+                        + Text(". In this example, the vibrato is metered as a means of learning the motion necessary to create the eventual sound you want. In real life, vibrato is not metered and should be modified to suit the musical situation.")
                     }
                         .padding()
                         .fixedSize(horizontal: false, vertical: true)

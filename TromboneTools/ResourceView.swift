@@ -21,7 +21,7 @@ struct ResourceView: View {
                     }
                     
                     Button(action: {
-                        let url = URL(string: breathingBookTenorPurchaseLink)!
+                        let url = URL(string: breathingBookResourceLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Breathing Book")
@@ -35,7 +35,7 @@ struct ResourceView: View {
                     }
                     
                     Button(action: {
-                        let url = URL(string: dailyRoutinesTenorPurchaseLink)!
+                        let url = URL(string: dailyRoutinesResourceLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Daily Routines")
@@ -56,7 +56,7 @@ struct ResourceView: View {
                     }
                     
                     Button(action: {
-                        let url = URL(string: flowStudiesTenorPurchaseLink)!
+                        let url = URL(string: flowStudiesResourceLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Flow Studies")
@@ -85,7 +85,7 @@ struct ResourceView: View {
                     }
                     
                     Button(action: {
-                        let url = URL(string: rangesongsTenorPurchaseLink)!
+                        let url = URL(string: rangesongsResourceLink)!
                         UIApplication.shared.open(url)
                     }) {
                         Text("Rangesongs")

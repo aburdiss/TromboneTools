@@ -63,13 +63,13 @@ struct Intonation: View {
                         Image("flow-example")
                             .resizable()
                             .scaledToFit()
-                        Paragraph("Try playing this phrase at about quarter = 92.  Once you learn the notes, put a tuner on your music stand and turn it on. Now play the phrase again, adding a fermata as indicated. When you reach the fermata, hold the note and look at the tuner:")
+                        Paragraph("Try playing this phrase at about quarter = 90.  Once you learn the notes, check several of the As in context with a tuner by stopping on each fermata one at a time, as in this example:")
                         Image("sample-with-fermata")
                             .resizable()
                             .scaledToFit()
                     }
                     
-                    Paragraph("This will tell you if you have a habit of being sharp or flat in this particular context. It doesn’t mean, however, that all of your A-naturals are out of tune; in a different key they might be perfectly fine.")
+                    Paragraph("How each A is approached may change your intonation tendency: the first A is approached from first position B-flat; the second is approached from third position C; and the third is approached from fourth position G. Hopefully every A is perfectly in tune (!) but if you are like most players you will have an intonation tendency that differs according to the context of the note in question. Learning your tendencies can help you improve your intonation–use this contextual tuning process in your practicing regularly to refine your sensitivity to where to place the slide in any context, regardless of key, interval, range, or tempo.")
                     Paragraph("The point is to acknowledge the idea that we have certain intonation tendencies which are key-related. Figure out what your tendencies are and you are on your way to improving intonation.")
                 }
                 Group {
